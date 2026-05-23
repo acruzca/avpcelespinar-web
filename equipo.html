@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html class="light" lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-highest": "#e2e2e2",
+                        "on-tertiary-fixed-variant": "#324769",
+                        "surface-container-high": "#e8e8e8",
+                        "secondary-container": "#fe6514",
+                        "on-secondary-fixed-variant": "#7e2c00",
+                        "secondary": "#a53c00",
+                        "on-secondary-container": "#561b00",
+                        "on-primary-fixed-variant": "#184683",
+                        "secondary-fixed-dim": "#ffb598",
+                        "inverse-on-surface": "#f1f1f1",
+                        "error": "#ba1a1a",
+                        "primary-fixed-dim": "#aac7ff",
+                        "on-primary-fixed": "#001b3e",
+                        "on-error": "#ffffff",
+                        "surface-bright": "#f9f9f9",
+                        "tertiary": "#182f4f",
+                        "surface-dim": "#dadada",
+                        "tertiary-fixed-dim": "#b2c7f0",
+                        "inverse-primary": "#aac7ff",
+                        "surface-container-lowest": "#ffffff",
+                        "surface": "#f9f9f9",
+                        "on-tertiary-fixed": "#011b3b",
+                        "error-container": "#ffdad6",
+                        "on-secondary": "#ffffff",
+                        "on-surface-variant": "#434750",
+                        "primary": "#002e60",
+                        "background": "#f9f9f9",
+                        "primary-fixed": "#d6e3ff",
+                        "primary-container": "#154481",
+                        "outline-variant": "#c3c6d2",
+                        "tertiary-fixed": "#d5e3ff",
+                        "on-primary": "#ffffff",
+                        "surface-container-low": "#f3f3f3",
+                        "surface-container": "#eeeeee",
+                        "on-surface": "#1a1c1c",
+                        "inverse-surface": "#2f3131",
+                        "outline": "#737781",
+                        "on-primary-container": "#8db3f7",
+                        "on-error-container": "#93000a",
+                        "on-background": "#1a1c1c",
+                        "on-secondary-fixed": "#370e00",
+                        "surface-variant": "#e2e2e2",
+                        "on-tertiary": "#ffffff",
+                        "surface-tint": "#365e9d",
+                        "secondary-fixed": "#ffdbce",
+                        "on-tertiary-container": "#9db3da",
+                        "tertiary-container": "#304567"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "container-max": "1140px",
+                        "gutter": "24px",
+                        "stack-md": "32px",
+                        "stack-lg": "64px",
+                        "stack-sm": "16px",
+                        "margin-page": "32px",
+                        "unit": "8px"
+                    },
+                    "fontFamily": {
+                        "label-lg": ["Public Sans"],
+                        "headline-sm": ["Public Sans"],
+                        "body-lg": ["Public Sans"],
+                        "label-sm": ["Public Sans"],
+                        "headline-lg": ["Public Sans"],
+                        "headline-xl": ["Public Sans"],
+                        "body-md": ["Public Sans"],
+                        "headline-md": ["Public Sans"]
+                    },
+                    "fontSize": {
+                        "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        body {
+            font-family: 'Public Sans', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-background text-on-background">
+    <header
+        class="bg-white dark:bg-slate-900 border-b border-gray-300 dark:border-slate-800 docked full-width top-0 z-50 sticky">
+        <div class="max-w-[1140px] mx-auto flex justify-between items-center px-4 h-20">
+            <div class="text-xl font-bold text-blue-900 dark:text-blue-50 font-['Public_Sans'] tracking-tight">
+                Protección Civil El Espinar
+            </div>
+            <nav
+                class="hidden md:flex items-center space-x-8 font-['Public_Sans'] text-base font-semibold tracking-tight">
+                <a class="text-gray-600 dark:text-slate-400 hover:text-blue-800 dark:hover:text-blue-300 transition-all duration-200 active:opacity-70"
+                    href="index.html">Inicio</a>
+                <a class="text-gray-600 dark:text-slate-400 hover:text-blue-800 dark:hover:text-blue-300 transition-all duration-200 active:opacity-70"
+                    href="hazte_voluntario.html">Voluntariado</a>
+                <a class="text-gray-600 dark:text-slate-400 hover:text-blue-800 dark:hover:text-blue-300 transition-all duration-200 active:opacity-70"
+                    href="agrupacion.html">Historia</a>
+                <a class="text-blue-900 dark:text-blue-400 border-b-2 border-blue-900 dark:border-blue-400 pb-1 hover:text-blue-800 dark:hover:text-blue-300 transition-all duration-200 active:opacity-70"
+                    href="equipo.html">Equipo</a>
+                <a class="text-gray-600 dark:text-slate-400 hover:text-blue-800 dark:hover:text-blue-300 transition-all duration-200 active:opacity-70"
+                    href="contacto.html">Contacto</a>
+            </nav>
+            <div class="flex items-center">
+                <button
+                    class="bg-secondary-container text-on-secondary px-6 py-2 font-bold rounded-lg transition-all active:scale-95">
+                    Emergencias 112
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="relative h-[450px] flex items-center overflow-hidden bg-primary">
+            <div class="absolute inset-0 z-0">
+                <img class="w-full h-full object-cover opacity-30 mix-blend-overlay"
+                    data-alt="A professional group portrait of emergency service volunteers standing confidently in front of a modern rescue vehicle. The scene is bathed in natural morning sunlight, highlighting their orange and navy blue uniforms. The atmosphere is heroic and institutional, emphasizing readiness and community protection with a clean, light-mode aesthetic and professional composition."
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_gCHGolECF6nAV0wOrshkO56j2szZt6rxqisFQsooFHuEQ7Ardnf9aioYM1aIeJYp3TqRgJEUpch6N1fZd6_hRELZxL_C3n6dU7Mihep7BrP30ou6RwL8lSHFwyMAjbkBt2Uek6quLFYdlDlS1W53-xJzR-bvjohOURy1fOOZO0J4bE8tb9aZikNnkq24HpZa4KBn4C4LR9BzbDlo-sgcfnSPNfyG39R-MKsNqxXL32gRIhaiVK8IojBTnzQCKV1qagTjT-vHTm0">
+            </div>
+            <div class="relative z-10 max-w-[1140px] mx-auto px-4 w-full">
+                <div class="max-w-2xl">
+                    <h1 class="font-headline-xl text-headline-xl text-white mb-4">Nuestro Equipo</h1>
+                    <p class="font-body-lg text-body-lg text-on-primary-container max-w-xl">
+                        Un grupo humano multidisciplinar comprometido con la seguridad de El Espinar. Profesionales y
+                        voluntarios que trabajan coordinados para ofrecer una respuesta rápida y eficaz.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="py-16 max-w-[1140px] mx-auto px-4">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="h-8 w-2 bg-primary"></div>
+                <h2 class="font-headline-lg text-headline-lg text-primary">Estructura de Coordinación</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div
+                    class="bg-white border border-outline-variant p-8 rounded-xl flex flex-col md:flex-row gap-6 items-center">
+                    <div class="w-32 h-32 rounded-full overflow-hidden flex-shrink-0 border-4 border-surface-container">
+                        <img class="w-full h-full object-cover"
+                            data-alt="A professional headshot of a middle-aged male emergency coordinator in a crisp navy blue uniform. He has a confident and approachable expression, looking directly at the camera. The background is a clean, out-of-focus institutional office setting with soft, high-key lighting that reinforces trust and authority."
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzuhhdxFobxYhm2bJYKPUVFMfQcBYxS5VPgNYuTBPBK7t1ss9_KjVk5t5G88tknWs2nTF9lO178SiRjSumqW_RRyA-Ocgdkuk5BCZvy8jxWDTldMWKsPlOBhmaY5i3RH03bRk6Mv-HWDb40-nIxnTmK32-cExoXs2OwOm-A1GIrtzo4yJoqZv0goE5Rk3pb4TIPVpfc6JS23X0p9QDZNCn0B7UAQE5cP6v2pZ_-MI_w7jUG0ah2pibpU6kjdWBxfrC2UTpsl53k9Q">
+                    </div>
+                    <div>
+                        <span class="text-secondary font-label-lg text-label-lg uppercase tracking-widest">Coordinador
+                            Jefe</span>
+                        <h3 class="font-headline-md text-headline-md text-primary mt-1 mb-2">Antonio Rodríguez</h3>
+                        <p class="font-body-md text-body-md text-on-surface-variant">Responsable de la dirección
+                            operativa y estratégica de la agrupación, con más de 15 años de experiencia en gestión de
+                            emergencias.</p>
+                    </div>
+                </div>
+                <div
+                    class="bg-white border border-outline-variant p-8 rounded-xl flex flex-col md:flex-row gap-6 items-center">
+                    <div class="w-32 h-32 rounded-full overflow-hidden flex-shrink-0 border-4 border-surface-container">
+                        <img class="w-full h-full object-cover"
+                            data-alt="A professional headshot of a female deputy coordinator in a formal emergency service uniform. She has a dedicated and serious but friendly expression. The lighting is bright and professional, following a corporate style that projects reliability and competence. The background is neutral and minimalist."
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDR-3Aa-JfphDDSmdsf0-8xFyTxzJjwuS5pdUUWvR7NSTDQCvYbOBSmy1SJW5EsUe8EfkhLmmHRcxVy5p0gS-KdsPvmnFCA3rHWOPil8MW7Evbc06YxR9pMwD9KS7buuYfHOAavHeGBlua8KgVc8thvTZZYvt8mNyiFDulK7q3MRC4bBWiQlF5bCABKzzcKuJL0hSgaNkfoOoJhhDfhPr9mRXidyNlutqXf1u6QS1UP-H_R6aXq4pn6eS2i6EUNtK2MpXxooyHuK14">
+                    </div>
+                    <div>
+                        <span
+                            class="text-secondary font-label-lg text-label-lg uppercase tracking-widest">Subcoordinadora</span>
+                        <h3 class="font-headline-md text-headline-md text-primary mt-1 mb-2">Elena Martínez</h3>
+                        <p class="font-body-md text-body-md text-on-surface-variant">Encargada de la supervisión técnica
+                            de las unidades y la gestión del personal voluntario durante intervenciones críticas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-surface-container-low py-16">
+            <div class="max-w-[1140px] mx-auto px-4">
+                <div class="flex items-center gap-4 mb-12">
+                    <div class="h-8 w-2 bg-primary"></div>
+                    <h2 class="font-headline-lg text-headline-lg text-primary">Unidades Especializadas</h2>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <div class="bg-white border border-outline-variant rounded-xl overflow-hidden group">
+                        <div class="h-48 overflow-hidden">
+                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                data-alt="A detailed view of emergency logistics equipment including high-visibility vests, orange cones, and technical communication devices neatly arranged in the back of a rescue vehicle. The lighting is clean and bright, showcasing an organized and ready-to-act environment with a professional institutional aesthetic."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwQUbY8ICRZnEDmFrJXvu89eHdfd6QqHbi20dsSbelNGC6WhTb6IzR2y9RCoWMxwIezvjLVx8IRT0BCLv-I11hgXJxQlNg9PI1Fbl0R6G3rcW_H8dC4H9RX7u-t2XibvgQEEe-aTXLS5nhM9RKB5zomUi_RrRLYckFrKsqAxlY6rIJN-nt5Tm9z0ymPax0PBEgEnhhvW4cBvhiCcnKsUqmZ5kq7P10Zy6hFSs3F5clw8fcCV0TVm2vozp_EDSJ6y2n0tJT-I9lj8A">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center gap-3 mb-3">
+                                <span class="material-symbols-outlined text-primary"
+                                    data-icon="inventory_2">inventory_2</span>
+                                <h3 class="font-headline-sm text-headline-sm text-primary">Unidad de Logística</h3>
+                            </div>
+                            <p class="font-body-md text-body-md text-on-surface-variant mb-4">Gestión de recursos
+                                materiales, abastecimiento en intervenciones prolongadas y despliegue de puestos de
+                                mando avanzados.</p>
+                            <ul class="space-y-2">
+                                <li class="flex items-center gap-2 text-label-lg text-on-surface">
+                                    <span class="material-symbols-outlined text-primary text-[18px]"
+                                        data-icon="check_circle">check_circle</span>
+                                    Despliegue de refugios
+                                </li>
+                                <li class="flex items-center gap-2 text-label-lg text-on-surface">
+                                    <span class="material-symbols-outlined text-primary text-[18px]"
+                                        data-icon="check_circle">check_circle</span>
+                                    Comunicaciones de radio
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bg-white border border-outline-variant rounded-xl overflow-hidden group">
+                        <div class="h-48 overflow-hidden">
+                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                data-alt="A close-up shot of a modern medical emergency bag open, revealing organized medical supplies and a defibrillator. The scene is set in a high-tech ambulance interior with clean white and blue tones. The lighting is focused and professional, emphasizing readiness and health technology in a corporate emergency context."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxKosKiKAzeCmJcorvZNXuL6aOBEXiFDKJauB5wPIMd88sb9zYfM4s5vt9qDTszPQG-aq-7DOLuZIg9dLsgg0fKcnaxQnPKHIUGkV6klTGgSozBJ36Brk73KRqYjEfCUVQAOgxmTd6_2Sq5TCs7KZ7812FRioYsWUcE6GsVwcAX_iKORDZmlDQb8iJUxOmLVKSLpgmWV7dqiQIp173q2M4QUHDmrkQ203Aq8vw3R7ayXBMKi9fwxDs-1-Gudd5zs-n5J248w57CN4">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center gap-3 mb-3">
+                                <span class="material-symbols-outlined text-primary"
+                                    data-icon="medical_services">medical_services</span>
+                                <h3 class="font-headline-sm text-headline-sm text-primary">Unidad Sanitaria</h3>
+                            </div>
+                            <p class="font-body-md text-body-md text-on-surface-variant mb-4">Primeros auxilios
+                                avanzados y soporte vital básico en preventivos y situaciones de emergencia colectiva.
+                            </p>
+                            <ul class="space-y-2">
+                                <li class="flex items-center gap-2 text-label-lg text-on-surface">
+                                    <span class="material-symbols-outlined text-primary text-[18px]"
+                                        data-icon="check_circle">check_circle</span>
+                                    Técnicos en Emergencias (TES)
+                                </li>
+                                <li class="flex items-center gap-2 text-label-lg text-on-surface">
+                                    <span class="material-symbols-outlined text-primary text-[18px]"
+                                        data-icon="check_circle">check_circle</span>
+                                    Desfibrilación (DESA)
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bg-white border border-outline-variant rounded-xl overflow-hidden group">
+                        <div class="h-48 overflow-hidden">
+                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                data-alt="Emergency rescue personnel rappelling down a rocky cliffside during a training exercise. The sky is clear blue, and the gear is bright orange for high visibility. The style is action-oriented yet professional, capturing the precision and bravery of rescue units in a high-contrast, clean daylight setting."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyYgHTJU1u4wnGOUQcLvq965fXDeP4tAAwBkJqWcFE-GqsiI75CZqT0SzxzVEZSkRPr-oQ-18JxVuTBXojfZ0y5GTkGyhgzys17UuuzcgCD8vAwRgb0HEX4bTMXR6-fsa-x-6wzbxSYdUkbXE_O2w6RJl9PWyE7PAGiqICeCBmaWRSV5HSdF23FUoa4K-WoyXNnGD4J8IzIJ2CIDU41p5SaboYjywLupnVXnBQ1t4VXcxKlp_qWzyvmFNEZ4Rl0hl8dL6J7UC_ru4">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center gap-3 mb-3">
+                                <span class="material-symbols-outlined text-primary" data-icon="explore">explore</span>
+                                <h3 class="font-headline-sm text-headline-sm text-primary">Unidad de Rescate</h3>
+                            </div>
+                            <p class="font-body-md text-body-md text-on-surface-variant mb-4">Búsqueda y rescate en
+                                entornos rurales y montaña, especializados en la orografía de nuestra Sierra de
+                                Guadarrama.</p>
+                            <ul class="space-y-2">
+                                <li class="flex items-center gap-2 text-label-lg text-on-surface">
+                                    <span class="material-symbols-outlined text-primary text-[18px]"
+                                        data-icon="check_circle">check_circle</span>
+                                    Búsqueda de desaparecidos
+                                </li>
+                                <li class="flex items-center gap-2 text-label-lg text-on-surface">
+                                    <span class="material-symbols-outlined text-primary text-[18px]"
+                                        data-icon="check_circle">check_circle</span>
+                                    Técnicas de montaña
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-24 max-w-[1140px] mx-auto px-4">
+            <div class="bg-primary-container rounded-3xl p-8 md:p-16 text-center relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-8 opacity-10">
+                    <span class="material-symbols-outlined text-[180px] text-white"
+                        data-icon="diversity_3">diversity_3</span>
+                </div>
+                <div class="relative z-10 max-w-2xl mx-auto">
+                    <h2 class="font-headline-lg text-headline-lg text-white mb-6">¿Quieres ser parte de nosotros?</h2>
+                    <p class="font-body-lg text-body-lg text-on-primary-container mb-10">
+                        Buscamos personas comprometidas, con espíritu de servicio y ganas de aprender. No necesitas
+                        experiencia previa, nosotros te formamos.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <button
+                            class="bg-secondary-container text-on-secondary px-8 py-4 font-bold rounded-lg transition-all hover:bg-secondary active:scale-95 text-lg">
+                            Únete al Voluntariado
+                        </button>
+                        <button
+                            class="bg-transparent border-2 border-white text-white px-8 py-4 font-bold rounded-lg transition-all hover:bg-white/10 active:scale-95 text-lg">
+                            Más información
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-gray-100 dark:bg-slate-950 border-t border-gray-300 dark:border-slate-800 full-width py-12">
+        <div
+            class="max-w-[1140px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 px-4 font-['Public_Sans'] text-sm leading-relaxed">
+            <div class="col-span-1 md:col-span-1">
+                <div class="text-lg font-black uppercase text-blue-900 dark:text-blue-50 mb-4">
+                    Protección Civil El Espinar
+                </div>
+                <p class="text-gray-500 dark:text-slate-500">
+                    Servicio público de prevención y atención de emergencias del Ayuntamiento de El Espinar.
+                </p>
+            </div>
+            <div>
+                <h4 class="font-bold text-blue-900 dark:text-blue-400 mb-4">Información</h4>
+                <nav class="flex flex-col gap-2">
+                    <a class="text-gray-500 dark:text-slate-500 hover:text-blue-800 dark:hover:text-blue-300 hover:underline transition-opacity duration-200"
+                        href="aviso_legal.html">Aviso Legal</a>
+                    <a class="text-gray-500 dark:text-slate-500 hover:text-blue-800 dark:hover:text-blue-300 hover:underline transition-opacity duration-200"
+                        href="privacidad.html">Privacidad</a>
+                    <a class="text-gray-500 dark:text-slate-500 hover:text-blue-800 dark:hover:text-blue-300 hover:underline transition-opacity duration-200"
+                        href="http://elespinar.es/" target="_blank">Cookies</a>
+                </nav>
+            </div>
+            <div>
+                <h4 class="font-bold text-blue-900 dark:text-blue-400 mb-4">Institucional</h4>
+                <nav class="flex flex-col gap-2">
+                    <a class="text-gray-500 dark:text-slate-500 hover:text-blue-800 dark:hover:text-blue-300 hover:underline transition-opacity duration-200"
+                        href="transparencia.html">Transparencia</a>
+                    <a class="text-gray-500 dark:text-slate-500 hover:text-blue-800 dark:hover:text-blue-300 hover:underline transition-opacity duration-200"
+                        href="hazte_voluntario.html">Portal del Voluntario</a>
+                    <a class="text-gray-500 dark:text-slate-500 hover:text-blue-800 dark:hover:text-blue-300 hover:underline transition-opacity duration-200"
+                        href="http://elespinar.es/" target="_blank">Ayuntamiento</a>
+                </nav>
+            </div>
+            <div>
+                <h4 class="font-bold text-blue-900 dark:text-blue-400 mb-4">Contacto</h4>
+                <div class="flex flex-col gap-2 text-gray-500 dark:text-slate-500">
+                    <p class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px]"
+                            data-icon="location_on">location_on</span> Paseo de las Peitas, 1. Centro Cultural, El
+                        Espinar, Spain, 40400</p>
+                    <p class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px]"
+                            data-icon="phone">phone</span> 671 66 76 33</p>
+                    <p class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px]"
+                            data-icon="mail">mail</span> pcivil@aytoelespinar.com</p>
+                </div>
+            </div>
+        </div>
+        <div
+            class="max-w-[1140px] mx-auto px-4 mt-12 pt-8 border-t border-gray-300 dark:border-slate-800 text-center text-gray-500 dark:text-slate-500 text-xs">
+            © 2024 Protección Civil El Espinar. Todos los derechos reservados.
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

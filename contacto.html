@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html class="light" lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-highest": "#e2e2e2",
+                        "on-tertiary-fixed-variant": "#324769",
+                        "surface-container-high": "#e8e8e8",
+                        "secondary-container": "#fe6514",
+                        "on-secondary-fixed-variant": "#7e2c00",
+                        "secondary": "#a53c00",
+                        "on-secondary-container": "#561b00",
+                        "on-primary-fixed-variant": "#184683",
+                        "secondary-fixed-dim": "#ffb598",
+                        "inverse-on-surface": "#f1f1f1",
+                        "error": "#ba1a1a",
+                        "primary-fixed-dim": "#aac7ff",
+                        "on-primary-fixed": "#001b3e",
+                        "on-error": "#ffffff",
+                        "surface-bright": "#f9f9f9",
+                        "tertiary": "#182f4f",
+                        "surface-dim": "#dadada",
+                        "tertiary-fixed-dim": "#b2c7f0",
+                        "inverse-primary": "#aac7ff",
+                        "surface-container-lowest": "#ffffff",
+                        "surface": "#f9f9f9",
+                        "on-tertiary-fixed": "#011b3b",
+                        "error-container": "#ffdad6",
+                        "on-secondary": "#ffffff",
+                        "on-surface-variant": "#434750",
+                        "primary": "#002e60",
+                        "background": "#f9f9f9",
+                        "primary-fixed": "#d6e3ff",
+                        "primary-container": "#154481",
+                        "outline-variant": "#c3c6d2",
+                        "tertiary-fixed": "#d5e3ff",
+                        "on-primary": "#ffffff",
+                        "surface-container-low": "#f3f3f3",
+                        "surface-container": "#eeeeee",
+                        "on-surface": "#1a1c1c",
+                        "inverse-surface": "#2f3131",
+                        "outline": "#737781",
+                        "on-primary-container": "#8db3f7",
+                        "on-error-container": "#93000a",
+                        "on-background": "#1a1c1c",
+                        "on-secondary-fixed": "#370e00",
+                        "surface-variant": "#e2e2e2",
+                        "on-tertiary": "#ffffff",
+                        "surface-tint": "#365e9d",
+                        "secondary-fixed": "#ffdbce",
+                        "on-tertiary-container": "#9db3da",
+                        "tertiary-container": "#304567"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "container-max": "1140px",
+                        "gutter": "24px",
+                        "stack-md": "32px",
+                        "stack-lg": "64px",
+                        "stack-sm": "16px",
+                        "margin-page": "32px",
+                        "unit": "8px"
+                    },
+                    "fontFamily": {
+                        "label-lg": ["Public Sans"],
+                        "headline-sm": ["Public Sans"],
+                        "body-lg": ["Public Sans"],
+                        "label-sm": ["Public Sans"],
+                        "headline-lg": ["Public Sans"],
+                        "headline-xl": ["Public Sans"],
+                        "body-md": ["Public Sans"],
+                        "headline-md": ["Public Sans"]
+                    },
+                    "fontSize": {
+                        "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-background font-body-md text-on-background" data-mode="connect">
+    <header
+        class="bg-white dark:bg-slate-900 border-b border-gray-300 dark:border-slate-800 h-20 dock-full-width top-0 z-50 sticky transition-all duration-200">
+        <div class="max-w-[1140px] mx-auto flex justify-between items-center px-4 h-full">
+            <div class="flex items-center gap-2">
+                <span class="text-xl font-bold text-blue-900 dark:text-blue-50 font-headline-md">Protección Civil El
+                    Espinar</span>
+            </div>
+            <nav class="hidden md:flex items-center gap-8 font-['Public_Sans'] text-base font-semibold tracking-tight">
+                <a class="text-gray-600 dark:text-slate-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
+                    href="index.html">Inicio</a>
+                <a class="text-gray-600 dark:text-slate-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
+                    href="hazte_voluntario.html">Voluntariado</a>
+                <a class="text-gray-600 dark:text-slate-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
+                    href="agrupacion.html">Historia</a>
+                <a class="text-gray-600 dark:text-slate-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
+                    href="equipo.html">Equipo</a>
+                <a class="text-blue-900 dark:text-blue-400 border-b-2 border-blue-900 dark:border-blue-400 pb-1 hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
+                    href="contacto.html">Contacto</a>
+            </nav>
+            <button
+                class="bg-secondary-container text-white px-6 py-2 rounded-lg font-label-lg hover:bg-secondary transition-all active:opacity-70">
+                Emergencias 112
+            </button>
+        </div>
+    </header>
+    <main>
+        <section class="relative bg-primary-container text-white py-24 overflow-hidden">
+            <div class="absolute inset-0 opacity-20">
+                <img class="w-full h-full object-cover"
+                    data-alt="A cinematic wide shot of a professional emergency services operational center in Spain, featuring multiple digital displays and high-tech communication equipment. The lighting is focused and modern, highlighting the organized and ready-to-act atmosphere. The color scheme is dominated by deep institutional blues and emergency orange accents, reflecting authority and reliability."
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuACTBUx3rfhBnaTS-rfJN90AbpoqclmQOPb4iinWgdNGHQxCADWsonvCEDN-Tfx-V__-KUO5XKHPVXSmKa34GAT31TRNkkGrUTDuNqepI1mP-uQMim4ue3pBO-DNwQECRrxj_mUT83Tfd_TTMriLEVxT7MC7mUTGar8WU4BG7dykEdBXq9PuSWQ1YiRuTQQVs5eSybJiVaHjx6Rma7e8eOxO5vuvXcLkT79LEHYQBCeu2bSXWXOmEzGjqnqfLgp7g7_sNjtHvZa5tg">
+            </div>
+            <div class="max-w-[1140px] mx-auto px-4 relative z-10 text-center md:text-left">
+                <h1 class="font-headline-xl text-white mb-4">Contacta con nosotros</h1>
+                <p class="font-body-lg text-on-primary-container max-w-2xl">Estamos a tu disposición para cualquier
+                    consulta institucional, administrativa o relacionada con el voluntariado. Para emergencias
+                    inmediatas, llama siempre al 112.</p>
+            </div>
+        </section>
+        <section class="max-w-[1140px] mx-auto px-4 py-16">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                <div class="lg:col-span-7 bg-white p-8 rounded-xl border border-outline-variant shadow-sm">
+                    <h2 class="font-headline-lg text-primary mb-8">Envíanos un mensaje</h2>
+                    <form action="#" class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block font-label-lg text-on-surface mb-2">Nombre completo</label>
+                                <input
+                                    class="w-full px-4 py-3 border border-outline-variant rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
+                                    placeholder="Tu nombre" type="text">
+                            </div>
+                            <div>
+                                <label class="block font-label-lg text-on-surface mb-2">Correo electrónico</label>
+                                <input
+                                    class="w-full px-4 py-3 border border-outline-variant rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
+                                    placeholder="email@ejemplo.com" type="email">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block font-label-lg text-on-surface mb-2">Asunto</label>
+                            <input
+                                class="w-full px-4 py-3 border border-outline-variant rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
+                                placeholder="¿En qué podemos ayudarte?" type="text">
+                        </div>
+                        <div>
+                            <label class="block font-label-lg text-on-surface mb-2">Mensaje</label>
+                            <textarea
+                                class="w-full px-4 py-3 border border-outline-variant rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
+                                placeholder="Escribe tu mensaje aquí..." rows="5"></textarea>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <input class="mt-1 rounded border-outline-variant text-primary focus:ring-primary"
+                                id="privacy" type="checkbox">
+                            <label class="font-body-md text-on-surface-variant" for="privacy">He leído y acepto la <a
+                                    class="text-primary underline" href="privacidad.html">Política de Privacidad</a> y el tratamiento
+                                de mis datos.</label>
+                        </div>
+                        <button
+                            class="bg-primary text-on-primary px-8 py-4 rounded-lg font-label-lg hover:bg-on-primary-fixed-variant transition-colors w-full md:w-auto"
+                            type="submit">
+                            Enviar mensaje
+                        </button>
+                    </form>
+                </div>
+                <div class="lg:col-span-5 space-y-8">
+                    <div class="bg-surface-container-low p-8 rounded-xl border border-outline-variant">
+                        <h3 class="font-headline-md text-primary mb-6">Información de contacto</h3>
+                        <ul class="space-y-6">
+                            <li class="flex items-start gap-4">
+                                <div
+                                    class="bg-primary-container p-3 rounded-lg text-on-primary-container flex items-center justify-center">
+                                    <span class="material-symbols-outlined" data-icon="location_on">location_on</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-label-lg text-primary">Dirección</h4>
+                                    <p class="font-body-md text-on-surface-variant">Paseo de las Peitas, 1. Centro
+                                        Cultural, El Espinar, Spain, 40400</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-4">
+                                <div
+                                    class="bg-primary-container p-3 rounded-lg text-on-primary-container flex items-center justify-center">
+                                    <span class="material-symbols-outlined" data-icon="call">call</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-label-lg text-primary">Telefono de contacto</h4>
+                                    <p class="font-body-md text-on-surface-variant">671 66 76 33</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-4">
+                                <div
+                                    class="bg-primary-container p-3 rounded-lg text-on-primary-container flex items-center justify-center">
+                                    <span class="material-symbols-outlined" data-icon="mail">mail</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-label-lg text-primary">Correo Electrónico</h4>
+                                    <p class="font-body-md text-on-surface-variant">pcivil@aytoelespinar.com</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl border border-outline-variant shadow-sm">
+                        <h3 class="font-headline-md text-primary mb-6">Síguenos</h3>
+                        <div class="flex gap-4">
+                            <a class="w-12 h-12 bg-surface-container rounded-full flex items-center justify-center text-primary hover:bg-primary-container hover:text-on-primary-container transition-all"
+                                href="#">
+                                <span class="material-symbols-outlined" data-icon="share">share</span>
+                            </a>
+                            <a class="w-12 h-12 bg-surface-container rounded-full flex items-center justify-center text-primary hover:bg-primary-container hover:text-on-primary-container transition-all"
+                                href="#">
+                                <span class="material-symbols-outlined" data-icon="public">public</span>
+                            </a>
+                            <a class="w-12 h-12 bg-surface-container rounded-full flex items-center justify-center text-primary hover:bg-primary-container hover:text-on-primary-container transition-all"
+                                href="#">
+                                <span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+                            </a>
+                        </div>
+                        <p class="mt-6 font-body-md text-on-surface-variant">Mantente al día con las últimas alertas y
+                            noticias de Protección Civil a través de nuestras redes institucionales.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="max-w-[1140px] mx-auto px-4 pb-24">
+            <div
+                class="rounded-xl overflow-hidden border border-outline-variant h-[450px] relative grayscale hover:grayscale-0 transition-all duration-500">
+                <img class="w-full h-full object-cover"
+                    data-alt="A clean, minimalist 3D rendering of an urban map showing Plaza de la Constitución in El Espinar, Segovia. The map design is in a light mode aesthetic with soft grays and blues, featuring a prominent pinpoint icon for the headquarters of Protección Civil. The lighting is overhead and even, creating a professional and functional navigation visual."
+                    data-location="El Espinar, Segovia, Spain"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfMXfVvpsuNXdR5b3OdDDfue5LBc1VgAI1Vs1jRqnslRcjHwRYiqBfRvR8wiKNRUHFwibJSJ4iUkcweqZL5slzjH4iyK-qAPoPghVopJEkUW5W4d2xALDjW7VGNX6DSi_JABRb686QVDBRyOXH5kZUHWVCqWNn4K-dbdFJWEnkyOTA6BLPHhYMKi-K1pP4LuC3GbY19nl-bnbnS1PGhiC1PBrS91DRrtf5_7qu17jl2bZeYZPr3vnKeq-Z1fRywphJYPH6qKEeKE0">
+                <div
+                    class="absolute bottom-6 right-6 bg-white p-6 rounded-lg shadow-xl max-w-sm border border-outline-variant">
+                    <h4 class="font-headline-sm text-primary mb-2">Sede Principal</h4>
+                    <p class="font-body-md text-on-surface-variant mb-4">Paseo de las Peitas, 1. Centro Cultural, El
+                        Espinar.</p>
+                    <a class="flex items-center gap-2 text-primary font-label-lg hover:underline"
+                        href="https://maps.google.com" target="_blank">
+                        <span class="material-symbols-outlined text-sm" data-icon="directions">directions</span>
+                        Cómo llegar
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-gray-100 dark:bg-slate-950 border-t border-gray-300 dark:border-slate-800 py-12">
+        <div class="max-w-[1140px] mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <div class="col-span-1 md:col-span-2">
+                    <span class="text-lg font-black uppercase text-blue-900 dark:text-blue-50 block mb-4">Protección
+                        Civil El Espinar</span>
+                    <p class="text-gray-600 dark:text-slate-400 font-['Public_Sans'] text-sm leading-relaxed max-w-md">
+                        Comprometidos con la seguridad y bienestar de todos los ciudadanos de El Espinar. Voluntariado
+                        activo y servicio público de respuesta inmediata.
+                    </p>
+                </div>
+                <div>
+                    <h5 class="font-bold text-blue-900 dark:text-blue-400 mb-4">Institucional</h5>
+                    <ul class="space-y-2">
+                        <li class=""><a
+                                class="text-gray-500 dark:text-slate-500 hover:text-blue-800 dark:hover:text-blue-300 hover:underline text-sm"
+                                href="aviso_legal.html">Aviso Legal</a></li>
+                        <li class=""><a
+                                class="text-gray-500 dark:text-slate-500 hover:text-blue-800 dark:hover:text-blue-300 hover:underline text-sm"
+                                href="privacidad.html">Privacidad</a></li>
+                        <li class=""><a
+                                class="text-gray-500 dark:text-slate-500 hover:text-blue-800 dark:hover:text-blue-300 hover:underline text-sm"
+                                href="privacidad.html">Cookies</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-bold text-blue-900 dark:text-blue-400 mb-4">Portal</h5>
+                    <ul class="space-y-2">
+                        <li class=""><a
+                                class="text-gray-500 dark:text-slate-500 hover:text-blue-800 dark:hover:text-blue-300 hover:underline text-sm"
+                                href="transparencia.html">Transparencia</a></li>
+                        <li class=""><a
+                                class="text-gray-500 dark:text-slate-500 hover:text-blue-800 dark:hover:text-blue-300 hover:underline text-sm font-bold"
+                                href="hazte_voluntario.html">Portal del Voluntario</a></li>
+                        <li class=""><a
+                                class="text-gray-500 dark:text-slate-500 hover:text-blue-800 dark:hover:text-blue-300 hover:underline text-sm"
+                                href="http://elespinar.es/" target="_blank">Ayuntamiento de El Espinar</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                class="border-t border-gray-300 dark:border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-gray-500 dark:text-slate-500 text-sm">© 2024 Protección Civil El Espinar. Todos los
+                    derechos reservados.</p>
+                <div class="flex gap-4">
+                    <span class="material-symbols-outlined text-blue-900 dark:text-blue-400"
+                        data-icon="shield">shield</span>
+                    <span class="material-symbols-outlined text-blue-900 dark:text-blue-400"
+                        data-icon="emergency_share">emergency_share</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

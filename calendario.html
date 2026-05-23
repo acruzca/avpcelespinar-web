@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html class="light" lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Calendario de Formación - Protección Civil</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed": "#d6e3ff",
+                        "on-tertiary-container": "#9db3da",
+                        "surface": "#f9f9f9",
+                        "secondary-fixed-dim": "#ffb598",
+                        "surface-container": "#eeeeee",
+                        "on-tertiary": "#ffffff",
+                        "outline-variant": "#c3c6d2",
+                        "on-surface-variant": "#434750",
+                        "secondary-fixed": "#ffdbce",
+                        "error-container": "#ffdad6",
+                        "error": "#ba1a1a",
+                        "inverse-primary": "#aac7ff",
+                        "surface-bright": "#f9f9f9",
+                        "on-secondary": "#ffffff",
+                        "on-primary-container": "#8db3f7",
+                        "on-secondary-fixed-variant": "#7e2c00",
+                        "on-error-container": "#93000a",
+                        "on-secondary-container": "#561b00",
+                        "on-primary-fixed": "#001b3e",
+                        "tertiary": "#182f4f",
+                        "on-surface": "#1a1c1c",
+                        "outline": "#737781",
+                        "surface-container-highest": "#e2e2e2",
+                        "background": "#f9f9f9",
+                        "primary": "#002e60",
+                        "on-primary": "#ffffff",
+                        "on-background": "#1a1c1c",
+                        "tertiary-fixed": "#d5e3ff",
+                        "tertiary-fixed-dim": "#b2c7f0",
+                        "primary-container": "#154481",
+                        "inverse-on-surface": "#f1f1f1",
+                        "inverse-surface": "#2f3131",
+                        "primary-fixed-dim": "#aac7ff",
+                        "on-primary-fixed-variant": "#184683",
+                        "on-secondary-fixed": "#370e00",
+                        "secondary-container": "#fe6514",
+                        "surface-container-high": "#e8e8e8",
+                        "surface-dim": "#dadada",
+                        "surface-variant": "#e2e2e2",
+                        "surface-container-low": "#f3f3f3",
+                        "secondary": "#a53c00",
+                        "tertiary-container": "#304567",
+                        "on-tertiary-fixed": "#011b3b",
+                        "surface-tint": "#365e9d",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed-variant": "#324769",
+                        "on-error": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "stack-lg": "64px",
+                        "stack-md": "32px",
+                        "stack-sm": "16px",
+                        "unit": "8px",
+                        "gutter": "24px",
+                        "container-max": "1140px",
+                        "margin-page": "32px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Public Sans"],
+                        "body-md": ["Public Sans"],
+                        "label-lg": ["Public Sans"],
+                        "body-lg": ["Public Sans"],
+                        "headline-sm": ["Public Sans"],
+                        "headline-xl": ["Public Sans"],
+                        "label-sm": ["Public Sans"],
+                        "headline-md": ["Public Sans"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                        "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-background text-on-background min-h-screen flex flex-col font-body-md">
+    <!-- TopNavBar -->
+    <header
+        class="bg-surface-container-lowest sticky full-width top-0 z-50 border-b border-outline-variant flat no shadows">
+        <div class="max-w-[1140px] mx-auto flex justify-between items-center px-4 py-4 w-full">
+            <div class="text-xl font-black text-primary font-headline-lg flex items-center gap-2">
+                <span class="material-symbols-outlined text-primary"
+                    style="font-variation-settings: 'FILL' 1;">security</span>
+                Protección Civil
+            </div>
+            <nav class="hidden md:flex gap-6 items-center">
+                <a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg scale-95 active:opacity-90 duration-200"
+                    href="index.html">Inicio</a>
+                <a class="text-primary border-b-2 border-primary pb-1 font-label-lg text-label-lg scale-95 active:opacity-90 duration-200"
+                    href="hazte_voluntario.html">Voluntariado</a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg scale-95 active:opacity-90 duration-200"
+                    href="agrupacion.html">Historia</a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg scale-95 active:opacity-90 duration-200"
+                    href="equipo.html">Equipo</a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg scale-95 active:opacity-90 duration-200"
+                    href="contacto.html">Contacto</a>
+            </nav>
+            <div class="flex items-center gap-4">
+                <button
+                    class="bg-secondary text-on-secondary px-4 py-2 rounded font-label-lg text-label-lg hover:bg-on-secondary-fixed transition-colors flex items-center gap-2">
+                    <span class="material-symbols-outlined"
+                        style="font-variation-settings: 'FILL' 1;">phone_in_talk</span>
+                    112 Emergencias
+                </button>
+                <button class="md:hidden text-on-surface">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- Main Content -->
+    <main class="flex-grow max-w-[1140px] mx-auto w-full px-4 py-stack-md flex flex-col gap-stack-lg">
+        <!-- Header Section -->
+        <section class="flex flex-col gap-stack-sm text-center">
+            <h1 class="font-headline-xl text-headline-xl text-primary">Calendario de Formación</h1>
+            <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Consulta y apúntate a
+                nuestros próximos cursos de capacitación en primeros auxilios, RCP y uso de DESA. Preparando a
+                ciudadanos para salvar vidas.</p>
+        </section>
+        <!-- Filters & Controls -->
+        <section
+            class="bg-surface-container rounded-xl p-gutter border border-outline-variant flex flex-col md:flex-row gap-gutter justify-between items-center">
+            <div class="flex flex-wrap gap-4 items-center w-full md:w-auto">
+                <div class="relative">
+                    <select
+                        class="appearance-none bg-surface-container-lowest border border-outline-variant rounded px-4 py-2 pr-8 font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary">
+                        <option>Todos los meses</option>
+                        <option>Octubre 2024</option>
+                        <option>Noviembre 2024</option>
+                        <option>Diciembre 2024</option>
+                    </select>
+                    <span
+                        class="material-symbols-outlined absolute right-2 top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none">arrow_drop_down</span>
+                </div>
+                <div class="relative">
+                    <select
+                        class="appearance-none bg-surface-container-lowest border border-outline-variant rounded px-4 py-2 pr-8 font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary">
+                        <option>Todas las categorías</option>
+                        <option>Primeros Auxilios</option>
+                        <option>RCP Básica</option>
+                        <option>Manejo de DESA</option>
+                    </select>
+                    <span
+                        class="material-symbols-outlined absolute right-2 top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none">arrow_drop_down</span>
+                </div>
+            </div>
+            <div class="flex gap-2 w-full md:w-auto justify-end">
+                <button
+                    class="p-2 bg-surface-container-highest text-on-surface rounded border border-outline-variant hover:bg-surface-dim transition-colors"
+                    title="Vista Lista">
+                    <span class="material-symbols-outlined">view_list</span>
+                </button>
+                <button class="p-2 bg-primary text-on-primary rounded hover:bg-primary-container transition-colors"
+                    title="Vista Calendario">
+                    <span class="material-symbols-outlined">calendar_month</span>
+                </button>
+            </div>
+        </section>
+        <!-- Featured Event Bento -->
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+            <div
+                class="md:col-span-2 rounded-xl overflow-hidden border border-outline-variant bg-surface-container-lowest flex flex-col relative group">
+                <img alt="A group of diverse individuals participating in a hands-on CPR training session in a brightly lit modern community center. The atmosphere is focused and educational. The lighting is natural and clear, casting soft shadows. The overall aesthetic is professional, clean, and aligns with a light-mode corporate identity using crisp whites and subtle blues."
+                    class="w-full h-64 object-cover"
+                    data-alt="A group of diverse individuals participating in a hands-on CPR training session in a brightly lit modern community center. The atmosphere is focused and educational. The lighting is natural and clear, casting soft shadows. The overall aesthetic is professional, clean, and aligns with a light-mode corporate identity using crisp whites and subtle blues."
+                    src="https://lh3.googleusercontent.com/aida/ADBb0ujjBn_jS5dl1cWzN57ik-oUi6TENSmSfuljinKOPM-CEa5LnRv_--qjjfQEok7zG27NNgCO1kZ4TRI_gAB2XwkzkIM5XLDCgMkEn8tTeVoAyoJn4zdJXhuU2Nv35jFW79baoysmD7O2qOHmHOFoiobS-VA2stNIi1I1Cb1Fk6dBnHrZO0s_8FP9fD78k-mxBMh6OOHEcLJjNtuv_vUilxQWpqyov2FQZ0IREoLLMroyGcnRfob2yb4UkxT5YvkThTIcpFSLi8RHSg">
+                <div
+                    class="absolute top-4 left-4 bg-error text-on-error px-3 py-1 rounded font-label-sm text-label-sm uppercase tracking-wider flex items-center gap-1">
+                    <span class="material-symbols-outlined text-[16px]">campaign</span>
+                    Últimas plazas
+                </div>
+                <div class="p-gutter flex flex-col gap-4 flex-grow">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <span class="text-primary font-label-sm text-label-sm uppercase tracking-wider">Curso
+                                Intensivo</span>
+                            <h2 class="font-headline-md text-headline-md text-on-surface mt-1">Soporte Vital Básico y
+                                uso de DESA</h2>
+                        </div>
+                        <div class="bg-surface-container-highest px-4 py-2 rounded text-center flex flex-col">
+                            <span class="font-headline-sm text-headline-sm text-primary">15</span>
+                            <span class="font-label-sm text-label-sm text-on-surface-variant uppercase">OCT</span>
+                        </div>
+                    </div>
+                    <p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">Capacitación completa para
+                        responder ante paradas cardiorrespiratorias. Incluye prácticas con maniquíes y simuladores de
+                        desfibrilador.</p>
+                    <div class="flex flex-wrap gap-4 mt-auto pt-4 border-t border-outline-variant">
+                        <div class="flex items-center gap-2 text-on-surface-variant font-body-md text-body-md">
+                            <span class="material-symbols-outlined text-[20px]">schedule</span> 09:00 - 14:00
+                        </div>
+                        <div class="flex items-center gap-2 text-on-surface-variant font-body-md text-body-md">
+                            <span class="material-symbols-outlined text-[20px]">location_on</span> Sede Central
+                        </div>
+                        <div class="flex items-center gap-2 text-primary font-label-md text-label-md ml-auto">
+                            <span class="material-symbols-outlined text-[20px]">group</span> 3 plazas disponibles
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="rounded-xl overflow-hidden border border-outline-variant bg-surface-container-lowest flex flex-col p-gutter gap-4 relative">
+                <div
+                    class="absolute inset-0 bg-gradient-to-br from-primary-fixed to-surface-container-lowest opacity-30 pointer-events-none">
+                </div>
+                <div class="z-10 flex flex-col h-full">
+                    <h3
+                        class="font-headline-sm text-headline-sm text-primary mb-4 border-b border-outline-variant pb-2">
+                        Próximos Eventos</h3>
+                    <ul class="flex flex-col gap-4 flex-grow">
+                        <li class="flex gap-4 items-start group cursor-pointer">
+                            <div
+                                class="w-12 h-12 bg-surface-container-high rounded flex flex-col items-center justify-center shrink-0 border border-outline-variant group-hover:border-primary transition-colors">
+                                <span class="font-label-sm text-label-sm text-on-surface-variant">OCT</span>
+                                <span class="font-headline-sm text-headline-sm text-primary leading-none">22</span>
+                            </div>
+                            <div>
+                                <h4
+                                    class="font-label-lg text-label-lg text-on-surface group-hover:text-primary transition-colors">
+                                    Primeros Auxilios Pediátricos</h4>
+                                <p class="font-label-sm text-label-sm text-on-surface-variant mt-1">17:00 - Centro
+                                    Cívico Sur</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-4 items-start group cursor-pointer">
+                            <div
+                                class="w-12 h-12 bg-surface-container-high rounded flex flex-col items-center justify-center shrink-0 border border-outline-variant group-hover:border-primary transition-colors">
+                                <span class="font-label-sm text-label-sm text-on-surface-variant">NOV</span>
+                                <span class="font-headline-sm text-headline-sm text-primary leading-none">05</span>
+                            </div>
+                            <div>
+                                <h4
+                                    class="font-label-lg text-label-lg text-on-surface group-hover:text-primary transition-colors">
+                                    Taller de Prevención de Incendios</h4>
+                                <p class="font-label-sm text-label-sm text-on-surface-variant mt-1">10:00 - Sede Central
+                                </p>
+                            </div>
+                        </li>
+                        <li class="flex gap-4 items-start group cursor-pointer">
+                            <div
+                                class="w-12 h-12 bg-surface-container-high rounded flex flex-col items-center justify-center shrink-0 border border-outline-variant group-hover:border-primary transition-colors">
+                                <span class="font-label-sm text-label-sm text-on-surface-variant">NOV</span>
+                                <span class="font-headline-sm text-headline-sm text-primary leading-none">12</span>
+                            </div>
+                            <div>
+                                <h4
+                                    class="font-label-lg text-label-lg text-on-surface group-hover:text-primary transition-colors">
+                                    RCP Avanzada para Profesionales</h4>
+                                <p class="font-label-sm text-label-sm text-on-surface-variant mt-1">09:00 - Hospital
+                                    Clínico</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <button
+                        class="mt-auto w-full py-2 border-2 border-primary text-primary rounded font-label-lg text-label-lg hover:bg-primary-fixed transition-colors">
+                        Ver todos
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- Events Grid -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+            <!-- Event Card 1 -->
+            <div
+                class="bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden flex flex-col sm:flex-row hover:shadow-sm transition-shadow">
+                <div
+                    class="w-full sm:w-1/3 shrink-0 h-48 sm:h-auto bg-surface-container-highest flex flex-col items-center justify-center p-4 border-r border-outline-variant relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-2 text-on-surface-variant">
+                        <span class="material-symbols-outlined text-[20px]">medical_services</span>
+                    </div>
+                    <span class="font-headline-xl text-headline-xl text-primary">22</span>
+                    <span
+                        class="font-headline-sm text-headline-sm text-on-surface-variant uppercase tracking-widest">Octubre</span>
+                    <span
+                        class="font-label-sm text-label-sm text-on-surface-variant mt-2 bg-surface-container-lowest px-2 py-1 rounded border border-outline-variant">Martes</span>
+                </div>
+                <div class="p-gutter flex flex-col gap-3 flex-grow">
+                    <span class="text-tertiary-container font-label-sm text-label-sm uppercase tracking-wider">Primeros
+                        Auxilios</span>
+                    <h3 class="font-headline-sm text-headline-sm text-on-surface leading-tight">Manejo de
+                        atragantamientos (Maniobra de Heimlich)</h3>
+                    <div class="flex items-center gap-2 text-on-surface-variant font-body-md text-body-md mt-auto">
+                        <span class="material-symbols-outlined text-[18px]">schedule</span> 18:00 - 20:00
+                    </div>
+                    <div class="flex items-center gap-2 text-on-surface-variant font-body-md text-body-md">
+                        <span class="material-symbols-outlined text-[18px]">location_on</span> Biblioteca Municipal
+                    </div>
+                    <div class="flex justify-between items-center mt-2 pt-4 border-t border-outline-variant">
+                        <span class="text-secondary font-label-sm text-label-sm bg-secondary-fixed px-2 py-1 rounded">12
+                            plazas</span>
+                        <button
+                            class="bg-primary text-on-primary px-4 py-2 rounded font-label-lg text-label-lg hover:bg-primary-container transition-colors">Inscribirse</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Event Card 2 -->
+            <div
+                class="bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden flex flex-col sm:flex-row hover:shadow-sm transition-shadow">
+                <div
+                    class="w-full sm:w-1/3 shrink-0 h-48 sm:h-auto bg-surface-container-highest flex flex-col items-center justify-center p-4 border-r border-outline-variant relative overflow-hidden">
+                    <img alt="A close-up shot of hands correctly positioned on a training mannequin chest for CPR compressions. The lighting is bright and clear, emphasizing the educational nature of the image. The setting is a clean, modern training room. The aesthetic matches a crisp, institutional light-mode style with soft grays and sterile whites."
+                        class="absolute inset-0 w-full h-full object-cover opacity-20 mix-blend-multiply"
+                        data-alt="A close-up shot of hands correctly positioned on a training mannequin chest for CPR compressions. The lighting is bright and clear, emphasizing the educational nature of the image. The setting is a clean, modern training room. The aesthetic matches a crisp, institutional light-mode style with soft grays and sterile whites."
+                        src="https://lh3.googleusercontent.com/aida/ADBb0ujiJpPovLTF4yOSAoOdlU_tkGTgSHdFu8oc8ouzPoGchfJW_sAxmj67W5K82G--8trtGQO-o9qP-1a8mqxKtOam6keoeZJzf1lliF7JWJmW1Aq8redQrGazuM4fXRavKm_jert3yl-Syl67wqnFjvwNYigJnG6IrZqSLccsZkr1aOPruvd2r6s-ZJBw22YEM_ZEEaPGboQNRncv6HFhLipw6aFUEajH4oo6x_hEhqSfZ5s0HUnFLz872zn7jeRt-23-9fQehsgfOg">
+                    <div class="absolute top-0 right-0 p-2 text-on-surface-variant z-10">
+                        <span class="material-symbols-outlined text-[20px]">favorite</span>
+                    </div>
+                    <span class="font-headline-xl text-headline-xl text-primary z-10">05</span>
+                    <span
+                        class="font-headline-sm text-headline-sm text-on-surface-variant uppercase tracking-widest z-10">Noviembre</span>
+                    <span
+                        class="font-label-sm text-label-sm text-on-surface-variant mt-2 bg-surface-container-lowest px-2 py-1 rounded border border-outline-variant z-10">Martes</span>
+                </div>
+                <div class="p-gutter flex flex-col gap-3 flex-grow z-10 bg-surface-container-lowest">
+                    <span class="text-tertiary-container font-label-sm text-label-sm uppercase tracking-wider">RCP
+                        Básica</span>
+                    <h3 class="font-headline-sm text-headline-sm text-on-surface leading-tight">RCP para padres y madres
+                    </h3>
+                    <div class="flex items-center gap-2 text-on-surface-variant font-body-md text-body-md mt-auto">
+                        <span class="material-symbols-outlined text-[18px]">schedule</span> 10:00 - 13:00
+                    </div>
+                    <div class="flex items-center gap-2 text-on-surface-variant font-body-md text-body-md">
+                        <span class="material-symbols-outlined text-[18px]">location_on</span> Centro de Salud Norte
+                    </div>
+                    <div class="flex justify-between items-center mt-2 pt-4 border-t border-outline-variant">
+                        <span
+                            class="text-outline font-label-sm text-label-sm bg-surface-container px-2 py-1 rounded">Lista
+                            de espera</span>
+                        <button
+                            class="border-2 border-primary text-primary px-4 py-2 rounded font-label-lg text-label-lg hover:bg-primary-fixed transition-colors">Apuntarse</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Pagination -->
+        <div class="flex justify-center mt-4">
+            <nav class="flex items-center gap-2">
+                <button
+                    class="p-2 bg-surface-container border border-outline-variant text-on-surface-variant rounded hover:bg-surface-dim disabled:opacity-50"
+                    disabled="">
+                    <span class="material-symbols-outlined">chevron_left</span>
+                </button>
+                <button
+                    class="w-10 h-10 bg-primary text-on-primary rounded font-label-lg text-label-lg flex items-center justify-center">1</button>
+                <button
+                    class="w-10 h-10 bg-surface-container-lowest border border-outline-variant text-on-surface rounded font-label-lg text-label-lg hover:bg-surface-container flex items-center justify-center">2</button>
+                <button
+                    class="w-10 h-10 bg-surface-container-lowest border border-outline-variant text-on-surface rounded font-label-lg text-label-lg hover:bg-surface-container flex items-center justify-center">3</button>
+                <span class="text-on-surface-variant">...</span>
+                <button
+                    class="p-2 bg-surface-container-lowest border border-outline-variant text-on-surface rounded hover:bg-surface-container">
+                    <span class="material-symbols-outlined">chevron_right</span>
+                </button>
+            </nav>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-surface-container-high border-t border-outline-variant flat no shadows mt-auto">
+        <div class="max-w-[1140px] mx-auto px-4 py-12 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-lg font-bold text-primary font-headline-md flex items-center gap-2">
+                <span class="material-symbols-outlined text-primary"
+                    style="font-variation-settings: 'FILL' 1;">security</span>
+                Protección Civil
+            </div>
+            <p class="font-body-md text-sm text-on-surface-variant text-center md:text-left">© 2024 Protección Civil.
+                Paseo de las Peñitas, 1. Centro Cultural, El Espinar, Spain, 40400.<br>Tel: 671 66 76 33 | Email:
+                pcivil@aytoelespinar.com</p>
+            <nav class="flex flex-wrap gap-4 justify-center md:justify-end">
+                <a class="text-on-surface-variant hover:underline hover:text-primary transition-all duration-200 font-label-sm text-sm"
+                    href="aviso_legal.html">Aviso Legal</a>
+                <a class="text-on-surface-variant hover:underline hover:text-primary transition-all duration-200 font-label-sm text-sm"
+                    href="privacidad.html">Privacidad</a>
+                <a class="text-on-surface-variant hover:underline hover:text-primary transition-all duration-200 font-label-sm text-sm"
+                    href="privacidad.html">Cookies</a>
+                <a class="text-on-surface-variant hover:underline hover:text-primary transition-all duration-200 font-label-sm text-sm"
+                    href="aviso_legal.html">Accesibilidad</a>
+                <a class="text-on-surface-variant hover:underline hover:text-primary transition-all duration-200 font-label-sm text-sm"
+                    href="http://elespinar.es/" target="_blank">Ayuntamiento</a>
+            </nav>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Teléfonos de Interés - Protección Civil</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary-fixed": "#d6e3ff",
+                        "on-tertiary-container": "#9db3da",
+                        "surface": "#f9f9f9",
+                        "secondary-fixed-dim": "#ffb598",
+                        "surface-container": "#eeeeee",
+                        "on-tertiary": "#ffffff",
+                        "outline-variant": "#c3c6d2",
+                        "on-surface-variant": "#434750",
+                        "secondary-fixed": "#ffdbce",
+                        "error-container": "#ffdad6",
+                        "error": "#ba1a1a",
+                        "inverse-primary": "#aac7ff",
+                        "surface-bright": "#f9f9f9",
+                        "on-secondary": "#ffffff",
+                        "on-primary-container": "#8db3f7",
+                        "on-secondary-fixed-variant": "#7e2c00",
+                        "on-error-container": "#93000a",
+                        "on-secondary-container": "#561b00",
+                        "on-primary-fixed": "#001b3e",
+                        "tertiary": "#182f4f",
+                        "on-surface": "#1a1c1c",
+                        "outline": "#737781",
+                        "surface-container-highest": "#e2e2e2",
+                        "background": "#f9f9f9",
+                        "primary": "#002e60",
+                        "on-primary": "#ffffff",
+                        "on-background": "#1a1c1c",
+                        "tertiary-fixed": "#d5e3ff",
+                        "tertiary-fixed-dim": "#b2c7f0",
+                        "primary-container": "#154481",
+                        "inverse-on-surface": "#f1f1f1",
+                        "inverse-surface": "#2f3131",
+                        "primary-fixed-dim": "#aac7ff",
+                        "on-primary-fixed-variant": "#184683",
+                        "on-secondary-fixed": "#370e00",
+                        "secondary-container": "#fe6514",
+                        "surface-container-high": "#e8e8e8",
+                        "surface-dim": "#dadada",
+                        "surface-variant": "#e2e2e2",
+                        "surface-container-low": "#f3f3f3",
+                        "secondary": "#a53c00",
+                        "tertiary-container": "#304567",
+                        "on-tertiary-fixed": "#011b3b",
+                        "surface-tint": "#365e9d",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed-variant": "#324769",
+                        "on-error": "#ffffff"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    spacing: {
+                        "stack-lg": "64px",
+                        "stack-md": "32px",
+                        "stack-sm": "16px",
+                        "unit": "8px",
+                        "gutter": "24px",
+                        "container-max": "1140px",
+                        "margin-page": "32px"
+                    },
+                    fontFamily: {
+                        "headline-lg": ["Public Sans"],
+                        "body-md": ["Public Sans"],
+                        "label-lg": ["Public Sans"],
+                        "body-lg": ["Public Sans"],
+                        "headline-sm": ["Public Sans"],
+                        "headline-xl": ["Public Sans"],
+                        "label-sm": ["Public Sans"],
+                        "headline-md": ["Public Sans"]
+                    },
+                    fontSize: {
+                        "headline-lg": ["32px", { lineHeight: "40px", letterSpacing: "-0.01em", fontWeight: "700" }],
+                        "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }],
+                        "label-lg": ["14px", { lineHeight: "20px", letterSpacing: "0.05em", fontWeight: "600" }],
+                        "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }],
+                        "headline-sm": ["20px", { lineHeight: "28px", fontWeight: "600" }],
+                        "headline-xl": ["48px", { lineHeight: "56px", letterSpacing: "-0.02em", fontWeight: "700" }],
+                        "label-sm": ["12px", { lineHeight: "16px", fontWeight: "500" }],
+                        "headline-md": ["24px", { lineHeight: "32px", fontWeight: "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col">
+    <!-- TopNavBar -->
+    <header
+        class="bg-white dark:bg-slate-900 font-['Public_Sans'] text-base font-semibold w-full top-0 border-b border-b border-gray-300 dark:border-gray-800">
+        <div class="max-w-[1140px] mx-auto flex justify-between items-center px-4 py-4 w-full">
+            <div class="text-xl font-black text-blue-900 dark:text-white">
+                Protección Civil
+            </div>
+            <nav class="hidden md:flex gap-6 items-center">
+                <a class="text-gray-600 dark:text-gray-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors scale-95 active:opacity-90 duration-200"
+                    href="index.html">Inicio</a>
+                <a class="text-gray-600 dark:text-gray-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors scale-95 active:opacity-90 duration-200"
+                    href="hazte_voluntario.html">Voluntariado</a>
+                <a class="text-gray-600 dark:text-gray-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors scale-95 active:opacity-90 duration-200"
+                    href="agrupacion.html">Historia</a>
+                <a class="text-gray-600 dark:text-gray-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors scale-95 active:opacity-90 duration-200"
+                    href="equipo.html">Equipo</a>
+                <a class="text-blue-900 dark:text-blue-400 border-b-2 border-blue-900 dark:border-blue-400 pb-1 hover:text-blue-800 dark:hover:text-blue-300 transition-colors scale-95 active:opacity-90 duration-200"
+                    href="contacto.html">Contacto</a>
+            </nav>
+            <a class="bg-[#EC5900] text-white px-6 py-2 rounded-lg font-label-lg hover:bg-orange-600 transition-colors flex items-center gap-2"
+                href="tel:112">
+                <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">call</span>
+                112 Emergencias
+            </a>
+        </div>
+    </header>
+    <!-- Main Content Canvas -->
+    <main
+        class="flex-grow max-w-container-max mx-auto w-full px-4 sm:px-margin-page py-stack-lg flex flex-col gap-stack-lg">
+        <!-- Header Section -->
+        <section class="flex flex-col gap-stack-sm text-center items-center">
+            <h1 class="font-headline-xl text-headline-xl text-primary">Teléfonos de Interés</h1>
+            <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                Directorio oficial de números de emergencia y servicios esenciales para la ciudadanía en El Espinar.
+                Mantenga esta página a mano ante cualquier eventualidad.
+            </p>
+        </section>
+        <!-- Emergency Bento Grid -->
+        <section class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+            <!-- 112 Main Alert Card (Spans 8 cols) -->
+            <div
+                class="col-span-1 md:col-span-8 bg-[#EC5900] text-white rounded-xl border border-[#D1D1D1] p-stack-md flex flex-col justify-between overflow-hidden relative">
+                <div class="z-10 flex flex-col gap-stack-sm h-full justify-between">
+                    <div>
+                        <div class="flex items-center gap-2 mb-4">
+                            <span class="material-symbols-outlined text-[48px]"
+                                style="font-variation-settings: 'FILL' 1;">emergency</span>
+                            <h2 class="font-headline-lg text-headline-lg">Emergencias</h2>
+                        </div>
+                        <p class="font-body-lg text-body-lg text-white/90 max-w-md">
+                            Centro de Coordinación de Emergencias. Asistencia inmediata para situaciones críticas,
+                            accidentes, incendios o urgencias médicas graves.
+                        </p>
+                    </div>
+                    <a class="inline-flex items-center justify-center gap-2 bg-white text-[#EC5900] px-8 py-4 rounded-lg font-headline-sm text-headline-sm hover:bg-surface-container transition-colors w-max mt-6"
+                        href="tel:112">
+                        <span class="material-symbols-outlined">call</span>
+                        Llamar al 112
+                    </a>
+                </div>
+                <img alt="" class="absolute inset-0 w-full h-full object-cover opacity-20 mix-blend-overlay"
+                    data-alt="A dramatic, high-quality photograph of a red emergency flashing light on top of a responding vehicle, slightly blurred in the background to show motion. The lighting is cinematic, highlighting the urgency and critical nature of the emergency services. The color palette emphasizes the bright red and deep shadows to match the corporate modern aesthetic."
+                    src="https://lh3.googleusercontent.com/aida/ADBb0ujjBn_jS5dl1cWzN57ik-oUi6TENSmSfuljinKOPM-CEa5LnRv_--qjjfQEok7zG27NNgCO1kZ4TRI_gAB2XwkzkIM5XLDCgMkEn8tTeVoAyoJn4zdJXhuU2Nv35jFW79baoysmD7O2qOHmHOFoiobS-VA2stNIi1I1Cb1Fk6dBnHrZO0s_8FP9fD78k-mxBMh6OOHEcLJjNtuv_vUilxQWpqyov2FQZ0IREoLLMroyGcnRfob2yb4UkxT5YvkThTIcpFSLi8RHSg">
+            </div>
+            <!-- Proteccion Civil Card (Spans 4 cols) -->
+            <div
+                class="col-span-1 md:col-span-4 bg-primary-container text-white rounded-xl border border-[#D1D1D1] p-stack-md flex flex-col justify-between">
+                <div class="flex flex-col gap-4">
+                    <span class="material-symbols-outlined text-[40px] text-primary-fixed-dim"
+                        style="font-variation-settings: 'FILL' 1;">shield</span>
+                    <h3 class="font-headline-md text-headline-md">Protección Civil</h3>
+                    <p class="font-body-md text-body-md text-primary-fixed">Agrupación Local de Voluntarios. El Espinar.
+                    </p>
+                </div>
+                <a class="mt-8 flex items-center justify-between w-full border border-white/30 rounded-lg p-4 hover:bg-white/10 transition-colors"
+                    href="tel:671667633">
+                    <span class="font-headline-sm text-headline-sm">671 66 76 33</span>
+                    <span class="material-symbols-outlined">call</span>
+                </a>
+            </div>
+            <!-- Police & Security Forces -->
+            <div
+                class="col-span-1 md:col-span-4 bg-surface-container-lowest rounded-xl border border-[#D1D1D1] p-6 flex flex-col gap-6">
+                <div class="flex items-center gap-3 text-primary">
+                    <span class="material-symbols-outlined text-[32px]"
+                        style="font-variation-settings: 'FILL' 1;">local_police</span>
+                    <h3 class="font-headline-sm text-headline-sm">Policía Local</h3>
+                </div>
+                <div class="flex-grow">
+                    <p class="font-body-md text-body-md text-on-surface-variant mb-4">Seguridad ciudadana y tráfico en
+                        el municipio.</p>
+                    <div class="text-on-surface">
+                        <p class="font-label-lg text-label-lg text-outline mb-1">Centralita</p>
+                        <p class="font-headline-sm text-headline-sm">921 18 17 00</p>
+                    </div>
+                </div>
+                <a class="w-full text-center bg-primary-container text-white py-3 rounded-lg font-label-lg text-label-lg hover:bg-primary transition-colors"
+                    href="tel:921181700">Llamar</a>
+            </div>
+            <div
+                class="col-span-1 md:col-span-4 bg-surface-container-lowest rounded-xl border border-[#D1D1D1] p-6 flex flex-col gap-6">
+                <div class="flex items-center gap-3 text-primary">
+                    <span class="material-symbols-outlined text-[32px]"
+                        style="font-variation-settings: 'FILL' 1;">security</span>
+                    <h3 class="font-headline-sm text-headline-sm">Guardia Civil</h3>
+                </div>
+                <div class="flex-grow">
+                    <p class="font-body-md text-body-md text-on-surface-variant mb-4">Puesto de El Espinar. Seguridad
+                        nacional.</p>
+                    <div class="text-on-surface">
+                        <p class="font-label-lg text-label-lg text-outline mb-1">Cuartel</p>
+                        <p class="font-headline-sm text-headline-sm">062 / 921 18 10 36</p>
+                    </div>
+                </div>
+                <a class="w-full text-center bg-primary-container text-white py-3 rounded-lg font-label-lg text-label-lg hover:bg-primary transition-colors"
+                    href="tel:062">Llamar</a>
+            </div>
+            <!-- Health Center -->
+            <div
+                class="col-span-1 md:col-span-4 bg-surface-container-lowest rounded-xl border border-[#D1D1D1] p-6 flex flex-col gap-6">
+                <div class="flex items-center gap-3 text-primary">
+                    <span class="material-symbols-outlined text-[32px]"
+                        style="font-variation-settings: 'FILL' 1;">local_hospital</span>
+                    <h3 class="font-headline-sm text-headline-sm">Centro de Salud</h3>
+                </div>
+                <div class="flex-grow">
+                    <p class="font-body-md text-body-md text-on-surface-variant mb-4">Atención primaria y urgencias
+                        médicas (PAC).</p>
+                    <div class="text-on-surface">
+                        <p class="font-label-lg text-label-lg text-outline mb-1">Citas / Urgencias</p>
+                        <p class="font-headline-sm text-headline-sm">921 18 11 00</p>
+                    </div>
+                </div>
+                <a class="w-full text-center bg-primary-container text-white py-3 rounded-lg font-label-lg text-label-lg hover:bg-primary transition-colors"
+                    href="tel:921181100">Llamar</a>
+            </div>
+            <!-- Fire Department (Spans 6 cols) -->
+            <div
+                class="col-span-1 md:col-span-6 bg-surface-container-lowest rounded-xl border border-[#D1D1D1] p-6 flex items-center gap-6">
+                <div class="bg-error-container text-on-error-container p-4 rounded-full flex-shrink-0">
+                    <span class="material-symbols-outlined text-[32px]"
+                        style="font-variation-settings: 'FILL' 1;">fire_extinguisher</span>
+                </div>
+                <div class="flex-grow">
+                    <h3 class="font-headline-sm text-headline-sm text-primary mb-1">Bomberos</h3>
+                    <p class="font-body-md text-body-md text-on-surface-variant">Parque más cercano y extinción de
+                        incendios.</p>
+                </div>
+                <div class="text-right flex-shrink-0">
+                    <p class="font-headline-sm text-headline-sm text-on-surface mb-2">080 / 112</p>
+                    <a class="inline-flex items-center justify-center border-2 border-primary-container text-primary-container px-4 py-2 rounded-lg font-label-sm text-label-sm hover:bg-surface-container transition-colors"
+                        href="tel:080">Llamar 080</a>
+                </div>
+            </div>
+            <!-- Town Hall (Spans 6 cols) -->
+            <div
+                class="col-span-1 md:col-span-6 bg-surface-container-lowest rounded-xl border border-[#D1D1D1] p-6 flex items-center gap-6 relative overflow-hidden">
+                <div class="z-10 bg-primary-fixed text-on-primary-fixed p-4 rounded-full flex-shrink-0">
+                    <span class="material-symbols-outlined text-[32px]"
+                        style="font-variation-settings: 'FILL' 1;">account_balance</span>
+                </div>
+                <div class="z-10 flex-grow">
+                    <h3 class="font-headline-sm text-headline-sm text-primary mb-1">Ayuntamiento</h3>
+                    <p class="font-body-md text-body-md text-on-surface-variant">Servicios municipales generales.</p>
+                </div>
+                <div class="z-10 text-right flex-shrink-0">
+                    <p class="font-headline-sm text-headline-sm text-on-surface mb-2">921 18 17 00</p>
+                    <a class="inline-flex items-center justify-center border-2 border-primary-container text-primary-container px-4 py-2 rounded-lg font-label-sm text-label-sm hover:bg-surface-container transition-colors"
+                        href="tel:921181700">Llamar</a>
+                </div>
+                <img alt=""
+                    class="absolute right-0 top-0 h-full w-1/3 object-cover opacity-10 mask-image: linear-gradient(to left, black, transparent)"
+                    data-alt="A clean, architectural shot of a modern institutional building facade, likely a town hall or municipal center. The building features crisp lines, neutral stone colors, and large windows reflecting a bright blue sky. The lighting is bright and high-key, reinforcing the light mode aesthetic and projecting stability and accessibility."
+                    src="https://lh3.googleusercontent.com/aida/ADBb0ujiJpPovLTF4yOSAoOdlU_tkGTgSHdFu8oc8ouzPoGchfJW_sAxmj67W5K82G--8trtGQO-o9qP-1a8mqxKtOam6keoeZJzf1lliF7JWJmW1Aq8redQrGazuM4fXRavKm_jert3yl-Syl67wqnFjvwNYigJnG6IrZqSLccsZkr1aOPruvd2r6s-ZJBw22YEM_ZEEaPGboQNRncv6HFhLipw6aFUEajH4oo6x_hEhqSfZ5s0HUnFLz872zn7jeRt-23-9fQehsgfOg">
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer
+        class="bg-gray-100 dark:bg-slate-950 font-['Public_Sans'] text-sm full-width border-t border-t border-gray-300 dark:border-gray-800">
+        <div class="max-w-[1140px] mx-auto px-4 py-12 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-lg font-bold text-blue-900 dark:text-blue-400">
+                Protección Civil
+            </div>
+            <div class="text-gray-500 dark:text-gray-400 text-center md:text-left">%3Cdiv class="flex flex-col
+                gap-1"%3E%3Cp%3EPaseo de las Peñitas, 1. Centro Cultural, El Espinar, Spain, 40400%3C/p%3E%3Cp%3ETel:
+                671 66 76 33 | Email: pcivil@aytoelespinar.com%3C/p%3E%3Cp%3E© 2024 Protección Civil. Institución al
+                servicio del ciudadano.%3C/p%3E%3C/div%3E</div>
+            <nav class="flex gap-4">
+                <a class="text-gray-500 dark:text-gray-400 hover:underline hover:text-blue-800 transition-all duration-200"
+                    href="aviso_legal.html">Aviso Legal</a>
+                <a class="text-gray-500 dark:text-gray-400 hover:underline hover:text-blue-800 transition-all duration-200"
+                    href="privacidad.html">Privacidad</a>
+                <a class="text-gray-500 dark:text-gray-400 hover:underline hover:text-blue-800 transition-all duration-200"
+                    href="privacidad.html">Cookies</a>
+                <a class="text-gray-500 dark:text-gray-400 hover:underline hover:text-blue-800 transition-all duration-200"
+                    href="aviso_legal.html">Accesibilidad</a>
+                %3Ca class="text-gray-500 dark:text-gray-400 hover:underline hover:text-blue-800 transition-all
+                duration-200" href="http://elespinar.es/" target="_blank"%3EAyuntamiento%3C/a%3E
+            </nav>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

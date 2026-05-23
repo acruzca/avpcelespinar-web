@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html class="light" lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Mapa Interactivo de Riesgos y Meteorología - Protección Civil</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;900&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed": "#d6e3ff",
+                        "on-tertiary-container": "#9db3da",
+                        "surface": "#f9f9f9",
+                        "secondary-fixed-dim": "#ffb598",
+                        "surface-container": "#eeeeee",
+                        "on-tertiary": "#ffffff",
+                        "outline-variant": "#c3c6d2",
+                        "on-surface-variant": "#434750",
+                        "secondary-fixed": "#ffdbce",
+                        "error-container": "#ffdad6",
+                        "error": "#ba1a1a",
+                        "inverse-primary": "#aac7ff",
+                        "surface-bright": "#f9f9f9",
+                        "on-secondary": "#ffffff",
+                        "on-primary-container": "#8db3f7",
+                        "on-secondary-fixed-variant": "#7e2c00",
+                        "on-error-container": "#93000a",
+                        "on-secondary-container": "#561b00",
+                        "on-primary-fixed": "#001b3e",
+                        "tertiary": "#182f4f",
+                        "on-surface": "#1a1c1c",
+                        "outline": "#737781",
+                        "surface-container-highest": "#e2e2e2",
+                        "background": "#f9f9f9",
+                        "primary": "#002e60",
+                        "on-primary": "#ffffff",
+                        "on-background": "#1a1c1c",
+                        "tertiary-fixed": "#d5e3ff",
+                        "tertiary-fixed-dim": "#b2c7f0",
+                        "primary-container": "#154481",
+                        "inverse-on-surface": "#f1f1f1",
+                        "inverse-surface": "#2f3131",
+                        "primary-fixed-dim": "#aac7ff",
+                        "on-primary-fixed-variant": "#184683",
+                        "on-secondary-fixed": "#370e00",
+                        "secondary-container": "#fe6514",
+                        "surface-container-high": "#e8e8e8",
+                        "surface-dim": "#dadada",
+                        "surface-variant": "#e2e2e2",
+                        "surface-container-low": "#f3f3f3",
+                        "secondary": "#a53c00",
+                        "tertiary-container": "#304567",
+                        "on-tertiary-fixed": "#011b3b",
+                        "surface-tint": "#365e9d",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed-variant": "#324769",
+                        "on-error": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "stack-lg": "64px",
+                        "stack-md": "32px",
+                        "stack-sm": "16px",
+                        "unit": "8px",
+                        "gutter": "24px",
+                        "container-max": "1140px",
+                        "margin-page": "32px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Public Sans"],
+                        "body-md": ["Public Sans"],
+                        "label-lg": ["Public Sans"],
+                        "body-lg": ["Public Sans"],
+                        "headline-sm": ["Public Sans"],
+                        "headline-xl": ["Public Sans"],
+                        "label-sm": ["Public Sans"],
+                        "headline-md": ["Public Sans"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                        "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col">
+    <!-- TopNavBar -->
+    <header class="bg-surface-container-lowest border-b border-surface-variant w-full sticky top-0 z-50">
+        <div class="max-w-[1140px] mx-auto flex justify-between items-center px-4 py-4 w-full">
+            <div class="text-primary font-headline-md">
+                Protección Civil
+            </div>
+            <nav class="hidden md:flex gap-8 items-center">
+                <a class="font-label-lg text-on-surface-variant hover:text-primary transition-colors"
+                    href="index.html">Inicio</a>
+                <a class="font-label-lg text-on-surface-variant hover:text-primary transition-colors"
+                    href="hazte_voluntario.html">Voluntariado</a>
+                <a class="font-label-lg text-on-surface-variant hover:text-primary transition-colors"
+                    href="agrupacion.html">Historia</a>
+                <a class="font-label-lg text-on-surface-variant hover:text-primary transition-colors"
+                    href="equipo.html">Equipo</a>
+                <a class="font-label-lg text-on-surface-variant hover:text-primary transition-colors"
+                    href="contacto.html">Contacto</a>
+            </nav>
+            <button
+                class="bg-[#EC5900] text-on-primary font-label-lg px-6 py-2 rounded-lg hover:bg-secondary transition-colors shadow-none scale-95 active:opacity-90 duration-200">
+                112 Emergencias
+            </button>
+        </div>
+    </header>
+    <!-- Main Content -->
+    <main class="flex-grow w-full max-w-[1140px] mx-auto px-4 py-stack-lg flex flex-col gap-stack-md">
+        <!-- Header Section -->
+        <div class="flex flex-col gap-unit">
+            <h1 class="font-headline-xl text-primary">Mapa Interactivo de Riesgos</h1>
+            <p class="font-body-lg text-on-surface-variant max-w-3xl">Monitorización en tiempo real de condiciones
+                meteorológicas adversas y avisos de Protección Civil.</p>
+        </div>
+        <!-- Bento Grid Layout -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter h-auto lg:h-[700px]">
+            <!-- Main Map Area (Spans 8 cols) -->
+            <div
+                class="lg:col-span-8 bg-surface-container-lowest rounded-xl border border-outline-variant overflow-hidden flex flex-col relative shadow-sm">
+                <!-- Map Controls Overlay -->
+                <div class="absolute top-4 right-4 z-10 flex flex-col gap-2">
+                    <button aria-label="Acercar"
+                        class="w-10 h-10 bg-surface-container-lowest border border-outline-variant rounded-lg flex items-center justify-center text-on-surface hover:bg-surface-container transition-colors shadow-sm">
+                        <span class="material-symbols-outlined">add</span>
+                    </button>
+                    <button aria-label="Alejar"
+                        class="w-10 h-10 bg-surface-container-lowest border border-outline-variant rounded-lg flex items-center justify-center text-on-surface hover:bg-surface-container transition-colors shadow-sm">
+                        <span class="material-symbols-outlined">remove</span>
+                    </button>
+                    <button aria-label="Mi ubicación"
+                        class="w-10 h-10 bg-surface-container-lowest border border-outline-variant rounded-lg flex items-center justify-center text-on-surface hover:bg-surface-container transition-colors shadow-sm mt-2">
+                        <span class="material-symbols-outlined">my_location</span>
+                    </button>
+                </div>
+                <!-- Map Layer Controls Overlay (Bottom Left) -->
+                <div
+                    class="absolute bottom-4 left-4 z-10 bg-surface-container-lowest/90 backdrop-blur-sm border border-outline-variant rounded-lg p-3 shadow-sm flex gap-4">
+                    <label class="flex items-center gap-2 cursor-pointer">
+                        <input checked="" class="text-primary focus:ring-primary h-4 w-4" name="mapLayer" type="radio">
+                        <span class="font-label-sm text-on-surface">Radar Lluvia</span>
+                    </label>
+                    <label class="flex items-center gap-2 cursor-pointer">
+                        <input class="text-primary focus:ring-primary h-4 w-4" name="mapLayer" type="radio">
+                        <span class="font-label-sm text-on-surface">Viento</span>
+                    </label>
+                    <label class="flex items-center gap-2 cursor-pointer">
+                        <input class="text-primary focus:ring-primary h-4 w-4" name="mapLayer" type="radio">
+                        <span class="font-label-sm text-on-surface">Temperaturas</span>
+                    </label>
+                </div>
+                <!-- The Map Image Placeholder -->
+                <div class="w-full h-full min-h-[400px] relative bg-surface-container">
+                    <img alt="Mapa interactivo mostrando capas meteorológicas de lluvia y viento sobre la región de España. El diseño tiene una paleta de colores moderna e institucional, alineada con Protección Civil, predominando azules y tonos neutros, con indicaciones precisas de intensidad climática mediante gradientes de color suaves."
+                        class="w-full h-full object-cover"
+                        data-alt="A highly detailed interactive weather map visualization covering the Iberian Peninsula. The map is designed in a modern, authoritative public service aesthetic. It uses a base map of light gray and white tones, overlaid with dynamic, generative visualizations of rain radar patterns in deep blues (#002e60) and wind particle currents. Several active warning icons (small shields with exclamation marks in safety orange #EC5900) are scattered across critical regions. The lighting is bright and clear, conveying readiness and high-tech monitoring capabilities within an institutional context."
+                        src="https://lh3.googleusercontent.com/aida/ADBb0ujjBn_jS5dl1cWzN57ik-oUi6TENSmSfuljinKOPM-CEa5LnRv_--qjjfQEok7zG27NNgCO1kZ4TRI_gAB2XwkzkIM5XLDCgMkEn8tTeVoAyoJn4zdJXhuU2Nv35jFW79baoysmD7O2qOHmHOFoiobS-VA2stNIi1I1Cb1Fk6dBnHrZO0s_8FP9fD78k-mxBMh6OOHEcLJjNtuv_vUilxQWpqyov2FQZ0IREoLLMroyGcnRfob2yb4UkxT5YvkThTIcpFSLi8RHSg">
+                    <!-- Example Active Alert Markers on Map -->
+                    <div class="absolute top-[30%] left-[45%] flex items-center justify-center">
+                        <div
+                            class="w-8 h-8 bg-error text-on-error rounded-full flex items-center justify-center border-2 border-surface-container-lowest shadow-sm animate-pulse">
+                            <span class="material-symbols-outlined text-sm">warning</span>
+                        </div>
+                    </div>
+                    <div class="absolute top-[60%] left-[20%] flex items-center justify-center">
+                        <div
+                            class="w-6 h-6 bg-secondary-container text-on-secondary-container rounded-full flex items-center justify-center border-2 border-surface-container-lowest shadow-sm">
+                            <span class="material-symbols-outlined text-xs">air</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Side Panel (Spans 4 cols) -->
+            <div class="lg:col-span-4 flex flex-col gap-gutter h-full">
+                <!-- Local Weather Card -->
+                <div
+                    class="bg-surface-container-lowest rounded-xl border border-outline-variant p-6 flex flex-col gap-4 shadow-sm flex-shrink-0">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h2 class="font-headline-sm text-primary">Madrid Central</h2>
+                            <p class="font-body-sm text-on-surface-variant">Actualizado hace 5 min</p>
+                        </div>
+                        <span class="material-symbols-outlined text-primary text-3xl">partly_cloudy_day</span>
+                    </div>
+                    <div class="flex items-end gap-2">
+                        <span class="font-headline-xl text-on-surface">18°</span>
+                        <span class="font-body-lg text-on-surface-variant mb-2">/ 12°</span>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4 mt-2 pt-4 border-t border-surface-variant">
+                        <div class="flex flex-col">
+                            <span class="font-label-sm text-on-surface-variant flex items-center gap-1"><span
+                                    class="material-symbols-outlined text-[16px]">water_drop</span>
+                                Precipitaciones</span>
+                            <span class="font-body-md text-on-surface font-semibold">20%</span>
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="font-label-sm text-on-surface-variant flex items-center gap-1"><span
+                                    class="material-symbols-outlined text-[16px]">air</span> Viento</span>
+                            <span class="font-body-md text-on-surface font-semibold">15 km/h NO</span>
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="font-label-sm text-on-surface-variant flex items-center gap-1"><span
+                                    class="material-symbols-outlined text-[16px]">humidity_percentage</span>
+                                Humedad</span>
+                            <span class="font-body-md text-on-surface font-semibold">65%</span>
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="font-label-sm text-on-surface-variant flex items-center gap-1"><span
+                                    class="material-symbols-outlined text-[16px]">visibility</span> Visibilidad</span>
+                            <span class="font-body-md text-on-surface font-semibold">10 km</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Active Alerts List -->
+                <div
+                    class="bg-surface-container-lowest rounded-xl border border-outline-variant p-0 flex flex-col shadow-sm flex-grow overflow-hidden">
+                    <div
+                        class="p-4 border-b border-surface-variant bg-surface-container-low flex justify-between items-center">
+                        <h3 class="font-headline-sm text-primary">Avisos Activos</h3>
+                        <span class="bg-error-container text-on-error-container font-label-sm px-2 py-1 rounded-full">2
+                            Nivel Naranja</span>
+                    </div>
+                    <div class="overflow-y-auto flex-grow p-4 flex flex-col gap-4">
+                        <!-- Alert Item 1 -->
+                        <div class="border-l-4 border-error bg-surface-container p-3 rounded-r-lg">
+                            <div class="flex items-center gap-2 mb-1">
+                                <span class="material-symbols-outlined text-error text-sm">thunderstorm</span>
+                                <span class="font-label-lg text-error">Tormentas Fuertes</span>
+                            </div>
+                            <p class="font-body-sm text-on-surface-variant text-sm">Precipitación acumulada en 1 hora:
+                                30 mm. Probabilidad: 40%-70%.</p>
+                            <div class="mt-2 text-xs text-on-surface-variant">Hasta las 23:59h de hoy</div>
+                        </div>
+                        <!-- Alert Item 2 -->
+                        <div class="border-l-4 border-[#EC5900] bg-surface-container p-3 rounded-r-lg">
+                            <div class="flex items-center gap-2 mb-1">
+                                <span class="material-symbols-outlined text-[#EC5900] text-sm">air</span>
+                                <span class="font-label-lg text-[#EC5900]">Rachas de Viento</span>
+                            </div>
+                            <p class="font-body-sm text-on-surface-variant text-sm">Rachas máximas: 90 km/h. Vientos del
+                                suroeste.</p>
+                            <div class="mt-2 text-xs text-on-surface-variant">Hasta las 18:00h de mañana</div>
+                        </div>
+                        <!-- Alert Item 3 (Yellow Level - Secondary) -->
+                        <div class="border-l-4 border-[#FBBF24] bg-surface-container p-3 rounded-r-lg">
+                            <div class="flex items-center gap-2 mb-1">
+                                <span class="material-symbols-outlined text-[#B45309] text-sm">waves</span>
+                                <span class="font-label-lg text-[#B45309]">Fenómenos Costeros</span>
+                            </div>
+                            <p class="font-body-sm text-on-surface-variant text-sm">Mar combinada del oeste aumentando a
+                                4 metros.</p>
+                            <div class="mt-2 text-xs text-on-surface-variant">Hasta las 12:00h de mañana</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Risk Legend & Information Section -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter mt-stack-sm">
+            <!-- Legend -->
+            <div class="bg-surface-container-lowest rounded-xl border border-outline-variant p-6 shadow-sm">
+                <h3 class="font-headline-sm text-primary mb-4 flex items-center gap-2">
+                    <span class="material-symbols-outlined">info</span>
+                    Leyenda de Niveles de Riesgo
+                </h3>
+                <ul class="flex flex-col gap-3">
+                    <li class="flex items-center gap-3">
+                        <div class="w-4 h-4 rounded-full bg-error border border-outline-variant"></div>
+                        <span class="font-label-lg text-on-surface w-24">Nivel Rojo</span>
+                        <span class="font-body-sm text-on-surface-variant">Riesgo meteorológico extremo.</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <div class="w-4 h-4 rounded-full bg-[#EC5900] border border-outline-variant"></div>
+                        <span class="font-label-lg text-on-surface w-24">Nivel Naranja</span>
+                        <span class="font-body-sm text-on-surface-variant">Riesgo meteorológico importante.</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <div class="w-4 h-4 rounded-full bg-[#FBBF24] border border-outline-variant"></div>
+                        <span class="font-label-lg text-on-surface w-24">Nivel Amarillo</span>
+                        <span class="font-body-sm text-on-surface-variant">Riesgo para ciertas actividades.</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <div class="w-4 h-4 rounded-full bg-[#10B981] border border-outline-variant"></div>
+                        <span class="font-label-lg text-on-surface w-24">Sin Riesgo</span>
+                        <span class="font-body-sm text-on-surface-variant">Ausencia de riesgo meteorológico.</span>
+                    </li>
+                </ul>
+            </div>
+            <!-- Contextual Graphic / Infographic space -->
+            <div
+                class="bg-surface-container-lowest rounded-xl border border-outline-variant overflow-hidden shadow-sm h-full min-h-[200px] relative">
+                <img alt="Gráfico de análisis de predicción meteorológica mostrando tendencias de presión barométrica y precipitaciones para las próximas 48 horas, con un diseño limpio y profesional acorde a instituciones oficiales."
+                    class="w-full h-full object-cover"
+                    data-alt="A clean, institutional infographic or chart displaying meteorological prediction trends over a 48-hour period. The graphic is set against a stark white background with subtle gray grid lines. Data lines track barometric pressure and rainfall using the brand's authoritative blue (#002e60) and safety orange (#EC5900) colors. The visual style is highly technical, precise, and flat, projecting stability and scientific accuracy appropriate for a civil protection agency dashboard."
+                    src="https://lh3.googleusercontent.com/aida/ADBb0ujiJpPovLTF4yOSAoOdlU_tkGTgSHdFu8oc8ouzPoGchfJW_sAxmj67W5K82G--8trtGQO-o9qP-1a8mqxKtOam6keoeZJzf1lliF7JWJmW1Aq8redQrGazuM4fXRavKm_jert3yl-Syl67wqnFjvwNYigJnG6IrZqSLccsZkr1aOPruvd2r6s-ZJBw22YEM_ZEEaPGboQNRncv6HFhLipw6aFUEajH4oo6x_hEhqSfZ5s0HUnFLz872zn7jeRt-23-9fQehsgfOg">
+                <div
+                    class="absolute bottom-0 left-0 right-0 bg-surface-container-lowest/80 backdrop-blur-md p-4 border-t border-outline-variant">
+                    <p class="font-label-sm text-primary">Tendencia de Precipitaciones (48h)</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-surface-container-highest border-t border-outline-variant mt-auto">
+        <div class="max-w-[1140px] mx-auto px-4 py-12 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div class="flex flex-col gap-4">
+                    <div class="text-primary font-headline-sm font-bold">Protección Civil</div>
+                    <div class="text-on-surface-variant font-body-sm space-y-1">
+                        <div class="flex items-start gap-2">
+                            <span class="material-symbols-outlined text-sm shrink-0 mt-1">location_on</span>
+                            <span class="">Peñitas, 1. Centro Cultural, El Espinar, Spain, 40400</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="material-symbols-outlined text-sm">phone</span>
+                            <span class="">671 66 76 33</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="material-symbols-outlined text-sm">mail</span>
+                            <span class="">pcivil@aytoelespinar.com</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-4 md:items-center">
+                    <div class="font-label-lg text-primary uppercase">Enlaces de interés</div>
+                    <div class="flex flex-col gap-2 md:items-center">
+                        <a class="font-label-sm text-on-surface-variant hover:text-primary transition-all duration-200 hover:underline"
+                            href="index.html">Inicio</a>
+                        <a class="font-label-sm text-on-surface-variant hover:text-primary transition-all duration-200 hover:underline"
+                            href="hazte_voluntario.html">Voluntariado</a>
+                        <a class="font-label-sm text-on-surface-variant hover:text-primary transition-all duration-200 hover:underline"
+                            href="http://elespinar.es/" target="_blank">Ayuntamiento de El Espinar</a>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-4 md:items-end">
+                    <div class="font-label-lg text-primary uppercase">Información Legal</div>
+                    <div class="flex flex-col gap-2 md:items-end">
+                        <a class="font-label-sm text-on-surface-variant hover:text-primary transition-all duration-200 hover:underline"
+                            href="aviso_legal.html">Aviso Legal</a>
+                        <a class="font-label-sm text-on-surface-variant hover:text-primary transition-all duration-200 hover:underline"
+                            href="privacidad.html">Privacidad</a>
+                        <a class="font-label-sm text-on-surface-variant hover:text-primary transition-all duration-200 hover:underline"
+                            href="aviso_legal.html">Accesibilidad</a>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="border-t border-outline-variant pt-8 flex flex-col md:flex-row justify-between items-center gap-4 w-full">
+                <div class="font-label-sm text-on-surface-variant text-center md:text-left">
+                    © 2024 Protección Civil. Instituci3n al servicio del ciudadano.
+                </div>
+                <div class="flex gap-4">
+                    <span class="material-symbols-outlined text-primary">shield</span>
+                    <span class="material-symbols-outlined text-primary">health_and_safety</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

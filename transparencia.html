@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Transparencia - Protección Civil El Espinar</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary": "#ffffff",
+                        "on-primary-container": "#8db3f7",
+                        "on-secondary-container": "#561b00",
+                        "surface-tint": "#365e9d",
+                        "tertiary-container": "#304567",
+                        "on-primary-fixed": "#001b3e",
+                        "on-error-container": "#93000a",
+                        "secondary-fixed-dim": "#ffb598",
+                        "on-error": "#ffffff",
+                        "inverse-surface": "#2f3131",
+                        "primary-fixed": "#d6e3ff",
+                        "on-tertiary-container": "#9db3da",
+                        "primary-container": "#154481",
+                        "on-tertiary": "#ffffff",
+                        "surface-bright": "#f9f9f9",
+                        "on-tertiary-fixed-variant": "#324769",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-fixed": "#370e00",
+                        "inverse-primary": "#aac7ff",
+                        "surface-container-high": "#e8e8e8",
+                        "secondary-container": "#fe6514",
+                        "secondary-fixed": "#ffdbce",
+                        "surface-dim": "#dadada",
+                        "error": "#ba1a1a",
+                        "outline-variant": "#c3c6d2",
+                        "on-secondary-fixed-variant": "#7e2c00",
+                        "surface-container-low": "#f3f3f3",
+                        "primary-fixed-dim": "#aac7ff",
+                        "on-background": "#1a1c1c",
+                        "surface": "#f9f9f9",
+                        "on-surface-variant": "#434750",
+                        "on-primary-fixed-variant": "#184683",
+                        "secondary": "#a53c00",
+                        "on-tertiary-fixed": "#011b3b",
+                        "background": "#f9f9f9",
+                        "outline": "#737781",
+                        "primary": "#002e60",
+                        "on-primary": "#ffffff",
+                        "surface-variant": "#e2e2e2",
+                        "tertiary-fixed": "#d5e3ff",
+                        "on-surface": "#1a1c1c",
+                        "surface-container-highest": "#e2e2e2",
+                        "inverse-on-surface": "#f1f1f1",
+                        "error-container": "#ffdad6",
+                        "tertiary-fixed-dim": "#b2c7f0",
+                        "tertiary": "#182f4f",
+                        "surface-container": "#eeeeee"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "container-max": "1140px",
+                        "unit": "8px",
+                        "stack-sm": "16px",
+                        "stack-md": "32px",
+                        "margin-page": "32px",
+                        "gutter": "24px",
+                        "stack-lg": "64px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Public Sans"],
+                        "headline-lg": ["Public Sans"],
+                        "label-sm": ["Public Sans"],
+                        "label-lg": ["Public Sans"],
+                        "headline-sm": ["Public Sans"],
+                        "headline-xl": ["Public Sans"],
+                        "body-md": ["Public Sans"],
+                        "body-lg": ["Public Sans"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }],
+                        "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                        "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-background text-on-background font-body-md">
+    <!-- TopNavBar -->
+    <header
+        class="bg-white dark:bg-slate-950 font-['Public_Sans'] antialiased docked full-width top-0 border-b border-slate-200 dark:border-slate-800 flat no shadows sticky z-50">
+        <div class="flex justify-between items-center w-full px-6 py-4 max-w-[1140px] mx-auto">
+            <div class="text-lg font-bold text-[#154481] dark:text-white uppercase tracking-tight">Protección Civil El
+                Espinar</div>
+            <nav class="hidden md:flex gap-6">
+                <a class="text-slate-600 dark:text-slate-400 hover:text-[#154481] transition-colors hover:bg-slate-50 dark:hover:bg-slate-900 px-2 py-1"
+                    href="index.html">Inicio</a>
+                <a class="text-slate-600 dark:text-slate-400 hover:text-[#154481] transition-colors hover:bg-slate-50 dark:hover:bg-slate-900 px-2 py-1"
+                    href="hazte_voluntario.html">Voluntariado</a>
+                <a class="text-slate-600 dark:text-slate-400 hover:text-[#154481] transition-colors hover:bg-slate-50 dark:hover:bg-slate-900 px-2 py-1"
+                    href="agrupacion.html">Historia</a>
+                <a class="text-slate-600 dark:text-slate-400 hover:text-[#154481] transition-colors hover:bg-slate-50 dark:hover:bg-slate-900 px-2 py-1"
+                    href="equipo.html">Equipo</a>
+                <a class="text-slate-600 dark:text-slate-400 hover:text-[#154481] transition-colors hover:bg-slate-50 dark:hover:bg-slate-900 px-2 py-1"
+                    href="contacto.html">Contacto</a>
+            </nav>
+            <button
+                class="bg-secondary-container text-on-secondary px-4 py-2 rounded-lg font-label-lg hover:bg-secondary transition-colors">Emergencias
+                112</button>
+        </div>
+    </header>
+    <main>
+        <!-- Hero Section -->
+        <section class="bg-surface-container-low py-stack-lg px-margin-page">
+            <div class="max-w-container-max mx-auto text-center">
+                <h1 class="font-headline-xl text-headline-xl text-primary mb-stack-sm">Portal de Transparencia</h1>
+                <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Comprometidos con la
+                    gestión pública clara y la rendición de cuentas a los ciudadanos de El Espinar. Aquí encontrarás
+                    toda la información relativa a nuestra actividad, convenios y recursos.</p>
+            </div>
+        </section>
+        <!-- Bento Grid Content -->
+        <section class="py-stack-lg px-margin-page">
+            <div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+                <!-- Normativa Aplicable -->
+                <div
+                    class="bg-surface-container-lowest border border-outline-variant rounded-xl p-stack-md lg:col-span-2 row-span-2 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-2 mb-stack-sm text-primary">
+                            <span class="material-symbols-outlined"
+                                style="font-variation-settings: 'FILL' 1;">gavel</span>
+                            <h2 class="font-headline-md text-headline-md">Normativa Aplicable</h2>
+                        </div>
+                        <p class="font-body-md text-body-md text-on-surface-variant mb-stack-md">Marco legal que regula
+                            la actuación, organización y funcionamiento de la Agrupación Municipal de Voluntarios de
+                            Protección Civil de El Espinar.</p>
+                        <ul class="space-y-4">
+                            <li class="flex items-start gap-3">
+                                <span class="material-symbols-outlined text-primary mt-1">description</span>
+                                <div>
+                                    <h3 class="font-headline-sm text-headline-sm text-on-surface">Reglamento de la
+                                        Agrupación</h3>
+                                    <p class="font-body-md text-body-md text-on-surface-variant text-sm">Aprobado por el
+                                        Pleno del Ayuntamiento en sesión ordinaria.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="material-symbols-outlined text-primary mt-1">description</span>
+                                <div>
+                                    <h3 class="font-headline-sm text-headline-sm text-on-surface">Ley del Sistema
+                                        Nacional de Protección Civil</h3>
+                                    <p class="font-body-md text-body-md text-on-surface-variant text-sm">Ley 17/2015, de
+                                        9 de julio.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Convenios -->
+                <div
+                    class="bg-surface-container-lowest border border-outline-variant rounded-xl p-stack-md flex flex-col">
+                    <div class="flex items-center gap-2 mb-stack-sm text-secondary-container">
+                        <span class="material-symbols-outlined"
+                            style="font-variation-settings: 'FILL' 1;">handshake</span>
+                        <h2 class="font-headline-sm text-headline-sm">Convenios</h2>
+                    </div>
+                    <p class="font-body-md text-body-md text-on-surface-variant mb-stack-sm flex-grow">Acuerdos de
+                        colaboración vigentes con el Ayuntamiento de El Espinar y otras entidades.</p>
+                    <a class="inline-flex items-center gap-2 text-primary font-label-lg hover:underline" href="#">
+                        Ver convenios activos <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                    </a>
+                </div>
+                <!-- Presupuesto -->
+                <div class="bg-primary-container text-on-primary rounded-xl p-stack-md flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-2 mb-stack-sm">
+                            <span class="material-symbols-outlined"
+                                style="font-variation-settings: 'FILL' 1;">account_balance</span>
+                            <h2 class="font-headline-sm text-headline-sm">Presupuesto y Subvenciones</h2>
+                        </div>
+                        <p class="font-body-md text-body-md text-on-primary-container mb-stack-md">Información detallada
+                            sobre la asignación presupuestaria municipal y subvenciones recibidas de otras
+                            administraciones para equipamiento y formación.</p>
+                    </div>
+                    <button
+                        class="bg-surface-container-lowest text-primary px-4 py-2 rounded-lg font-label-lg w-full mt-4 hover:bg-surface-variant transition-colors border border-transparent">Consultar
+                        Ejercicio 2023</button>
+                </div>
+                <!-- Memorias Anuales -->
+                <div
+                    class="bg-surface-container-lowest border border-outline-variant rounded-xl p-stack-md lg:col-span-3">
+                    <div class="flex items-center gap-2 mb-stack-md text-primary">
+                        <span class="material-symbols-outlined"
+                            style="font-variation-settings: 'FILL' 1;">library_books</span>
+                        <h2 class="font-headline-md text-headline-md">Memorias Anuales de Actividades</h2>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-unit">
+                        <!-- Memoria 2023 -->
+                        <div
+                            class="border border-outline-variant rounded-lg p-stack-sm flex items-center justify-between hover:bg-surface-container-low transition-colors group cursor-pointer">
+                            <div class="flex items-center gap-3">
+                                <span
+                                    class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">picture_as_pdf</span>
+                                <span class="font-label-lg text-label-lg text-on-surface">Memoria 2023</span>
+                            </div>
+                            <span
+                                class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">download</span>
+                        </div>
+                        <!-- Memoria 2022 -->
+                        <div
+                            class="border border-outline-variant rounded-lg p-stack-sm flex items-center justify-between hover:bg-surface-container-low transition-colors group cursor-pointer">
+                            <div class="flex items-center gap-3">
+                                <span
+                                    class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">picture_as_pdf</span>
+                                <span class="font-label-lg text-label-lg text-on-surface">Memoria 2022</span>
+                            </div>
+                            <span
+                                class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">download</span>
+                        </div>
+                        <!-- Memoria 2021 -->
+                        <div
+                            class="border border-outline-variant rounded-lg p-stack-sm flex items-center justify-between hover:bg-surface-container-low transition-colors group cursor-pointer">
+                            <div class="flex items-center gap-3">
+                                <span
+                                    class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">picture_as_pdf</span>
+                                <span class="font-label-lg text-label-lg text-on-surface">Memoria 2021</span>
+                            </div>
+                            <span
+                                class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">download</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer
+        class="bg-slate-100 dark:bg-slate-900 font-['Public_Sans'] text-sm full-width border-t border-slate-300 dark:border-slate-700 flat no shadows">
+        <div class="max-w-[1140px] mx-auto px-6 py-10">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <div class="text-base font-bold text-[#154481] dark:text-white mb-4 uppercase tracking-tight">
+                        Protección Civil El Espinar</div>
+                    <p class="text-slate-500 dark:text-slate-400 leading-relaxed">
+                        Paseo de las Peñitas, 1. Centro Cultural,<br>
+                        El Espinar, Spain, 40400
+                    </p>
+                </div>
+                <div>
+                    <div class="text-slate-800 dark:text-slate-200 font-semibold mb-4">Contacto</div>
+                    <ul class="space-y-2 text-slate-500 dark:text-slate-400">
+                        <li class="flex items-center gap-2">
+                            <span class="material-symbols-outlined text-sm">call</span>
+                            <a href="tel:671667633" class="hover:text-[#154481]">671 66 76 33</a>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="material-symbols-outlined text-sm">mail</span>
+                            <a href="mailto:pcivil@aytoelespinar.com"
+                                class="hover:text-[#154481]">pcivil@aytoelespinar.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="text-slate-800 dark:text-slate-200 font-semibold mb-4">Enlaces de interés</div>
+                    <div class="flex flex-col gap-2">
+                        <a class="text-slate-500 dark:text-slate-400 hover:underline hover:text-[#154481]"
+                            href="aviso_legal.html">Aviso Legal</a>
+                        <a class="text-slate-500 dark:text-slate-400 hover:underline hover:text-[#154481]"
+                            href="privacidad.html">Privacidad</a>
+                        <a class="text-[#154481] dark:text-white font-medium hover:underline" href="transparencia.html">Transparencia</a>
+                        <a class="text-slate-500 dark:text-slate-400 hover:underline hover:text-[#154481]"
+                            href="http://elespinar.es/" target="_blank">Ayuntamiento</a>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="pt-8 border-t border-slate-200 dark:border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-500 dark:text-slate-400">
+                <div class="">© 2026 Agrupación de Protección Civil El Espinar. Todos los derechos reservados.</div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

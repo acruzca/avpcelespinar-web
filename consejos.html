@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html class="light" lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Consejos de Autoprotección - Protección Civil</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed": "#d6e3ff",
+                        "on-tertiary-container": "#9db3da",
+                        "surface": "#f9f9f9",
+                        "secondary-fixed-dim": "#ffb598",
+                        "surface-container": "#eeeeee",
+                        "on-tertiary": "#ffffff",
+                        "outline-variant": "#c3c6d2",
+                        "on-surface-variant": "#434750",
+                        "secondary-fixed": "#ffdbce",
+                        "error-container": "#ffdad6",
+                        "error": "#ba1a1a",
+                        "inverse-primary": "#aac7ff",
+                        "surface-bright": "#f9f9f9",
+                        "on-secondary": "#ffffff",
+                        "on-primary-container": "#8db3f7",
+                        "on-secondary-fixed-variant": "#7e2c00",
+                        "on-error-container": "#93000a",
+                        "on-secondary-container": "#561b00",
+                        "on-primary-fixed": "#001b3e",
+                        "tertiary": "#182f4f",
+                        "on-surface": "#1a1c1c",
+                        "outline": "#737781",
+                        "surface-container-highest": "#e2e2e2",
+                        "background": "#f9f9f9",
+                        "primary": "#002e60",
+                        "on-primary": "#ffffff",
+                        "on-background": "#1a1c1c",
+                        "tertiary-fixed": "#d5e3ff",
+                        "tertiary-fixed-dim": "#b2c7f0",
+                        "primary-container": "#154481",
+                        "inverse-on-surface": "#f1f1f1",
+                        "inverse-surface": "#2f3131",
+                        "primary-fixed-dim": "#aac7ff",
+                        "on-primary-fixed-variant": "#184683",
+                        "on-secondary-fixed": "#370e00",
+                        "secondary-container": "#fe6514",
+                        "surface-container-high": "#e8e8e8",
+                        "surface-dim": "#dadada",
+                        "surface-variant": "#e2e2e2",
+                        "surface-container-low": "#f3f3f3",
+                        "secondary": "#a53c00",
+                        "tertiary-container": "#304567",
+                        "on-tertiary-fixed": "#011b3b",
+                        "surface-tint": "#365e9d",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed-variant": "#324769",
+                        "on-error": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "stack-lg": "64px",
+                        "stack-md": "32px",
+                        "stack-sm": "16px",
+                        "unit": "8px",
+                        "gutter": "24px",
+                        "container-max": "1140px",
+                        "margin-page": "32px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Public Sans"],
+                        "body-md": ["Public Sans"],
+                        "label-lg": ["Public Sans"],
+                        "body-lg": ["Public Sans"],
+                        "headline-sm": ["Public Sans"],
+                        "headline-xl": ["Public Sans"],
+                        "label-sm": ["Public Sans"],
+                        "headline-md": ["Public Sans"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                        "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col">
+    <!-- TopNavBar -->
+    <nav class="bg-white dark:bg-slate-900 border-b border-gray-300 dark:border-gray-800 w-full z-50 sticky top-0">
+        <div class="max-w-[1140px] mx-auto flex justify-between items-center px-4 py-4 w-full">
+            <div class="text-xl font-black text-blue-900 dark:text-white font-headline-md">
+                Protección Civil
+            </div>
+            <div class="hidden md:flex gap-6 items-center">
+                <a class="text-gray-600 dark:text-gray-400 font-['Public_Sans'] text-base font-semibold hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
+                    href="index.html">Inicio</a>
+                <a class="text-blue-900 dark:text-blue-400 border-b-2 border-blue-900 dark:border-blue-400 pb-1 font-['Public_Sans'] text-base font-semibold hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
+                    href="hazte_voluntario.html">Voluntariado</a>
+                <a class="text-gray-600 dark:text-gray-400 font-['Public_Sans'] text-base font-semibold hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
+                    href="agrupacion.html">Historia</a>
+                <a class="text-gray-600 dark:text-gray-400 font-['Public_Sans'] text-base font-semibold hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
+                    href="equipo.html">Equipo</a>
+                <a class="text-gray-600 dark:text-gray-400 font-['Public_Sans'] text-base font-semibold hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
+                    href="contacto.html">Contacto</a>
+            </div>
+            <button
+                class="bg-[#EC5900] text-white px-4 py-2 rounded-DEFAULT font-label-lg font-bold hover:bg-opacity-90 transition-all duration-200 scale-95 active:opacity-90">
+                112 Emergencias
+            </button>
+        </div>
+    </nav>
+    <!-- Main Content -->
+    <main class="flex-grow max-w-[1140px] mx-auto w-full px-4 sm:px-margin-page py-stack-lg">
+        <!-- Header Section -->
+        <header class="mb-stack-lg text-center md:text-left">
+            <h1 class="font-headline-xl text-headline-xl text-primary mb-stack-sm">Consejos de Autoprotección</h1>
+            <p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl">Guías y recomendaciones oficiales
+                para saber cómo actuar ante diferentes situaciones de emergencia. La prevención y el conocimiento son
+                las mejores herramientas para garantizar su seguridad y la de los suyos.</p>
+        </header>
+        <!-- Featured Guide (Inundaciones - Image 6) -->
+        <section
+            class="mb-stack-lg bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden flex flex-col md:flex-row shadow-sm">
+            <div class="w-full md:w-1/2 min-h-[300px] relative">
+                <img alt="Autoprotección en Inundaciones" class="w-full h-full object-cover absolute inset-0"
+                    data-alt="A highly realistic photo showing an urban street heavily flooded with murky brown water reaching halfway up parked cars. Rescue workers in high-visibility orange vests are visible in the background, assisting citizens into a small inflatable boat. The lighting is overcast and grey, creating a serious, institutional mood. The style is documentary photography, typical of a government emergency response manual, emphasizing readiness and civil protection authority."
+                    src="https://lh3.googleusercontent.com/aida/ADBb0ujjBn_jS5dl1cWzN57ik-oUi6TENSmSfuljinKOPM-CEa5LnRv_--qjjfQEok7zG27NNgCO1kZ4TRI_gAB2XwkzkIM5XLDCgMkEn8tTeVoAyoJn4zdJXhuU2Nv35jFW79baoysmD7O2qOHmHOFoiobS-VA2stNIi1I1Cb1Fk6dBnHrZO0s_8FP9fD78k-mxBMh6OOHEcLJjNtuv_vUilxQWpqyov2FQZ0IREoLLMroyGcnRfob2yb4UkxT5YvkThTIcpFSLi8RHSg">
+            </div>
+            <div class="w-full md:w-1/2 p-stack-md flex flex-col justify-center">
+                <div class="flex items-center gap-2 text-primary-container mb-unit">
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">water_drop</span>
+                    <span class="font-label-lg text-label-lg uppercase tracking-wider">Prioridad Actual</span>
+                </div>
+                <h2 class="font-headline-lg text-headline-lg text-on-surface mb-stack-sm">Riesgo de Inundaciones</h2>
+                <p class="font-body-md text-body-md text-on-surface-variant mb-stack-md">Ante episodios de lluvias
+                    intensas, conozca las medidas preventivas para proteger su vivienda y cómo actuar si se encuentra en
+                    zonas de riesgo o conduciendo.</p>
+                <ul class="space-y-3 mb-stack-md">
+                    <li class="flex items-start gap-3">
+                        <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+                        <span class="font-body-md text-body-md">Retire del exterior objetos que puedan ser
+                            arrastrados.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+                        <span class="font-body-md text-body-md">No atraviese tramos inundados ni a pie ni en
+                            vehículo.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+                        <span class="font-body-md text-body-md">Diríjase a los puntos más altos de la zona si el agua
+                            sube.</span>
+                    </li>
+                </ul>
+                <button
+                    class="bg-primary-container text-white px-6 py-3 rounded-DEFAULT font-label-lg text-label-lg hover:bg-primary transition-colors self-start">Descargar
+                    Guía Completa (PDF)</button>
+            </div>
+        </section>
+        <!-- Grid of Guides -->
+        <h3 class="font-headline-md text-headline-md text-primary mb-stack-md border-b border-outline-variant pb-2">
+            Guías de Actuación</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter mb-stack-lg">
+            <!-- Incendios -->
+            <div
+                class="bg-surface-container-lowest border border-outline-variant rounded-xl p-gutter hover:border-primary-container transition-colors group">
+                <div
+                    class="w-12 h-12 rounded-full bg-error-container text-on-error-container flex items-center justify-center mb-stack-sm group-hover:scale-110 transition-transform">
+                    <span class="material-symbols-outlined"
+                        style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+                </div>
+                <h4 class="font-headline-sm text-headline-sm text-on-surface mb-unit">Incendios Forestales</h4>
+                <p class="font-body-md text-body-md text-on-surface-variant mb-stack-sm">Recomendaciones para residentes
+                    cerca de masas forestales y pautas de evacuación segura.</p>
+                <a class="text-primary-container font-label-lg text-label-lg hover:underline flex items-center gap-1"
+                    href="#">
+                    Leer más <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                </a>
+            </div>
+            <!-- Nevadas / Olas de Frío -->
+            <div
+                class="bg-surface-container-lowest border border-outline-variant rounded-xl p-gutter hover:border-primary-container transition-colors group">
+                <div
+                    class="w-12 h-12 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center mb-stack-sm group-hover:scale-110 transition-transform">
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">ac_unit</span>
+                </div>
+                <h4 class="font-headline-sm text-headline-sm text-on-surface mb-unit">Nevadas y Olas de Frío</h4>
+                <p class="font-body-md text-body-md text-on-surface-variant mb-stack-sm">Preparación del hogar,
+                    conducción invernal y protección personal ante temperaturas extremas.</p>
+                <a class="text-primary-container font-label-lg text-label-lg hover:underline flex items-center gap-1"
+                    href="#">
+                    Leer más <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                </a>
+            </div>
+            <!-- Emergencias en el Hogar -->
+            <div
+                class="bg-surface-container-lowest border border-outline-variant rounded-xl p-gutter hover:border-primary-container transition-colors group">
+                <div
+                    class="w-12 h-12 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center mb-stack-sm group-hover:scale-110 transition-transform">
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+                </div>
+                <h4 class="font-headline-sm text-headline-sm text-on-surface mb-unit">Emergencias en el Hogar</h4>
+                <p class="font-body-md text-body-md text-on-surface-variant mb-stack-sm">Prevención de accidentes
+                    domésticos, fugas de gas, fallos eléctricos e incendios en interiores.</p>
+                <a class="text-primary-container font-label-lg text-label-lg hover:underline flex items-center gap-1"
+                    href="#">
+                    Leer más <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                </a>
+            </div>
+            <!-- Vientos Fuertes -->
+            <div
+                class="bg-surface-container-lowest border border-outline-variant rounded-xl p-gutter hover:border-primary-container transition-colors group">
+                <div
+                    class="w-12 h-12 rounded-full bg-surface-variant text-on-surface-variant flex items-center justify-center mb-stack-sm group-hover:scale-110 transition-transform">
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">air</span>
+                </div>
+                <h4 class="font-headline-sm text-headline-sm text-on-surface mb-unit">Vientos Fuertes</h4>
+                <p class="font-body-md text-body-md text-on-surface-variant mb-stack-sm">Aseguramiento de elementos
+                    exteriores, precauciones en la vía pública y zonas costeras.</p>
+                <a class="text-primary-container font-label-lg text-label-lg hover:underline flex items-center gap-1"
+                    href="#">
+                    Leer más <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                </a>
+            </div>
+            <!-- Terremotos -->
+            <div
+                class="bg-surface-container-lowest border border-outline-variant rounded-xl p-gutter hover:border-primary-container transition-colors group">
+                <div
+                    class="w-12 h-12 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center mb-stack-sm group-hover:scale-110 transition-transform">
+                    <span class="material-symbols-outlined"
+                        style="font-variation-settings: 'FILL' 1;">broken_image</span>
+                </div>
+                <h4 class="font-headline-sm text-headline-sm text-on-surface mb-unit">Movimientos Sísmicos</h4>
+                <p class="font-body-md text-body-md text-on-surface-variant mb-stack-sm">Pautas de comportamiento
+                    durante y después de un terremoto. Identificación de zonas seguras.</p>
+                <a class="text-primary-container font-label-lg text-label-lg hover:underline flex items-center gap-1"
+                    href="#">
+                    Leer más <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                </a>
+            </div>
+            <!-- Botiquín -->
+            <div
+                class="bg-surface-container-lowest border border-outline-variant rounded-xl p-gutter hover:border-primary-container transition-colors group">
+                <div
+                    class="w-12 h-12 rounded-full bg-[#e8f5e9] text-[#2e7d32] flex items-center justify-center mb-stack-sm group-hover:scale-110 transition-transform">
+                    <span class="material-symbols-outlined"
+                        style="font-variation-settings: 'FILL' 1;">medical_services</span>
+                </div>
+                <h4 class="font-headline-sm text-headline-sm text-on-surface mb-unit">Botiquín de Emergencia</h4>
+                <p class="font-body-md text-body-md text-on-surface-variant mb-stack-sm">Elementos esenciales que debe
+                    contener un botiquín familiar de primeros auxilios y supervivencia básica.</p>
+                <a class="text-primary-container font-label-lg text-label-lg hover:underline flex items-center gap-1"
+                    href="#">
+                    Leer más <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                </a>
+            </div>
+        </div>
+        <!-- Secondary Information Section (Image 7) -->
+        <section
+            class="bg-surface-container-low rounded-xl overflow-hidden flex flex-col md:flex-row-reverse shadow-sm">
+            <div class="w-full md:w-1/2 min-h-[300px] relative">
+                <img alt="Simulacro de Evacuación" class="w-full h-full object-cover absolute inset-0"
+                    data-alt="A wide shot of a group of citizens participating in an emergency evacuation drill in a modern urban square. Civil Protection volunteers in blue and orange uniforms are directing the crowd calmly using hand signals. The setting is bright and sunny, reflecting a calm, organized, and educational atmosphere. The aesthetic aligns with a corporate public service announcement, emphasizing readiness, order, and community safety."
+                    src="https://lh3.googleusercontent.com/aida/ADBb0ujiJpPovLTF4yOSAoOdlU_tkGTgSHdFu8oc8ouzPoGchfJW_sAxmj67W5K82G--8trtGQO-o9qP-1a8mqxKtOam6keoeZJzf1lliF7JWJmW1Aq8redQrGazuM4fXRavKm_jert3yl-Syl67wqnFjvwNYigJnG6IrZqSLccsZkr1aOPruvd2r6s-ZJBw22YEM_ZEEaPGboQNRncv6HFhLipw6aFUEajH4oo6x_hEhqSfZ5s0HUnFLz872zn7jeRt-23-9fQehsgfOg">
+            </div>
+            <div class="w-full md:w-1/2 p-stack-md flex flex-col justify-center">
+                <h3 class="font-headline-md text-headline-md text-on-surface mb-stack-sm">Importancia de los Simulacros
+                </h3>
+                <p class="font-body-md text-body-md text-on-surface-variant mb-stack-md">Participar en simulacros de
+                    evacuación en su comunidad, lugar de trabajo o centro educativo es vital para mecanizar las
+                    respuestas ante una emergencia real. Conozca las rutas de evacuación de los edificios que frecuenta.
+                </p>
+                <a class="inline-flex items-center justify-center px-6 py-3 border-2 border-primary-container text-primary-container font-label-lg text-label-lg rounded-DEFAULT hover:bg-primary-container hover:text-white transition-colors self-start"
+                    href="calendario.html">
+                    Ver Calendario de Simulacros
+                </a>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-gray-100 dark:bg-slate-950 border-t border-gray-300 dark:border-gray-800 w-full mt-auto">
+        <div class="max-w-[1140px] mx-auto px-4 py-12 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-8 items-start">
+                <div class="space-y-4">
+                    <div class="text-lg font-bold text-blue-900 dark:text-blue-400 font-headline-md">
+                        Protección Civil
+                    </div>
+                    <p class="text-gray-500 dark:text-gray-400 font-['Public_Sans'] text-sm leading-relaxed">
+                        Paseo de las Peñitas, 1. Centro Cultural,<br>El Espinar, Segovia, Spain, 40400
+                    </p>
+                </div>
+                <div class="space-y-4">
+                    <h5 class="text-sm font-bold uppercase tracking-wider text-gray-700 dark:text-gray-300">Contacto
+                    </h5>
+                    <div class="space-y-2">
+                        <a href="tel:+34671667633"
+                            class="flex items-center gap-2 text-gray-500 dark:text-gray-400 text-sm hover:text-primary transition-colors">
+                            <span class="material-symbols-outlined text-base">phone</span> 671 66 76 33
+                        </a>
+                        <a href="mailto:pcivil@aytoelespinar.com"
+                            class="flex items-center gap-2 text-gray-500 dark:text-gray-400 text-sm hover:text-primary transition-colors">
+                            <span class="material-symbols-outlined text-base">mail</span> pcivil@aytoelespinar.com
+                        </a>
+                    </div>
+                </div>
+                <div class="space-y-4 md:text-right">
+                    <h5 class="text-sm font-bold uppercase tracking-wider text-gray-700 dark:text-gray-300">Enlaces de
+                        Interés</h5>
+                    <div class="flex flex-col md:items-end gap-2">
+                        <a href="http://elespinar.es/" target="_blank"
+                            class="text-gray-500 dark:text-gray-400 text-sm hover:underline hover:text-blue-800 transition-colors">Ayuntamiento
+                            de El Espinar</a>
+                        <div class="flex flex-wrap md:justify-end gap-x-4 gap-y-2 mt-2">
+                            <a class="text-gray-500 dark:text-gray-400 font-['Public_Sans'] text-xs hover:underline hover:text-blue-800"
+                                href="aviso_legal.html">Aviso Legal</a>
+                            <a class="text-gray-500 dark:text-gray-400 font-['Public_Sans'] text-xs hover:underline hover:text-blue-800"
+                                href="privacidad.html">Privacidad</a>
+                            <a class="text-gray-500 dark:text-gray-400 font-['Public_Sans'] text-xs hover:underline hover:text-blue-800"
+                                href="privacidad.html">Cookies</a>
+                            <a class="text-gray-500 dark:text-gray-400 font-['Public_Sans'] text-xs hover:underline hover:text-blue-800"
+                                href="aviso_legal.html">Accesibilidad</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="border-t border-gray-200 dark:border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <div class="text-gray-500 dark:text-gray-400 font-['Public_Sans'] text-xs">
+                    © 2024 Protección Civil. Institución al servicio del ciudadano.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

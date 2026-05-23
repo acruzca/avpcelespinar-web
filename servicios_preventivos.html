@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html class="light" lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Servicios y Preventivos - Protección Civil El Espinar</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "outline-variant": "#c3c6d2",
+                        "on-secondary-fixed": "#370e00",
+                        "surface-bright": "#f9f9f9",
+                        "primary-fixed-dim": "#aac7ff",
+                        "on-secondary-container": "#561b00",
+                        "tertiary-fixed": "#d5e3ff",
+                        "surface-dim": "#dadada",
+                        "tertiary": "#182f4f",
+                        "background": "#f9f9f9",
+                        "on-tertiary-container": "#9db3da",
+                        "on-secondary": "#ffffff",
+                        "on-primary-fixed": "#001b3e",
+                        "secondary-container": "#fe6514",
+                        "on-error-container": "#93000a",
+                        "on-primary": "#ffffff",
+                        "primary-fixed": "#d6e3ff",
+                        "on-tertiary-fixed-variant": "#324769",
+                        "on-primary-fixed-variant": "#184683",
+                        "surface": "#f9f9f9",
+                        "tertiary-fixed-dim": "#b2c7f0",
+                        "secondary-fixed-dim": "#ffb598",
+                        "secondary-fixed": "#ffdbce",
+                        "on-primary-container": "#8db3f7",
+                        "tertiary-container": "#304567",
+                        "error": "#ba1a1a",
+                        "on-error": "#ffffff",
+                        "on-background": "#1a1c1c",
+                        "surface-container-lowest": "#ffffff",
+                        "primary": "#002e60",
+                        "error-container": "#ffdad6",
+                        "surface-variant": "#e2e2e2",
+                        "surface-container-low": "#f3f3f3",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed-variant": "#7e2c00",
+                        "inverse-surface": "#2f3131",
+                        "surface-container-high": "#e8e8e8",
+                        "surface-container": "#eeeeee",
+                        "outline": "#737781",
+                        "secondary": "#a53c00",
+                        "surface-container-highest": "#e2e2e2",
+                        "on-surface": "#1a1c1c",
+                        "on-tertiary-fixed": "#011b3b",
+                        "primary-container": "#154481",
+                        "inverse-on-surface": "#f1f1f1",
+                        "surface-tint": "#365e9d",
+                        "inverse-primary": "#aac7ff",
+                        "on-surface-variant": "#434750"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "stack-sm": "16px",
+                        "gutter": "24px",
+                        "container-max": "1140px",
+                        "unit": "8px",
+                        "margin-page": "32px",
+                        "stack-md": "32px",
+                        "stack-lg": "64px"
+                    },
+                    "fontFamily": {
+                        "label-sm": ["Public Sans"],
+                        "body-md": ["Public Sans"],
+                        "headline-xl": ["Public Sans"],
+                        "headline-md": ["Public Sans"],
+                        "body-lg": ["Public Sans"],
+                        "label-lg": ["Public Sans"],
+                        "headline-sm": ["Public Sans"],
+                        "headline-lg": ["Public Sans"]
+                    },
+                    "fontSize": {
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Public Sans', sans-serif;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+
+<body class="bg-background text-on-background min-h-screen flex flex-col">
+    <!-- TopAppBar -->
+    <header
+        class="bg-white dark:bg-slate-950 docked full-width top-0 border-b border-b border-gray-200 dark:border-gray-800 flat no shadows z-50 sticky">
+        <div class="flex justify-between items-center h-20 px-4 md:px-8 max-w-[1140px] mx-auto w-full">
+            <div class="text-xl font-bold tracking-tight text-blue-900 dark:text-white">
+                Protección Civil El Espinar
+            </div>
+            <nav class="hidden md:flex space-x-6">
+                <a class="font-['Public_Sans'] antialiased text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-blue-800 dark:hover:text-blue-200 hover:bg-gray-50 dark:hover:bg-slate-900 transition-colors duration-200 px-2 py-1 rounded"
+                    href="index.html">Inicio</a>
+                <a class="font-['Public_Sans'] antialiased text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-blue-800 dark:hover:text-blue-200 hover:bg-gray-50 dark:hover:bg-slate-900 transition-colors duration-200 px-2 py-1 rounded"
+                    href="hazte_voluntario.html">Voluntariado</a>
+                <a class="font-['Public_Sans'] antialiased text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-blue-800 dark:hover:text-blue-200 hover:bg-gray-50 dark:hover:bg-slate-900 transition-colors duration-200 px-2 py-1 rounded"
+                    href="agrupacion.html">Historia</a>
+                <a class="font-['Public_Sans'] antialiased text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-blue-800 dark:hover:text-blue-200 hover:bg-gray-50 dark:hover:bg-slate-900 transition-colors duration-200 px-2 py-1 rounded"
+                    href="equipo.html">Equipo</a>
+                <a class="font-['Public_Sans'] antialiased text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-blue-800 dark:hover:text-blue-200 hover:bg-gray-50 dark:hover:bg-slate-900 transition-colors duration-200 px-2 py-1 rounded"
+                    href="contacto.html">Contacto</a>
+            </nav>
+            <button
+                class="bg-[#EC5900] text-white px-4 py-2 rounded-DEFAULT font-label-lg hover:bg-[#CC4D00] transition-colors">
+                Emergencias 112
+            </button>
+        </div>
+    </header>
+    <!-- Main Content -->
+    <main class="flex-grow max-w-container-max mx-auto w-full px-margin-page py-stack-md">
+        <!-- Page Header -->
+        <section class="mb-stack-lg text-center">
+            <h1 class="font-headline-xl text-primary-container mb-stack-sm">Servicios y Preventivos</h1>
+            <p class="font-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                Catálogo histórico de operaciones, coberturas de eventos y asistencia en emergencias realizadas por la
+                Agrupación de Voluntarios de Protección Civil de El Espinar.
+            </p>
+        </section>
+        <!-- Category Filters -->
+        <section class="mb-stack-md flex flex-wrap justify-center gap-unit">
+            <button
+                class="bg-primary-container text-white px-6 py-2 rounded-full font-label-lg border-2 border-primary-container transition-colors">Todos</button>
+            <button
+                class="bg-surface text-primary-container px-6 py-2 rounded-full font-label-lg border-2 border-outline hover:border-primary-container transition-colors">Preventivos</button>
+            <button
+                class="bg-surface text-primary-container px-6 py-2 rounded-full font-label-lg border-2 border-outline hover:border-primary-container transition-colors">Emergencias</button>
+            <button
+                class="bg-surface text-primary-container px-6 py-2 rounded-full font-label-lg border-2 border-outline hover:border-primary-container transition-colors">Logística</button>
+        </section>
+        <!-- Services Grid -->
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+            <!-- Card 1: Preventivos -->
+            <article
+                class="bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden hover:shadow-md transition-shadow">
+                <div class="h-48 bg-surface-variant relative">
+                    <img alt="Preventivo Deportivo" class="w-full h-full object-cover"
+                        data-alt="A dynamic, wide shot of a mountain running race in a natural, wooded area. Volunteer personnel in high-visibility orange and navy blue uniforms are actively assisting runners at a control point. The lighting is bright and natural, conveying a sense of organized activity and safety. The overall style is documentary and institutional, fitting a modern light-mode website for a civil protection agency."
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCi3Bnyam1r7LPtv7b-pvk4M53HglgGTczPhE3aa41dv6t0xlm1DsRTUUWFZJyn-bHys3orfYjFJpcfVy2_mIm-Ex1JqC-VWKzwW9QsEZWWfJH8BTHob5E3D7QZDfGLKRqH7aQJQcDandKuaqe4X5tq5N8bPzLI91e2buqEtSQqq9GAXEvBgO5AripJFbK0MvXZiP0erxT6rNGinzVJXf8MhoG8Cpn1iJpUWzv18qze4nNDXzESXpTcPBZnhz_Nz0o59afFyl7sk64">
+                    <div
+                        class="absolute top-4 left-4 bg-primary-container text-white px-3 py-1 rounded-DEFAULT font-label-sm uppercase tracking-wider">
+                        Preventivos
+                    </div>
+                </div>
+                <div class="p-gutter">
+                    <h3 class="font-headline-sm text-primary-container mb-unit">Eventos Deportivos</h3>
+                    <p class="font-body-md text-on-surface-variant mb-stack-sm">
+                        Cobertura sanitaria y logística en carreras de montaña, marchas ciclistas y competiciones
+                        locales para garantizar la seguridad de los participantes.
+                    </p>
+                    <a class="font-label-lg text-primary hover:underline flex items-center gap-2" href="#">
+                        Ver detalles <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                    </a>
+                </div>
+            </article>
+            <!-- Card 2: Emergencias -->
+            <article
+                class="bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden hover:shadow-md transition-shadow">
+                <div class="h-48 bg-surface-variant relative">
+                    <img alt="Búsqueda de Desaparecidos" class="w-full h-full object-cover"
+                        data-alt="A focused, eye-level shot of an emergency search team working in a dense, snowy forest environment. The team members are wearing official orange and navy high-visibility gear, using flashlights and radios. The mood is serious, urgent, and professional. The lighting is overcast and slightly dim, highlighting the reflective stripes on the uniforms. The aesthetic matches a structured, institutional public safety platform."
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDD2jAnG3n91vCIPZk04IxgEZbnbdraUsBC4MDrfr3XubPBOCmOlOMdqxHFn4Kh_xlqaU6jeCNP2JN038YX7Tu1OAUxAwJEf2itHCkjKqe2fXni4MdEOogoFcc0knvB1sCq9EkOJ2-WFrpZqcPEBT2hk3mxu3cz0UFd-KWj0jJgKKsHBvNKeqmo-A9if0OAlmf7qoUIl239w-3U-piVx12S-exUHQspfzF7SF6c_i8lJ8TK8mJ3IhBhyYlFeQ6rQWMAWvLQw8-ysvo">
+                    <div
+                        class="absolute top-4 left-4 bg-[#EC5900] text-white px-3 py-1 rounded-DEFAULT font-label-sm uppercase tracking-wider">
+                        Emergencias
+                    </div>
+                </div>
+                <div class="p-gutter">
+                    <h3 class="font-headline-sm text-primary-container mb-unit">Búsqueda de Personas</h3>
+                    <p class="font-body-md text-on-surface-variant mb-stack-sm">
+                        Activación de dispositivos de búsqueda en zonas forestales y urbanas en coordinación con Guardia
+                        Civil y otros cuerpos de seguridad.
+                    </p>
+                    <a class="font-label-lg text-primary hover:underline flex items-center gap-2" href="#">
+                        Ver detalles <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                    </a>
+                </div>
+            </article>
+            <!-- Card 3: Logística -->
+            <article
+                class="bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden hover:shadow-md transition-shadow">
+                <div class="h-48 bg-surface-variant relative">
+                    <img alt="Apoyo Logístico" class="w-full h-full object-cover"
+                        data-alt="A medium shot of civil protection volunteers distributing supplies from a branded vehicle in a town square during a local festival. The volunteers are wearing their official navy blue and orange uniforms. The atmosphere is collaborative and community-focused. The lighting is clear daylight, providing a crisp, high-contrast image suitable for a modern, institutional civil defense website."
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkNqq0ELy4cUNSACS2k-z0bIijx9VLaQR0thv6UXz3ZEZYaqGlnSj833RypbRX3K5VuttZrGcb9mTYUQZS0TBWELcC9U4l8MoXwxldeeQ2jKbI86RFz1u-hGGtY8Lt7MSBnf04-UwzrDbL__1k75SvxVWNHJIaa8TKp4qsr_PaVkOdK2l9fsTXnf37ZRmm5ZYa0qYcUpcJNBtgLRH-9_dsdKfHV9QwT4hFk3Tr_oQgsmLUe97Op2EPs5pN2RSaJTWXZ7cQiAzBAuc">
+                    <div
+                        class="absolute top-4 left-4 bg-tertiary-container text-white px-3 py-1 rounded-DEFAULT font-label-sm uppercase tracking-wider">
+                        Logística
+                    </div>
+                </div>
+                <div class="p-gutter">
+                    <h3 class="font-headline-sm text-primary-container mb-unit">Apoyo a Fiestas Patronales</h3>
+                    <p class="font-body-md text-on-surface-variant mb-stack-sm">
+                        Despliegue logístico, control de accesos y retenes preventivos durante las festividades locales
+                        para prevenir incidentes.
+                    </p>
+                    <a class="font-label-lg text-primary hover:underline flex items-center gap-2" href="#">
+                        Ver detalles <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                    </a>
+                </div>
+            </article>
+            <!-- Card 4: Emergencias -->
+            <article
+                class="bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden hover:shadow-md transition-shadow">
+                <div class="h-48 bg-surface-variant relative">
+                    <img alt="Intervención Invernal" class="w-full h-full object-cover"
+                        data-alt="A wide shot of a specialized off-road emergency vehicle navigating a snow-covered road. Volunteers in heavy winter gear are clearing debris or assisting a stranded vehicle. The scene conveys readiness and resilience in harsh weather. The color palette emphasizes the contrast between the white snow and the bright orange and deep navy of the equipment. The style is factual and professional, ideal for a civil protection portfolio."
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKy8CxVpbyNouIeqAwwbFGc15v4CsjGlZJCwoJXDHWYvzh3gOEIf1bKntrByQgaAcemWYw98GvJfGp-R-AqQ3L4TQLUo_97xFyyBn39NX-Xa0WNS7piwqB3ZTexmaJ6-78sHGE8Ke-5FOgCJGp3aotlW4oKF3SgE7Y3b_j5zQ1EdjfZm1-KXobPcdTpoJYPd2DMc3WHrax9epRECKpAeHojwPopCJUAueptGhBlmrVuK98DhX2CW6dGvXUyFvGIgN160EwLR8r_z8">
+                    <div
+                        class="absolute top-4 left-4 bg-[#EC5900] text-white px-3 py-1 rounded-DEFAULT font-label-sm uppercase tracking-wider">
+                        Emergencias
+                    </div>
+                </div>
+                <div class="p-gutter">
+                    <h3 class="font-headline-sm text-primary-container mb-unit">Vialidad Invernal</h3>
+                    <p class="font-body-md text-on-surface-variant mb-stack-sm">
+                        Intervenciones durante temporales de nieve, esparcimiento de sal, asistencia a vehículos
+                        atrapados y limpieza de accesos críticos.
+                    </p>
+                    <a class="font-label-lg text-primary hover:underline flex items-center gap-2" href="#">
+                        Ver detalles <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                    </a>
+                </div>
+            </article>
+            <!-- Card 5: Logística -->
+            <article
+                class="bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden hover:shadow-md transition-shadow">
+                <div class="h-48 bg-surface-variant relative">
+                    <img alt="Asistencia Comunitaria" class="w-full h-full object-cover"
+                        data-alt="A close-up shot of hands exchanging a box of essential supplies, symbolizing community support. The focus is sharp on the action, with a blurred background showing uniformed volunteers and a command tent. The lighting is soft and natural. The image represents solidarity and logistical aid, fitting seamlessly into a clean, modern institutional design system using navy and orange accents."
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCf0kueaAZux_AOiyNnmcjB4-ZQxyUQbmut8ApLPDhwZGB9Sni4T0B5lQFBr_5E1zLgTTeGoQ8ECQc9cGrey816FDR2HJZmwNS_rObz88g-L9VLPJK0tb-JgSRWFKj4q5XtwLMxCqM1S6z14RyKyYjkoXVZzog-nRy2xqKym-oewO98ya03y1KeDrp98wlO4-cGnjZSQLjU89DLFS9-o9t1GbIb0OUvrQIkeXic1tuREmoLrungI-Rp56GohX5W6KnfdAHy2aZTq7o">
+                    <div
+                        class="absolute top-4 left-4 bg-tertiary-container text-white px-3 py-1 rounded-DEFAULT font-label-sm uppercase tracking-wider">
+                        Logística
+                    </div>
+                </div>
+                <div class="p-gutter">
+                    <h3 class="font-headline-sm text-primary-container mb-unit">Apoyo Comunitario</h3>
+                    <p class="font-body-md text-on-surface-variant mb-stack-sm">
+                        Distribución de suministros básicos, asistencia a personas vulnerables y colaboración con
+                        servicios sociales en situaciones excepcionales.
+                    </p>
+                    <a class="font-label-lg text-primary hover:underline flex items-center gap-2" href="#">
+                        Ver detalles <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                    </a>
+                </div>
+            </article>
+            <!-- Card 6: Preventivos -->
+            <article
+                class="bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden hover:shadow-md transition-shadow">
+                <div class="h-48 bg-surface-variant relative">
+                    <img alt="Eventos Culturales" class="w-full h-full object-cover"
+                        data-alt="A nighttime shot of a large outdoor cultural event or concert. In the foreground, slightly out of focus, stands a civil protection volunteer in high-visibility gear, observing the crowd. The background is illuminated by stage lights. The image conveys vigilance and safety management during mass gatherings. The aesthetic is modern and structured, aligning with a public service portfolio interface."
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmkdniBCkVWVHyzNqN9Y6naWcMiO0IlYKvf_KaOj3y8cJL9RDi1gPlVJTgPZD0OV1wdeFHVdcMzysNGiBP96PeyBPIJuh2a83ceJ_PbF7S-dVxmr_KUoKQhroUgcPQMpK5Vc4kcC6PKVbC22VsJHGm5UpgpmhEGf90sWLH-qoKGO6kmVQ-JXtU6IrTYuUqxa4HbSTN_kqL-YVbKJuUan0nRUp8R2T34w1xD7msbF_BUOlltiY--D7Yuu3m4K0soj8iYMKuQMhyTug">
+                    <div
+                        class="absolute top-4 left-4 bg-primary-container text-white px-3 py-1 rounded-DEFAULT font-label-sm uppercase tracking-wider">
+                        Preventivos
+                    </div>
+                </div>
+                <div class="p-gutter">
+                    <h3 class="font-headline-sm text-primary-container mb-unit">Eventos Culturales</h3>
+                    <p class="font-body-md text-on-surface-variant mb-stack-sm">
+                        Presencia preventiva en conciertos, ferias y actos institucionales de gran afluencia para
+                        asegurar la evacuación y primera atención si fuera necesario.
+                    </p>
+                    <a class="font-label-lg text-primary hover:underline flex items-center gap-2" href="#">
+                        Ver detalles <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                    </a>
+                </div>
+            </article>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer
+        class="bg-gray-100 dark:bg-slate-900 full-width border-t border-t border-gray-300 dark:border-gray-800 flat no shadows mt-auto">
+        <div
+            class="flex flex-col md:flex-row justify-between items-center py-12 px-4 md:px-8 max-w-[1140px] mx-auto w-full">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 w-full">
+                <div class="flex flex-col space-y-4">
+                    <p class="font-['Public_Sans'] text-xs uppercase tracking-wider text-blue-900 dark:text-blue-400">
+                        © 2024 Agrupación de Voluntarios de Protección Civil de El Espinar
+                    </p>
+                    <nav class="flex flex-wrap gap-x-6 gap-y-2">
+                        <a class="font-['Public_Sans'] text-xs uppercase tracking-wider text-gray-500 dark:text-gray-400 hover:text-blue-800 dark:hover:text-blue-200 underline"
+                            href="aviso_legal.html">Aviso Legal</a>
+                        <a class="font-['Public_Sans'] text-xs uppercase tracking-wider text-gray-500 dark:text-gray-400 hover:text-blue-800 dark:hover:text-blue-200 underline"
+                            href="privacidad.html">Privacidad</a>
+                        <a class="font-['Public_Sans'] text-xs uppercase tracking-wider text-gray-500 dark:text-gray-400 hover:text-blue-800 dark:hover:text-blue-200 underline"
+                            href="transparencia.html">Transparencia</a>
+                        <a class="font-['Public_Sans'] text-xs uppercase tracking-wider text-gray-500 dark:text-gray-400 hover:text-blue-800 dark:hover:text-blue-200 underline"
+                            href="http://elespinar.es/" target="_blank">Ayuntamiento</a>
+                    </nav>
+                </div>
+                <div class="flex flex-col space-y-2">
+                    <h4
+                        class="font-['Public_Sans'] text-xs font-bold uppercase tracking-widest text-gray-900 dark:text-white">
+                        Contacto</h4>
+                    <div class="flex items-start gap-2 text-sm text-gray-600 dark:text-gray-400 font-['Public_Sans']">
+                        <span class="material-symbols-outlined text-[18px] shrink-0">location_on</span>
+                        <span class="">Paseo de las Peñitas, 1. Centro Cultural, El Espinar, Spain, 40400</span>
+                    </div>
+                    <div class="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400 font-['Public_Sans']">
+                        <span class="material-symbols-outlined text-[18px] shrink-0">phone</span>
+                        <a href="tel:671667633" class="hover:text-blue-800">671 66 76 33</a>
+                    </div>
+                    <div class="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400 font-['Public_Sans']">
+                        <span class="material-symbols-outlined text-[18px] shrink-0">mail</span>
+                        <a href="mailto:pcivil@aytoelespinar.com"
+                            class="hover:text-blue-800">pcivil@aytoelespinar.com</a>
+                    </div>
+                </div>
+                <div class="flex flex-col space-y-2 items-start md:items-end">
+                    <h4
+                        class="font-['Public_Sans'] text-xs font-bold uppercase tracking-widest text-gray-900 dark:text-white">
+                        Sedes</h4>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 font-['Public_Sans']">
+                        El Espinar, Segovia
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

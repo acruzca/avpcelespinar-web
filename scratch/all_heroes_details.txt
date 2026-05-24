@@ -1,0 +1,239 @@
+=== FILE: accesibilidad.html ===
+<div class="mb-stack-md text-center max-w-3xl mx-auto">
+<h1 class="font-headline-xl text-headline-xl text-primary mb-unit">Declaración de Accesibilidad</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                El Ayuntamiento de El Espinar se ha comprometido a hacer accesible su sitio web para la agrupación de Protección Civil, de conformidad con el Real Decreto 1112/2018, de 7 de septiembre, sobre accesibilidad de los sitios web y aplicaciones para dispositivos móviles del sector público.
+            </p>
+</div>
+<!-- Bento Grid for Accessibility Info -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter mb-stack-lg">
+<!-- Compliance Status -->
+<div class="md:col-span-8 bg-surface-container-lowest border border-outline-variant rounded-xl p-stack-sm md:p-stack
+
+==================================================
+
+=== FILE: actuaciones.html ===
+<section
+            class="relative w-full h-[614px] min-h-[500px] flex items-center justify-center overflow-hidden bg-primary-container">
+            <div class="absolute inset-0 z-0">
+                <img alt="Fondo hero intervención" class="w-full h-full object-cover opacity-40"
+                    data-alt="A dramatic, high-quality photograph of civil protection or emergency response vehicles with flashing lights at night or dusk, showing readiness and action. The scene is illuminated by striking emergency vehicle lighting, casting strong shadows and highlights. The mood is serious, professional, and ready for action, aligning with a corporate institutional aesthetic. The color palette emphasizes deep navy blues and emergency orange accents."
+                    src="https://lh3.googl
+
+==================================================
+
+=== FILE: agrupacion.html ===
+<section class="relative h-[300px] flex items-center overflow-hidden bg-primary-container">
+        <div class="absolute inset-0 z-0">
+            <img class="w-full h-full object-cover opacity-20"
+                alt="Central de Comunicaciones y Coordinación"
+                src="img/weather_map.png" />
+            <div class="absolute inset-0 bg-[#002e60]/80"></div>
+        </div>
+        <div class="relative z-10 max-w-[1140px] mx-auto px-6 w-full text-white">
+            <div class="max-w-3xl">
+                <h1 class="font-headline-xl text-headline-xl text-white mb-4">La Agrupación</h1>
+                <p class="font-body-lg text-body-lg text-white/90">
+                    Conoce nuestra historia, nuestra estructura de coordinación y las unidades especializadas que velan por la segu
+
+==================================================
+
+=== FILE: aviso_legal.html ===
+<header class="bg-primary text-on-primary py-stack-md w-full">
+            <div class="max-w-container-max mx-auto px-gutter text-center md:text-left">
+                <h1 class="font-headline-xl text-headline-xl text-on-primary mb-unit">Aviso Legal</h1>
+                <p class="font-body-lg text-body-lg text-primary-fixed-dim">Información legal y condiciones de uso del
+                    portal web de la Agrupación de Protección Civil El Espinar.</p>
+            </div>
+        </header>
+        <!-- Main Content Canvas -->
+        <div class="max-w-container-max mx-auto px-gutter py-stack-lg">
+            <div
+                class="bg-surface-container-lowest border border-outline-variant rounded-xl p-stack-md lg:p-stack-lg shadow-sm">
+                <!-- Section 1: Datos Identificati
+
+==================================================
+
+=== FILE: avisos.html ===
+<section class="bg-surface-container py-stack-lg border-b border-outline-variant/30">
+            <div class="max-w-container-max mx-auto px-4 md:px-8">
+                <div class="max-w-3xl">
+                    <div
+                        class="inline-flex items-center gap-2 px-3 py-1 bg-error-container text-on-error-container rounded-full font-label-sm text-label-sm mb-4">
+                        <span class="material-symbols-outlined text-[16px]">warning</span>
+                        3 Alertas Activas
+                    </div>
+                    <h1 class="text-headline-xl font-headline-xl text-primary-container mb-4">Centro de Alertas y Avisos
+                    </h1>
+                    <p class="text-body-lg font-body-lg text-on-surface-variant max-w-2xl">
+
+==================================================
+
+=== FILE: biosfera.html ===
+<section class="relative w-full h-[600px] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Reserva de la Biosfera Real Sitio de San Ildefonso-El Espinar" class="w-full h-full object-cover" data-alt="A breathtaking panoramic view of a dense, verdant pine forest stretching across rolling mountains under a clear blue sky. The scene is illuminated by bright, natural sunlight, casting soft shadows that highlight the texture of the trees. The overall aesthetic is natural, serene, and majestic, perfectly capturing the essence of a protected biosphere reserve." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqktqlOser7XmnpUWp0LM8YK-lOJxW9EvRGegs3C7iPr4i6ruKjYyYWeDuGfqGdLjGB1RguG1zjHl6ypWASABuZ2lAPYKcar3hIElLEv0MydKM_gkLyqGV5g7AHW8h86xUR5Vm6p
+
+==================================================
+
+=== FILE: calendario.html ===
+<section class="flex flex-col gap-stack-sm text-center">
+                <h1
+                    class="font-headline-xl text-headline-xl text-primary">Calendario
+                    de Formación</h1>
+                <p
+                    class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Consulta
+                    y apúntate a
+                    nuestros próximos cursos de capacitación en primeros
+                    auxilios, RCP y uso de DESA. Preparando a
+                    ciudadanos para salvar vidas.</p>
+            </section>
+            <!-- Filters & Controls -->
+            <section
+                class="bg-surface-container rounded-xl p-gutter border border-outline-variant flex flex-col md:flex-row gap-gutter justify-between items-center">
+
+==================================================
+
+=== FILE: consejos.html ===
+<header class="mb-stack-lg text-center md:text-left">
+            <h1 class="font-headline-xl text-headline-xl text-primary mb-stack-sm">Consejos de Autoprotección</h1>
+            <p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl">Guías y recomendaciones oficiales
+                para saber cómo actuar ante diferentes situaciones de emergencia. La prevención y el conocimiento son
+                las mejores herramientas para garantizar su seguridad y la de los suyos.</p>
+        </header>
+        <!-- Featured Guide (Inundaciones - Image 6) -->
+        <section
+            class="mb-stack-lg bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden flex flex-col md:flex-row shadow-sm">
+            <div class="w-full md:w-1/2 min-h-[300px] rel
+
+==================================================
+
+=== FILE: contacto.html ===
+<section class="relative bg-primary-container text-white py-24 overflow-hidden">
+            <div class="absolute inset-0 opacity-20">
+                <img class="w-full h-full object-cover"
+                    data-alt="A cinematic wide shot of a professional emergency services operational center in Spain, featuring multiple digital displays and high-tech communication equipment. The lighting is focused and modern, highlighting the organized and ready-to-act atmosphere. The color scheme is dominated by deep institutional blues and emergency orange accents, reflecting authority and reliability."
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuACTBUx3rfhBnaTS-rfJN90AbpoqclmQOPb4iinWgdNGHQxCADWsonvCEDN-Tfx-V__-KUO5XKHPVXSmKa34GAT31TRNkkGrUTDuNqepI1mP-uQMim4ue3pBO
+
+==================================================
+
+=== FILE: cookies.html ===
+<div class="mb-stack-md text-center max-w-3xl mx-auto">
+<h1 class="font-headline-xl text-headline-xl text-primary-container mb-unit">Política de Cookies</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                Información transparente sobre el uso de cookies en el sitio web de Protección Civil El Espinar.
+            </p>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant rounded-lg p-gutter md:p-stack-md max-w-4xl mx-auto shadow-sm">
+<section class="mb-stack-md">
+<h2 class="font-headline-md text-headline-md text-primary-container mb-stack-sm flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-container">info</span>
+                    ¿Qué son las cookies?
+                </h2>
+<p class="font-body-md text-body
+
+==================================================
+
+=== FILE: hazte_voluntario.html ===
+<section class="relative h-[500px] flex items-center overflow-hidden">
+    <div class="absolute inset-0 z-0">
+      <img class="w-full h-full object-cover"
+        data-alt="A group of smiling Protección Civil volunteers in their official blue and orange uniforms standing together outdoors in the town of El Espinar. The lighting is warm and golden during the late afternoon, casting a soft glow over the Spanish landscape. The image conveys a sense of unity, readiness, and institutional pride with high-contrast sharp details."
+        src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6eJZREEqeZgKntSgz8uth1LVVCiGg4bjpjKZiSQ2jApPf6lghFntWQCFKFEm-694vWf15SY8T-vBoSD3RkrB6YPd-Lu54bSk2WLF72tfUzTr0oeRv7rqfaL39EIRbRUbldg-AnAd8ju0uxi0Q-x171pv5BS2Zxbw27LUel7bPzWvjrUOp-24AhQzAcOKGQ9GXblj3u1hu7Y
+
+==================================================
+
+=== FILE: mapa_riesgos.html ===
+<div class="flex flex-col gap-unit">
+            <h1 class="font-headline-xl text-primary">Mapa Interactivo de Riesgos</h1>
+            <p class="font-body-lg text-on-surface-variant max-w-3xl">Monitorización en tiempo real de condiciones
+                meteorológicas adversas y avisos de Protección Civil.</p>
+        </div>
+        <!-- Bento Grid Layout -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter h-auto">
+            <!-- Main Map Area (Spans 8 cols) -->
+            <div
+                class="lg:col-span-8 bg-surface-container-lowest rounded-xl border border-outline-variant overflow-hidden flex flex-col relative shadow-sm">
+                <!-- Map Controls Overlay -->
+                <div class="absolute top-4 right-4 z-10 flex flex-col gap-2">
+
+==================================================
+
+=== FILE: privacidad.html ===
+<div class="mb-12 max-w-3xl">
+            <h1 class="font-headline-xl text-headline-xl text-primary mb-4">Política de Privacidad</h1>
+            <p class="font-body-lg text-body-lg text-on-surface-variant">
+                En la Agrupación de Protección Civil El Espinar, estamos comprometidos con la protección de los datos
+                personales de nuestros ciudadanos y voluntarios, garantizando en todo momento el cumplimiento de la
+                normativa vigente.
+            </p>
+        </div>
+        <!-- Layout Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 relative">
+            <!-- Sticky Navigation (Table of Contents) -->
+            <aside class="md:col-span-4 lg:col-span-3 hidden md:block">
+                <nav class="sticky top-32 flex flex-col gap-2
+
+==================================================
+
+=== FILE: servicios_preventivos.html ===
+<section class="mb-stack-lg text-center">
+            <h1 class="font-headline-xl text-primary-container mb-stack-sm">Servicios y Preventivos</h1>
+            <p class="font-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                Catálogo histórico de operaciones, coberturas de eventos y asistencia en emergencias realizadas por la
+                Agrupación de Voluntarios de Protección Civil de El Espinar.
+            </p>
+        </section>
+        <!-- Category Filters -->
+        <section class="mb-stack-md flex flex-wrap justify-center gap-unit">
+            <button
+                class="bg-primary-container text-white px-6 py-2 rounded-full font-label-lg border-2 border-primary-container transition-colors">Todos</button>
+            <button
+                class="bg-surfa
+
+==================================================
+
+=== FILE: solicitar_preventivo.html ===
+<div class="mb-12 max-w-3xl">
+            <h1 class="font-headline-xl text-headline-xl text-primary mb-4">Solicitud de Servicio Preventivo</h1>
+            <p class="font-body-lg text-body-lg text-on-surface-variant">
+                Si estás organizando un evento deportivo, cultural o multitudinario en el municipio de El Espinar, puedes solicitar la cobertura de seguridad y asistencia de la Agrupación de Protección Civil rellenando el siguiente formulario con un mínimo de 15 días de antelación.
+            </p>
+        </div>
+        <!-- Layout Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 relative">
+            <!-- Form Area (Spans 8 cols) -->
+            <div class="lg:col-span-8 bg-surface-container-lowest rounded-xl border border-surface-dim p-8 shadow-sm">
+
+==================================================
+
+=== FILE: telefonos.html ===
+<section class="flex flex-col gap-stack-sm text-center items-center">
+            <h1 class="font-headline-xl text-headline-xl text-primary">Teléfonos de Interés</h1>
+            <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                Directorio oficial de números de emergencia y servicios esenciales para la ciudadanía en El Espinar.
+                Mantenga esta página a mano ante cualquier eventualidad.
+            </p>
+        </section>
+        <!-- Emergency Bento Grid -->
+        <section class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+            <!-- 112 Main Alert Card (Spans 8 cols) -->
+            <div
+                class="col-span-1 md:col-span-8 bg-[#EC5900] text-white rounded-xl border border-[#D1D1D1] p-stack-md flex flex-col justify-be
+
+==================================================
+
+=== FILE: transparencia.html ===
+<section class="bg-surface-container-low py-stack-lg px-margin-page">
+            <div class="max-w-container-max mx-auto text-center">
+                <h1 class="font-headline-xl text-headline-xl text-primary mb-stack-sm">Portal de Transparencia</h1>
+                <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Comprometidos con la
+                    gestión pública clara y la rendición de cuentas a los ciudadanos de El Espinar. Aquí encontrarás
+                    toda la información relativa a nuestra actividad, convenios y recursos.</p>
+            </div>
+        </section>
+        <!-- Bento Grid Content -->
+        <section class="py-stack-lg px-margin-page">
+            <div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-
+
+==================================================

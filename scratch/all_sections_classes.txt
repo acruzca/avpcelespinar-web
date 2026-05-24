@@ -1,0 +1,96 @@
+=== accesibilidad.html (0 sections) ===
+
+=== actuaciones.html (5 sections) ===
+  Section 1: <section
+            class="relative h-[300px] flex items-center overflow-hidden bg-primary-container">
+  Section 2: <section class="max-w-container-max mx-auto px-margin-page py-stack-lg -mt-20 relative z-20">
+  Section 3: <section class="max-w-container-max mx-auto px-margin-page py-stack-lg">
+  Section 4: <section class="max-w-container-max mx-auto px-margin-page pb-stack-lg">
+  Section 5: <section class="bg-surface-container-low border-y border-outline-variant py-stack-lg mt-stack-md">
+
+=== agrupacion.html (7 sections) ===
+  Section 1: <section class="relative h-[300px] flex items-center overflow-hidden bg-primary-container">
+  Section 2: <section class="mb-stack-lg">
+  Section 3: <section class="py-16 max-w-[1140px] mx-auto px-4">
+  Section 4: <section class="mb-stack-lg bg-surface-container-lowest p-stack-lg rounded-xl border border-outline-variant">
+  Section 5: <section class="bg-surface-container-low py-16">
+  Section 6: <section class="mb-stack-lg">
+  Section 7: <section class="py-24 max-w-[1140px] mx-auto px-4">
+
+=== aviso_legal.html (5 sections) ===
+  Section 1: <section class="mb-stack-md">
+  Section 2: <section class="mb-stack-md">
+  Section 3: <section class="mb-stack-md">
+  Section 4: <section class="mb-stack-md">
+  Section 5: <section>
+
+=== avisos.html (2 sections) ===
+  Section 1: <section class="bg-surface-container py-stack-lg border-b border-outline-variant/30">
+  Section 2: <section class="py-stack-lg">
+
+=== biosfera.html (4 sections) ===
+  Section 1: <section class="relative h-[300px] flex items-center overflow-hidden bg-primary-container">
+  Section 2: <section class="py-stack-lg bg-surface">
+  Section 3: <section class="py-stack-lg bg-surface-container-low">
+  Section 4: <section class="py-stack-lg bg-surface">
+
+=== calendario.html (4 sections) ===
+  Section 1: <section class="flex flex-col gap-stack-sm text-center">
+  Section 2: <section
+                class="bg-surface-container rounded-xl p-gutter border border-outline-variant flex flex-col md:flex-row gap-gutter justify-between items-center">
+  Section 3: <section class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+  Section 4: <section class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+
+=== consejos.html (2 sections) ===
+  Section 1: <section
+            class="mb-stack-lg bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden flex flex-col md:flex-row shadow-sm">
+  Section 2: <section
+            class="bg-surface-container-low rounded-xl overflow-hidden flex flex-col md:flex-row-reverse shadow-sm">
+
+=== contacto.html (3 sections) ===
+  Section 1: <section class="relative h-[300px] flex items-center overflow-hidden bg-primary-container text-white">
+  Section 2: <section class="max-w-[1140px] mx-auto px-4 py-16">
+  Section 3: <section class="max-w-[1140px] mx-auto px-4 pb-24">
+
+=== cookies.html (4 sections) ===
+  Section 1: <section class="mb-stack-md">
+  Section 2: <section class="mb-stack-md">
+  Section 3: <section class="mb-stack-md">
+  Section 4: <section>
+
+=== hazte_voluntario.html (1 sections) ===
+  Section 1: <section class="relative h-[300px] flex items-center overflow-hidden bg-primary-container">
+
+=== index.html (3 sections) ===
+  Section 1: <section class="py-stack-lg max-w-[1140px] mx-auto px-4 md:px-8">
+  Section 2: <section class="py-stack-lg bg-surface-container-low">
+  Section 3: <section class="py-stack-lg max-w-[1140px] mx-auto px-4 md:px-8">
+
+=== mapa_riesgos.html (0 sections) ===
+
+=== privacidad.html (5 sections) ===
+  Section 1: <section class="bg-surface-container-lowest rounded-xl border border-surface-dim p-8 shadow-sm"
+                    id="responsable">
+  Section 2: <section class="bg-surface-container-lowest rounded-xl border border-surface-dim p-8 shadow-sm"
+                    id="finalidad">
+  Section 3: <section class="bg-surface-container-lowest rounded-xl border border-surface-dim p-8 shadow-sm"
+                    id="legitimacion">
+  Section 4: <section class="bg-surface-container-lowest rounded-xl border border-surface-dim p-8 shadow-sm"
+                    id="plazos">
+  Section 5: <section class="bg-surface-container-lowest rounded-xl border border-surface-dim p-8 shadow-sm"
+                    id="derechos">
+
+=== servicios_preventivos.html (3 sections) ===
+  Section 1: <section class="mb-stack-lg text-center">
+  Section 2: <section class="mb-stack-md flex flex-wrap justify-center gap-unit">
+  Section 3: <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+
+=== solicitar_preventivo.html (0 sections) ===
+
+=== telefonos.html (2 sections) ===
+  Section 1: <section class="flex flex-col gap-stack-sm text-center items-center">
+  Section 2: <section class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+
+=== transparencia.html (2 sections) ===
+  Section 1: <section class="bg-surface-container-low py-stack-lg px-margin-page">
+  Section 2: <section class="py-stack-lg px-margin-page">

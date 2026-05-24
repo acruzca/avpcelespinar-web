@@ -1,135 +1,113 @@
 <!DOCTYPE html>
-<html lang="es">
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800&amp;display=swap"
-    rel="stylesheet">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-    rel="stylesheet">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-    rel="stylesheet">
-  <script id="tailwind-config">
-    tailwind.config = {
-      darkMode: "class",
-      theme: {
-        extend: {
-          "colors": {
-            "surface-variant": "#e2e2e2",
-            "inverse-primary": "#aac7ff",
-            "on-surface-variant": "#434750",
-            "surface-bright": "#f9f9f9",
-            "primary-container": "#154481",
-            "on-tertiary-fixed-variant": "#324769",
-            "surface-container": "#eeeeee",
-            "inverse-on-surface": "#f1f1f1",
-            "surface-container-high": "#e8e8e8",
-            "on-secondary-fixed": "#370e00",
-            "on-secondary-container": "#561b00",
-            "secondary-container": "#fe6514",
-            "primary-fixed": "#d6e3ff",
-            "on-error": "#ffffff",
-            "surface-container-highest": "#e2e2e2",
-            "surface": "#f9f9f9",
-            "on-primary-container": "#8db3f7",
-            "error-container": "#ffdad6",
-            "on-tertiary": "#ffffff",
-            "on-secondary-fixed-variant": "#7e2c00",
-            "inverse-surface": "#2f3131",
-            "on-error-container": "#93000a",
-            "error": "#ba1a1a",
-            "tertiary-fixed": "#d5e3ff",
-            "tertiary": "#182f4f",
-            "outline-variant": "#c3c6d2",
-            "surface-container-lowest": "#ffffff",
-            "surface-dim": "#dadada",
-            "primary-fixed-dim": "#aac7ff",
-            "on-tertiary-container": "#9db3da",
-            "on-primary": "#ffffff",
-            "on-primary-fixed-variant": "#184683",
-            "on-primary-fixed": "#001b3e",
-            "tertiary-container": "#304567",
-            "secondary": "#a53c00",
-            "on-tertiary-fixed": "#011b3b",
-            "secondary-fixed": "#ffdbce",
-            "background": "#f9f9f9",
-            "on-surface": "#1a1c1c",
-            "outline": "#737781",
-            "on-secondary": "#ffffff",
-            "surface-tint": "#365e9d",
-            "primary": "#002e60",
-            "secondary-fixed-dim": "#ffb598",
-            "on-background": "#1a1c1c",
-            "tertiary-fixed-dim": "#b2c7f0",
-            "surface-container-low": "#f3f3f3"
-          },
-          "borderRadius": {
-            "DEFAULT": "0.125rem",
-            "lg": "0.25rem",
-            "xl": "0.5rem",
-            "full": "0.75rem"
-          },
-          "spacing": {
-            "stack-sm": "16px",
-            "unit": "8px",
-            "margin-page": "32px",
-            "container-max": "1140px",
-            "stack-md": "32px",
-            "stack-lg": "64px",
-            "gutter": "24px"
-          },
-          "fontFamily": {
-            "headline-sm": ["Public Sans"],
-            "body-lg": ["Public Sans"],
-            "label-lg": ["Public Sans"],
-            "headline-md": ["Public Sans"],
-            "body-md": ["Public Sans"],
-            "headline-lg": ["Public Sans"],
-            "label-sm": ["Public Sans"],
-            "headline-xl": ["Public Sans"]
-          },
-          "fontSize": {
-            "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
-            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
-            "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }],
-            "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
-            "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
-            "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
-            "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }],
-            "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }]
-          }
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Accesibilidad - Protección Civil El Espinar</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed": "#d5e3ff",
+                        "primary-container": "#154481",
+                        "on-background": "#1a1c1c",
+                        "secondary-fixed": "#ffdbce",
+                        "on-secondary-container": "#561b00",
+                        "on-surface-variant": "#434750",
+                        "inverse-primary": "#aac7ff",
+                        "surface-container-low": "#f3f3f3",
+                        "on-tertiary-fixed": "#011b3b",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container": "#eeeeee",
+                        "on-error": "#ffffff",
+                        "surface-bright": "#f9f9f9",
+                        "primary": "#002e60",
+                        "error-container": "#ffdad6",
+                        "primary-fixed": "#d6e3ff",
+                        "on-tertiary-fixed-variant": "#324769",
+                        "on-primary-fixed-variant": "#184683",
+                        "on-primary-container": "#8db3f7",
+                        "on-primary-fixed": "#001b3e",
+                        "surface-dim": "#dadada",
+                        "on-tertiary-container": "#9db3da",
+                        "on-secondary": "#ffffff",
+                        "secondary": "#a53c00",
+                        "on-error-container": "#93000a",
+                        "surface": "#f9f9f9",
+                        "surface-container-highest": "#e2e2e2",
+                        "tertiary-container": "#304567",
+                        "tertiary-fixed-dim": "#b2c7f0",
+                        "surface-container-high": "#e8e8e8",
+                        "inverse-on-surface": "#f1f1f1",
+                        "on-surface": "#1a1c1c",
+                        "tertiary": "#182f4f",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed-variant": "#7e2c00",
+                        "surface-tint": "#365e9d",
+                        "primary-fixed-dim": "#aac7ff",
+                        "surface-variant": "#e2e2e2",
+                        "secondary-fixed-dim": "#ffb598",
+                        "inverse-surface": "#2f3131",
+                        "background": "#f9f9f9",
+                        "secondary-container": "#fe6514",
+                        "on-secondary-fixed": "#370e00",
+                        "outline-variant": "#c3c6d2",
+                        "outline": "#737781",
+                        "on-primary": "#ffffff",
+                        "error": "#ba1a1a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "unit": "8px",
+                        "stack-sm": "16px",
+                        "stack-md": "32px",
+                        "stack-lg": "64px",
+                        "container-max": "1140px",
+                        "margin-page": "32px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "headline-sm": ["Public Sans"],
+                        "headline-lg": ["Public Sans"],
+                        "headline-md": ["Public Sans"],
+                        "body-lg": ["Public Sans"],
+                        "label-lg": ["Public Sans"],
+                        "label-sm": ["Public Sans"],
+                        "headline-xl": ["Public Sans"],
+                        "body-md": ["Public Sans"]
+                    },
+                    "fontSize": {
+                        "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }],
+                        "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }]
+                    }
+                }
+            }
         }
-      }
-    }
-  </script>
-  <style>
-    .material-symbols-outlined {
-      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-    }
-
-    .emergency-btn {
-      background-color: #EC5900;
-      color: white;
-      transition: background-color 0.2s;
-    }
-
-    .emergency-btn:hover {
-      background-color: #c44a00;
-    }
-
-    .section-padding {
-      padding-top: 64px;
-      padding-bottom: 64px;
-    }
-  </style>
+    </script>
+<style>
+        body { font-family: 'Public Sans', sans-serif; background-color: theme('colors.background'); color: theme('colors.on-background'); }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    </style>
 </head>
-
-<body class="bg-background font-body-md text-on-surface antialiased">
-      <!-- Barra superior del Ayuntamiento (Estandarizada) -->
+<body class="flex flex-col min-h-screen">
+<!-- Barra superior del Ayuntamiento (Estandarizada) -->
     <div class="bg-primary text-white py-1.5 px-4 text-xs font-medium border-b border-primary-container">
         <div class="max-w-[1140px] mx-auto flex justify-between items-center">
             <span class="opacity-80">Protección Civil El Espinar (Segovia)</span>
@@ -147,7 +125,7 @@
             </div>
         </div>
     </div>
-                    <!-- Menú de Navegación Estandarizado (Unificado) -->
+    <!-- Menú de Navegación Estandarizado (Unificado) -->
     <header class="bg-white dark:bg-slate-950 border-b border-[#D1D1D1] dark:border-slate-800 sticky z-50 top-0 transition-all duration-200">
         <div class="flex justify-between items-center h-20 max-w-[1140px] mx-auto px-4 md:px-8">
             <a href="index.html" class="flex items-center gap-2 hover:opacity-90 transition-opacity" aria-label="Inicio">
@@ -160,7 +138,7 @@
             <a class="text-slate-600 dark:text-slate-400 hover:text-[#154481] dark:hover:text-blue-400 transition-colors py-2" href="agrupacion.html">La agrupación</a>
             <a class="text-slate-600 dark:text-slate-400 hover:text-[#154481] dark:hover:text-blue-400 transition-colors py-2" href="actuaciones.html">Actuaciones</a>
             <a class="text-slate-600 dark:text-slate-400 hover:text-[#154481] dark:hover:text-blue-400 transition-colors py-2" href="biosfera.html">Biosfera</a>
-            <a class="text-[#154481] dark:text-blue-400 font-bold border-b-2 border-secondary-container pb-1 py-2" href="hazte_voluntario.html">Voluntariado</a>
+            <a class="text-slate-600 dark:text-slate-400 hover:text-[#154481] dark:hover:text-blue-400 transition-colors py-2" href="hazte_voluntario.html">Voluntariado</a>
             <a class="text-slate-600 dark:text-slate-400 hover:text-[#154481] dark:hover:text-blue-400 transition-colors py-2" href="contacto.html">Contacto</a>
             </nav>
             
@@ -184,7 +162,7 @@
         <a class="text-slate-600 dark:text-slate-400 hover:text-[#154481] dark:hover:text-blue-400 py-2 border-b border-slate-100 dark:border-slate-900 transition-colors" href="agrupacion.html">La agrupación</a>
         <a class="text-slate-600 dark:text-slate-400 hover:text-[#154481] dark:hover:text-blue-400 py-2 border-b border-slate-100 dark:border-slate-900 transition-colors" href="actuaciones.html">Actuaciones</a>
         <a class="text-slate-600 dark:text-slate-400 hover:text-[#154481] dark:hover:text-blue-400 py-2 border-b border-slate-100 dark:border-slate-900 transition-colors" href="biosfera.html">Biosfera</a>
-        <a class="text-[#154481] dark:text-blue-400 font-bold py-2 border-b border-slate-100 dark:border-slate-900 transition-colors" href="hazte_voluntario.html">Voluntariado</a>
+        <a class="text-slate-600 dark:text-slate-400 hover:text-[#154481] dark:hover:text-blue-400 py-2 border-b border-slate-100 dark:border-slate-900 transition-colors" href="hazte_voluntario.html">Voluntariado</a>
         <a class="text-slate-600 dark:text-slate-400 hover:text-[#154481] dark:hover:text-blue-400 py-2 border-b border-slate-100 dark:border-slate-900 transition-colors" href="contacto.html">Contacto</a>
         </div>
         
@@ -209,161 +187,86 @@
             });
         </script>
     </header>
-  <!-- Hero Section -->
-  <section class="relative h-[300px] flex items-center overflow-hidden bg-primary-container">
-    <div class="absolute inset-0 z-0">
-      <img class="w-full h-full object-cover opacity-20"
-        data-alt="A group of smiling Protección Civil volunteers in their official blue and orange uniforms standing together outdoors in the town of El Espinar. The lighting is warm and golden during the late afternoon, casting a soft glow over the Spanish landscape. The image conveys a sense of unity, readiness, and institutional pride with high-contrast sharp details."
-        src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6eJZREEqeZgKntSgz8uth1LVVCiGg4bjpjKZiSQ2jApPf6lghFntWQCFKFEm-694vWf15SY8T-vBoSD3RkrB6YPd-Lu54bSk2WLF72tfUzTr0oeRv7rqfaL39EIRbRUbldg-AnAd8ju0uxi0Q-x171pv5BS2Zxbw27LUel7bPzWvjrUOp-24AhQzAcOKGQ9GXblj3u1hu7Y0AhiI02kF4iIVCOFhQ8khKlzDCh_HfR5nl1UIQOmJk51n6tKjybRXxwn-JPKEP-MQ">
-      <div class="absolute inset-0 bg-[#002e60]/80"></div>
-    </div>
-    <div class="relative z-10 max-w-[1140px] mx-auto px-6 w-full text-white">
-      <div class="max-w-3xl">
-        <h1 class="font-headline-xl text-headline-xl text-white mb-4 md:whitespace-nowrap">Tu compromiso es nuestra fuerza</h1>
-        <p class="font-body-lg text-body-lg text-white/90 mb-4">Únete a la Agrupación de Voluntarios de Protección
-          Civil de El Espinar. Sé la primera línea de ayuda y protección para tus vecinos.</p>
-        <a class="bg-secondary-container hover:bg-secondary text-white px-6 py-2.5 rounded-lg font-bold text-base inline-flex items-center gap-2 transition-all"
-          href="#pre-inscripcion">
-          Quiero ser voluntario
-          <span class="material-symbols-outlined">arrow_forward</span>
-        </a>
-      </div>
-    </div>
-  </section>
-  <!-- Main Content Area -->
-  <main class="max-w-[1140px] mx-auto px-6 section-padding">
-    <!-- Requisitos & Beneficios Bento Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
-      <!-- Requisitos -->
-      <div class="md:col-span-7 bg-white border border-outline-variant p-stack-md rounded-xl">
-        <div class="flex items-center gap-4 mb-6">
-          <span class="material-symbols-outlined text-[#154481] text-4xl">verified_user</span>
-          <h2 class="font-headline-lg text-headline-lg text-primary border-b-2 border-secondary-container pb-2 w-fit">Requisitos del Aspirante</h2>
-        </div>
-        <div class="space-y-4">
-          <div class="flex items-start gap-4 p-4 hover:bg-surface transition-colors rounded-lg">
-            <span class="material-symbols-outlined text-secondary-container mt-1">cake</span>
-            <div>
-              <h3 class="font-headline-sm text-headline-sm">Ser mayor de 18 años</h3>
-              <p class="text-slate-600">Imprescindible haber cumplido la mayoría de edad legal para realizar tareas
-                operativas.</p>
-            </div>
-          </div>
-          <div class="flex items-start gap-4 p-4 hover:bg-surface transition-colors rounded-lg">
-            <span class="material-symbols-outlined text-secondary-container mt-1">location_on</span>
-            <div>
-              <h3 class="font-headline-sm text-headline-sm">Residencia en El Espinar</h3>
-              <p class="text-slate-600">Vivir o trabajar cerca de la zona para asegurar una respuesta rápida en
-                emergencias.</p>
-            </div>
-          </div>
-          <div class="flex items-start gap-4 p-4 hover:bg-surface transition-colors rounded-lg">
-            <span class="material-symbols-outlined text-secondary-container mt-1">school</span>
-            <div>
-              <h3 class="font-headline-sm text-headline-sm">Formación Inicial Obligatoria</h3>
-              <p class="text-slate-600">Superar la formación básica inicial obligatoria dictada por la organización, la cual tiene una duración mínima de 16 horas lectivas (según el plan formativo de la JCYL).</p>
-            </div>
-          </div>
-          <div class="flex items-start gap-4 p-4 hover:bg-surface transition-colors rounded-lg">
-            <span class="material-symbols-outlined text-secondary-container mt-1">schedule</span>
-            <div>
-              <h3 class="font-headline-sm text-headline-sm">Compromiso y Deberes Anuales</h3>
-              <p class="text-slate-600">Disponer de tiempo para formación continua y servicios preventivos programados. Para mantener la condición de miembro de pleno derecho de la agrupación, es de obligado cumplimiento realizar un mínimo de 60 horas anuales entre servicios preventivos, intervención, formación y tareas logísticas.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Beneficios -->
-      <div class="md:col-span-5 flex flex-col gap-gutter">
-        <div class="bg-primary text-white p-stack-md rounded-xl flex-1 relative overflow-hidden">
-          <div class="relative z-10">
-            <span class="material-symbols-outlined text-secondary-container text-4xl mb-4">school</span>
-            <h3 class="font-headline-md text-headline-md mb-2">Formación Gratuita</h3>
-            <p class="opacity-80">Accede a cursos oficiales de primeros auxilios, rescate y gestión de emergencias
-              certificados por la Comunidad.</p>
-          </div>
-        </div>
-        <div class="bg-white border border-outline-variant p-stack-md rounded-xl flex-1">
-          <span class="material-symbols-outlined text-primary text-4xl mb-4">groups</span>
-          <h3 class="font-headline-md text-headline-md mb-2 text-primary">Ayuda a tu Comunidad</h3>
-          <p class="text-slate-600">Siente la satisfacción de ser parte esencial de la seguridad y el bienestar de El
-            Espinar.</p>
-        </div>
-      </div>
-    </div>
-    <!-- Pre-inscripción Section -->
-    <div class="mt-stack-lg bg-surface-container-low rounded-xl p-stack-md md:p-stack-lg border border-outline-variant"
-      id="pre-inscripcion">
-      <div class="text-center max-w-2xl mx-auto mb-10">
-        <h2 class="font-headline-lg text-headline-lg text-primary border-b-2 border-secondary-container pb-2 w-fit mb-4">Formulario de Pre-inscripción</h2>
-        <p class="text-slate-600">Completa tus datos básicos y nos pondremos en contacto contigo para una entrevista
-          personal y explicarte el proceso de ingreso.</p>
-      </div>
-      <form class="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-stack-sm">
-        <div class="space-y-2">
-          <label class="font-label-lg text-label-lg text-primary block">Nombre completo</label>
-          <input
-            class="w-full border border-outline rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary focus:border-transparent bg-white"
-            placeholder="Ej. Juan Pérez" type="text">
-        </div>
-        <div class="space-y-2">
-          <label class="font-label-lg text-label-lg text-primary block">DNI / NIE</label>
-          <input
-            class="w-full border border-outline rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary focus:border-transparent bg-white"
-            placeholder="12345678X" type="text">
-        </div>
-        <div class="space-y-2">
-          <label class="font-label-lg text-label-lg text-primary block">Correo electrónico</label>
-          <input
-            class="w-full border border-outline rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary focus:border-transparent bg-white"
-            placeholder="nombre@ejemplo.com" type="email">
-        </div>
-        <div class="space-y-2">
-          <label class="font-label-lg text-label-lg text-primary block">Teléfono de contacto</label>
-          <input
-            class="w-full border border-outline rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary focus:border-transparent bg-white"
-            placeholder="600 000 000" type="tel">
-        </div>
-        <div class="md:col-span-2 space-y-2">
-          <label class="font-label-lg text-label-lg text-primary block">¿Por qué quieres ser voluntario?</label>
-          <textarea
-            class="w-full border border-outline rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary focus:border-transparent bg-white"
-            placeholder="Cuéntanos un poco sobre tu motivación..." rows="4"></textarea>
-        </div>
-        <div class="md:col-span-2 flex items-center gap-3 py-2">
-          <input class="w-5 h-5 rounded border-outline text-primary focus:ring-primary" id="privacy" type="checkbox" required>
-          <label class="text-sm text-slate-600" for="privacy">Acepto la <a class="text-primary underline hover:text-[#154481]" href="privacidad.html" target="_blank">política de privacidad</a> y el tratamiento de mis
-            datos para el proceso de selección.</label>
-        </div>
-        <div class="md:col-span-2 flex justify-center mt-4">
-          <button
-            class="bg-primary text-white font-bold px-12 py-4 rounded-lg hover:bg-[#154481]/90 transition-all shadow-md"
-            type="submit">
-            Enviar solicitud de información
-          </button>
-        </div>
-      </form>
-    </div>
-  </main>
-  <!-- Alerts Banner (Notice) -->
-  <aside class="max-w-[1140px] mx-auto px-6 mt-16 mb-16 w-full">
-    <div class="bg-[#154481] text-white py-6 px-8 md:px-10 rounded-2xl shadow-lg flex flex-col md:flex-row items-center justify-between gap-6 hover:shadow-xl transition-shadow border border-primary-container">
-      <div class="flex items-center gap-4 text-center md:text-left flex-col md:flex-row">
-        <span class="material-symbols-outlined text-secondary-container text-3xl" style="font-variation-settings: 'FILL' 1;">info</span>
-        <div>
-          <p class="font-bold text-lg leading-tight">Próximo curso de Formación Básica: Septiembre 2026</p>
-          <p class="text-white/80 text-sm mt-1">¡Inscripciones abiertas! Únete a la nueva promoción de voluntarios.</p>
-        </div>
-      </div>
-      <a class="bg-secondary-container hover:bg-secondary text-white font-bold px-6 py-3 rounded-lg shadow transition-all hover:scale-[1.03] active:scale-95 text-sm whitespace-nowrap flex items-center gap-2" href="calendario.html">
-        <span class="material-symbols-outlined text-sm">calendar_month</span>
-        Ver Calendario
-      </a>
-    </div>
-  </aside>
-  <!-- Footer -->
-          <!-- Footer Unificado -->
-    <!-- Footer -->
+<!-- Main Content -->
+<main class="flex-grow max-w-container-max mx-auto px-4 md:px-8 py-stack-lg w-full">
+<div class="mb-stack-md text-center max-w-3xl mx-auto">
+<h1 class="font-headline-xl text-headline-xl text-primary mb-unit">Declaración de Accesibilidad</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                El Ayuntamiento de El Espinar se ha comprometido a hacer accesible su sitio web para la agrupación de Protección Civil, de conformidad con el Real Decreto 1112/2018, de 7 de septiembre, sobre accesibilidad de los sitios web y aplicaciones para dispositivos móviles del sector público.
+            </p>
+</div>
+<!-- Bento Grid for Accessibility Info -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter mb-stack-lg">
+<!-- Compliance Status (Fully Compliant) -->
+<div class="md:col-span-12 bg-surface-container-lowest border border-outline-variant rounded-xl p-stack-sm md:p-stack-md flex flex-col justify-center">
+<div class="flex items-center gap-4 mb-4">
+<div class="w-12 h-12 rounded-full bg-tertiary-fixed flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[#2e7d32]" data-icon="verified" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary">Situación de Cumplimiento</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface mb-6">
+                    Este sitio web es <strong>totalmente conforme</strong> con el Real Decreto 1112/2018, de 7 de septiembre, sobre accesibilidad de los sitios web y aplicaciones para dispositivos móviles del sector público. El diseño, desarrollo y estructuración de este portal web han sido concebidos y auditados desde el origen para cumplir rigurosamente con los estándares y alcanzar la plena conformidad del nivel AA de las pautas WCAG 2.1.
+                </p>
+<div class="bg-surface-container-low p-6 rounded-lg border border-outline-variant/50">
+<h3 class="font-label-lg text-label-lg text-tertiary mb-3">Medidas e Integración de Accesibilidad Cumplidas</h3>
+<ul class="grid grid-cols-1 md:grid-cols-2 gap-4 font-body-md text-body-md text-on-surface-variant list-none">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[#2e7d32] text-sm mt-1" data-icon="check_circle">check_circle</span>
+<span>Contraste de color optimizado y adaptabilidad total de la interfaz.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[#2e7d32] text-sm mt-1" data-icon="check_circle">check_circle</span>
+<span>Navegación e interacción clara y predecible mediante teclado.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[#2e7d32] text-sm mt-1" data-icon="check_circle">check_circle</span>
+<span>Estructura semántica HTML robusta y equilibrada (encabezados, regiones y listas).</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[#2e7d32] text-sm mt-1" data-icon="check_circle">check_circle</span>
+<span>Textos alternativos descriptivos completos y etiquetado ARIA en elementos interactivos.</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- Contact & Feedback -->
+<div class="md:col-span-12 bg-primary-container text-on-primary border border-primary rounded-xl p-stack-md flex flex-col md:flex-row items-center justify-between gap-8">
+<div class="max-w-2xl">
+<h2 class="font-headline-md text-headline-md mb-2">Comunicaciones y Contacto</h2>
+<p class="font-body-md text-body-md opacity-90 mb-4">
+                        Puede realizar comunicaciones sobre requisitos de accesibilidad (artículo 10.2.a del RD 1112/2018) como, por ejemplo:
+                    </p>
+<ul class="list-disc list-inside font-body-md text-body-md opacity-90 space-y-1 mb-4">
+<li>Informar sobre cualquier posible incumplimiento por parte de este sitio web.</li>
+<li>Transmitir otras dificultades de acceso al contenido.</li>
+<li>Formular cualquier otra consulta o sugerencia de mejora relativa a la accesibilidad del sitio web.</li>
+</ul>
+</div>
+<div class="flex flex-col gap-4 w-full md:w-auto min-w-[250px]">
+<a class="bg-white text-primary-container font-label-lg text-label-lg px-6 py-3 rounded-lg text-center hover:bg-surface-container-low transition-colors flex items-center justify-center gap-2" href="mailto:accesibilidad@elespinar.es">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+                        Enviar Correo
+                    </a>
+<a class="border-2 border-white text-white font-label-lg text-label-lg px-6 py-3 rounded-lg text-center hover:bg-white/10 transition-colors flex items-center justify-center gap-2" href="tel:900112112">
+<span class="material-symbols-outlined" data-icon="call">call</span>
+                        Llamar a Información
+                    </a>
+</div>
+</div>
+<!-- Procedure -->
+<div class="md:col-span-12 bg-surface-container-lowest border border-outline-variant rounded-xl p-stack-sm md:p-stack-md">
+<h2 class="font-headline-sm text-headline-sm text-primary mb-3">Procedimiento de Aplicación</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                     Si una vez realizada una solicitud de información accesible o queja, ésta hubiera sido desestimada, no se estuviera de acuerdo con la decisión adoptada, o la respuesta no cumpliera los requisitos contemplados en el artículo 12.5, la persona interesada podrá iniciar una reclamación. Igualmente se podrá iniciar una reclamación en el caso de que haya transcurrido el plazo de veinte días hábiles sin haber obtenido respuesta.
+                 </p>
+</div>
+</div>
+</main>
+<!-- Footer (Shared Component) -->
+<!-- Applying explicit active navigation logic: 'Accesibilidad' tab is active -->
+<!-- Footer -->
             <!-- Footer Unificado -->
     <footer class="bg-[#F2F2F2] dark:bg-slate-900 border-t border-[#D1D1D1] dark:border-slate-800 mt-auto">
         <div class="py-12 max-w-[1140px] mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -422,10 +325,6 @@
             <p class="font-['Public_Sans'] text-sm leading-relaxed text-slate-400">© 2026 Protección Civil El Espinar</p>
         </div>
     </footer>
-
-
-
-
 <!-- Botón Flotante de Accesibilidad -->
 <div class="fixed bottom-6 right-6 z-50 font-['Public_Sans']">
     <button id="accessibility-widget-toggle" class="w-14 h-14 bg-secondary-container text-white rounded-full flex items-center justify-center shadow-lg hover:scale-110 active:scale-95 transition-all focus:outline-none" aria-label="Opciones de Accesibilidad">
@@ -692,6 +591,4 @@
         });
     });
 </script>
-</body>
-
-</html>
+</body></html>

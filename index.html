@@ -98,14 +98,14 @@
                         "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
                         "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
                         "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }],
-                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }],
-                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
-                        "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
-                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }]
+                        "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "headline-md": ["24px", { "lineHeight": "36px", "fontWeight": "600" }],
+                        "headline-xl": ["40px", { "lineHeight": "56px", "fontWeight": "700" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }]
                     }
-                },
-            },
-        }
+                }
+            }
+        };
     </script>
     <style>
         .material-symbols-outlined {
@@ -121,8 +121,8 @@
 
 <body class="bg-surface text-on-surface">
         <!-- Barra superior del Ayuntamiento (Estandarizada) -->
-    <div class="bg-primary text-white py-1.5 px-4 text-xs font-medium border-b border-primary-container">
-        <div class="max-w-[1140px] mx-auto flex justify-between items-center">
+    <div class="bg-primary text-white py-1.5 text-xs font-medium border-b border-primary-container">
+        <div class="max-w-[1140px] mx-auto flex justify-between items-center px-4 md:px-8">
             <span class="opacity-80">Protección Civil El Espinar (Segovia)</span>
             <div class="flex items-center gap-6">
                 <a class="hover:underline flex items-center gap-1 hover:opacity-100 transition-opacity" href="http://elespinar.es/" target="_blank" rel="noopener noreferrer">
@@ -138,14 +138,14 @@
             </div>
         </div>
     </div>
-    <!-- Banner de Aviso Meteorológico -->
-    <div class="bg-secondary-fixed text-on-secondary-fixed py-2 px-4 text-center text-sm font-semibold sticky top-0 z-[60] border-b border-secondary/20">
+    <!-- Banner de Alertas (Estandarizado) -->
+    <div class="bg-[#ba1a1a] text-white py-2 px-4 text-center text-sm font-bold sticky top-0 z-[60] border-b border-red-800">
         <div class="max-w-[1140px] mx-auto flex items-center justify-center gap-2">
-            <span class="material-symbols-outlined text-lg leading-none" data-icon="warning">warning</span>
+            <span>⚠️</span>
             <span>Aviso Meteorológico: Previsión de fuertes lluvias para el próximo fin de semana.</span>
-            <a class="flex items-center hover:opacity-80 transition-opacity ml-1" href="avisos.html">
-                <span class="underline">Más información</span>
-                <span class="material-symbols-outlined text-sm ml-0.5" data-icon="arrow_right_alt">arrow_right_alt</span>
+            <a class="flex items-center hover:opacity-90 transition-opacity ml-1" href="avisos.html">
+                <span class="underline text-white font-bold">Más información</span>
+                <span class="material-symbols-outlined text-sm ml-0.5" style="font-variation-settings: 'FILL' 1;">arrow_right_alt</span>
             </a>
         </div>
     </div>
@@ -160,7 +160,7 @@
             <nav class="hidden md:flex items-center gap-6 lg:gap-8 font-['Public_Sans'] text-sm font-semibold tracking-wide">
             <a class="text-[#154481] dark:text-blue-400 font-bold border-b-2 border-secondary-container pb-1 py-2" href="index.html">Inicio</a>
             <a class="text-slate-600 dark:text-slate-400 hover:text-[#154481] dark:hover:text-blue-400 transition-colors py-2" href="agrupacion.html">La agrupación</a>
-            <a class="text-slate-600 dark:text-slate-400 hover:text-[#154481] dark:hover:text-blue-400 transition-colors py-2" href="actuaciones.html">Actuaciones</a>
+            <a class="text-slate-600 dark:text-slate-400 hover:text-[#154481] dark:hover:text-blue-400 transition-colors py-2" href="solicitudes.html">Solicitudes</a>
             <a class="text-slate-600 dark:text-slate-400 hover:text-[#154481] dark:hover:text-blue-400 transition-colors py-2" href="biosfera.html">Biosfera</a>
             <a class="text-slate-600 dark:text-slate-400 hover:text-[#154481] dark:hover:text-blue-400 transition-colors py-2" href="hazte_voluntario.html">Voluntariado</a>
             <a class="text-slate-600 dark:text-slate-400 hover:text-[#154481] dark:hover:text-blue-400 transition-colors py-2" href="contacto.html">Contacto</a>
@@ -184,7 +184,7 @@
         <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800 transition-all duration-300 py-4 px-6 flex flex-col gap-4 font-['Public_Sans'] text-base font-semibold tracking-wider">
         <a class="text-[#154481] dark:text-blue-400 font-bold py-2 border-b border-slate-100 dark:border-slate-900 transition-colors" href="index.html">Inicio</a>
         <a class="text-slate-600 dark:text-slate-400 hover:text-[#154481] dark:hover:text-blue-400 py-2 border-b border-slate-100 dark:border-slate-900 transition-colors" href="agrupacion.html">La agrupación</a>
-        <a class="text-slate-600 dark:text-slate-400 hover:text-[#154481] dark:hover:text-blue-400 py-2 border-b border-slate-100 dark:border-slate-900 transition-colors" href="actuaciones.html">Actuaciones</a>
+        <a class="text-slate-600 dark:text-slate-400 hover:text-[#154481] dark:hover:text-blue-400 py-2 border-b border-slate-100 dark:border-slate-900 transition-colors" href="solicitudes.html">Solicitudes</a>
         <a class="text-slate-600 dark:text-slate-400 hover:text-[#154481] dark:hover:text-blue-400 py-2 border-b border-slate-100 dark:border-slate-900 transition-colors" href="biosfera.html">Biosfera</a>
         <a class="text-slate-600 dark:text-slate-400 hover:text-[#154481] dark:hover:text-blue-400 py-2 border-b border-slate-100 dark:border-slate-900 transition-colors" href="hazte_voluntario.html">Voluntariado</a>
         <a class="text-slate-600 dark:text-slate-400 hover:text-[#154481] dark:hover:text-blue-400 py-2 border-b border-slate-100 dark:border-slate-900 transition-colors" href="contacto.html">Contacto</a>
@@ -240,7 +240,7 @@
     <!-- Información Ciudadana (Bento Style) -->
     <section class="py-stack-lg max-w-[1140px] mx-auto px-4 md:px-8">
         <div class="mb-stack-md">
-            <h2 class="font-headline-lg text-primary-container border-b-2 border-secondary-container pb-2 w-fit mb-2">Información Ciudadana</h2>
+            <h2 class="font-headline-lg text-headline-lg text-primary border-b-2 border-secondary-container pb-2 w-fit">Información Ciudadana</h2>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
             <div
@@ -332,7 +332,7 @@
     <section class="py-stack-lg bg-surface-container-low">
         <div class="max-w-[1140px] mx-auto px-4 md:px-8">
             <div class="mb-stack-md">
-                <h2 class="font-headline-lg text-primary border-b-2 border-secondary-container pb-2 w-fit mb-4">Nuestros Servicios</h2>
+                <h2 class="font-headline-lg text-headline-lg text-primary border-b-2 border-secondary-container pb-2 w-fit">Nuestros Servicios</h2>
                 <p class="font-body-lg text-on-surface-variant">Operamos en múltiples ámbitos para garantizar la
                     seguridad pública.</p>
             </div>
@@ -396,7 +396,7 @@
     <section class="py-stack-lg max-w-[1140px] mx-auto px-4 md:px-8">
         <div class="flex flex-col md:flex-row md:items-end justify-between mb-stack-md gap-4">
             <div>
-                <h2 class="font-headline-lg text-primary border-b-2 border-secondary-container pb-2 w-fit mb-4">Cursos de Formación</h2>
+                <h2 class="font-headline-lg text-headline-lg text-primary border-b-2 border-secondary-container pb-2 w-fit">Cursos de Formación</h2>
                 <p class="font-body-lg text-on-surface-variant">Capacitación abierta para ciudadanos y profesionales.
                 </p>
             </div>
@@ -490,7 +490,7 @@
     <section class="py-stack-lg bg-surface-container-low">
         <div class="max-w-[1140px] mx-auto px-4 md:px-8">
             <div class="mb-stack-md">
-                <h2 class="font-headline-lg text-primary border-b-2 border-secondary-container pb-2 w-fit mb-4">Reconocimientos y Logros</h2>
+                <h2 class="font-headline-lg text-headline-lg text-primary border-b-2 border-secondary-container pb-2 w-fit">Reconocimientos y Logros</h2>
                 <p class="font-body-lg text-on-surface-variant">Distinciones y hitos oficiales que avalan el compromiso y la excelencia de nuestra agrupación.</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">

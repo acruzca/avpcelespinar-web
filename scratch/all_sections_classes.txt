@@ -1,6 +1,6 @@
 === accesibilidad.html (0 sections) ===
 
-=== actuaciones.html (5 sections) ===
+=== solicitudes.html (5 sections) ===
   Section 1: <section
             class="relative h-[300px] flex items-center overflow-hidden bg-primary-container">
   Section 2: <section class="max-w-container-max mx-auto px-margin-page py-stack-lg -mt-20 relative z-20">

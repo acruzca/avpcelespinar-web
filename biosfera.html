@@ -16,88 +16,98 @@
             href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
             rel="stylesheet">
         <script id="tailwind-config">
-    tailwind.config = {
-      darkMode: "class",
-      theme: {
-        extend: {
-          "colors": {
-            "surface-variant": "#e2e2e2",
-            "inverse-primary": "#aac7ff",
-            "on-surface-variant": "#434750",
-            "surface-bright": "#f9f9f9",
-            "primary-container": "#154481",
-            "on-tertiary-fixed-variant": "#324769",
-            "surface-container": "#eeeeee",
-            "inverse-on-surface": "#f1f1f1",
-            "surface-container-high": "#e8e8e8",
-            "on-secondary-fixed": "#370e00",
-            "on-secondary-container": "#561b00",
-            "secondary-container": "#fe6514",
-            "primary-fixed": "#d6e3ff",
-            "on-error": "#ffffff",
-            "surface-container-highest": "#e2e2e2",
-            "surface": "#f9f9f9",
-            "on-primary-container": "#8db3f7",
-            "error-container": "#ffdad6",
-            "on-tertiary": "#ffffff",
-            "on-secondary-fixed-variant": "#7e2c00",
-            "inverse-surface": "#2f3131",
-            "on-error-container": "#93000a",
-            "error": "#ba1a1a",
-            "tertiary-fixed": "#d5e3ff",
-            "tertiary": "#182f4f",
-            "outline-variant": "#c3c6d2",
-            "surface-container-lowest": "#ffffff",
-            "surface-dim": "#dadada",
-            "primary-fixed-dim": "#aac7ff",
-            "on-tertiary-container": "#9db3da",
-            "on-primary": "#ffffff",
-            "on-primary-fixed-variant": "#184683",
-            "on-primary-fixed": "#001b3e",
-            "tertiary-container": "#304567",
-            "secondary": "#a53c00",
-            "on-tertiary-fixed": "#011b3b",
-            "secondary-fixed": "#ffdbce",
-            "background": "#f9f9f9",
-            "on-surface": "#1a1c1c",
-            "outline": "#737781",
-            "on-secondary": "#ffffff",
-            "surface-tint": "#365e9d",
-            "primary": "#002e60",
-            "secondary-fixed-dim": "#ffb598",
-            "on-background": "#1a1c1c",
-            "tertiary-fixed-dim": "#b2c7f0",
-            "surface-container-low": "#f3f3f3"
-          },
-          "borderRadius": {
-            "DEFAULT": "0.125rem",
-            "lg": "0.25rem",
-            "xl": "0.5rem",
-            "full": "0.75rem"
-          },
-          "spacing": {
-            "stack-sm": "16px",
-            "unit": "8px",
-            "margin-page": "32px",
-            "container-max": "1140px",
-            "stack-md": "32px",
-            "stack-lg": "64px",
-            "gutter": "24px"
-          },
-          "fontFamily": {
-            "headline-sm": ["Public Sans"],
-            "body-lg": ["Public Sans"],
-            "label-lg": ["Public Sans"],
-            "headline-md": ["Public Sans"],
-            "body-md": ["Public Sans"],
-            "headline-lg": ["Public Sans"],
-            "label-sm": ["Public Sans"],
-            "headline-xl": ["Public Sans"]
-          }
-        }
-      }
-    }
-  </script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-low": "#f3f3f3",
+                        "background": "#f9f9f9",
+                        "tertiary-fixed": "#d5e3ff",
+                        "primary-container": "#154481",
+                        "outline": "#737781",
+                        "on-surface": "#1a1c1c",
+                        "on-secondary-container": "#561b00",
+                        "on-secondary-fixed": "#370e00",
+                        "on-primary-container": "#8db3f7",
+                        "surface-container": "#eeeeee",
+                        "secondary-fixed-dim": "#ffb598",
+                        "surface-dim": "#dadada",
+                        "on-error": "#ffffff",
+                        "on-primary-fixed": "#001b3e",
+                        "primary-fixed-dim": "#aac7ff",
+                        "on-primary-fixed-variant": "#184683",
+                        "on-surface-variant": "#434750",
+                        "on-tertiary-fixed": "#011b3b",
+                        "outline-variant": "#c3c6d2",
+                        "inverse-surface": "#2f3131",
+                        "on-primary": "#ffffff",
+                        "secondary": "#a53c00",
+                        "surface-tint": "#365e9d",
+                        "on-tertiary": "#ffffff",
+                        "tertiary": "#182f4f",
+                        "error-container": "#ffdad6",
+                        "surface-bright": "#f9f9f9",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-fixed-dim": "#b2c7f0",
+                        "primary": "#002e60",
+                        "on-tertiary-container": "#9db3da",
+                        "tertiary-container": "#304567",
+                        "secondary-container": "#fe6514",
+                        "surface-container-high": "#e8e8e8",
+                        "on-secondary-fixed-variant": "#7e2c00",
+                        "secondary-fixed": "#ffdbce",
+                        "surface-container-highest": "#e2e2e2",
+                        "on-error-container": "#93000a",
+                        "on-secondary": "#ffffff",
+                        "on-background": "#1a1c1c",
+                        "on-tertiary-fixed-variant": "#324769",
+                        "inverse-on-surface": "#f1f1f1",
+                        "surface-variant": "#e2e2e2",
+                        "primary-fixed": "#d6e3ff",
+                        "inverse-primary": "#aac7ff",
+                        "surface": "#f9f9f9",
+                        "error": "#ba1a1a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "stack-lg": "64px",
+                        "container-max": "1140px",
+                        "gutter": "24px",
+                        "margin-page": "32px",
+                        "unit": "8px",
+                        "stack-sm": "16px",
+                        "stack-md": "32px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Public Sans"],
+                        "body-md": ["Public Sans"],
+                        "headline-sm": ["Public Sans"],
+                        "label-lg": ["Public Sans"],
+                        "label-sm": ["Public Sans"],
+                        "headline-md": ["Public Sans"],
+                        "headline-xl": ["Public Sans"],
+                        "headline-lg": ["Public Sans"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                        "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "headline-md": ["24px", { "lineHeight": "36px", "fontWeight": "600" }],
+                        "headline-xl": ["40px", { "lineHeight": "56px", "fontWeight": "700" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }]
+                    }
+                }
+            }
+        };
+    </script>
         <style>
     .material-symbols-outlined {
       font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
@@ -113,37 +123,37 @@
 
     <body class="font-body-md text-on-surface">
         <!-- Barra superior del Ayuntamiento (Estandarizada) -->
-        <div
-            class="bg-primary text-white py-1.5 px-4 text-xs font-medium border-b border-primary-container">
-            <div
-                class="max-w-[1140px] mx-auto flex justify-between items-center">
-                <span class="opacity-80">Protección Civil El Espinar
-                    (Segovia)</span>
-                <div class="flex items-center gap-6">
-                    <a
-                        class="hover:underline flex items-center gap-1 hover:opacity-100 transition-opacity"
-                        href="http://elespinar.es/" target="_blank"
-                        rel="noopener noreferrer">
-                        <span class="material-symbols-outlined text-xs"
-                            style="font-variation-settings: 'FILL' 1;">account_balance</span>
-                        Ayuntamiento de El Espinar
-                    </a>
-                    <span class="opacity-30">|</span>
-                    <div class="flex items-center gap-2 font-semibold">
-                        <button
-                            class="hover:text-secondary-container transition-colors text-white font-bold"
-                            id="lang-es">ES</button>
-                        <span class="opacity-30">/</span>
-                        <button
-                            class="hover:text-secondary-container transition-colors opacity-75 font-normal"
-                            id="lang-en">EN</button>
-                    </div>
+    <div class="bg-primary text-white py-1.5 text-xs font-medium border-b border-primary-container">
+        <div class="max-w-[1140px] mx-auto flex justify-between items-center px-4 md:px-8">
+            <span class="opacity-80">Protección Civil El Espinar (Segovia)</span>
+            <div class="flex items-center gap-6">
+                <a class="hover:underline flex items-center gap-1 hover:opacity-100 transition-opacity" href="http://elespinar.es/" target="_blank" rel="noopener noreferrer">
+                    <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">account_balance</span>
+                    Ayuntamiento de El Espinar
+                </a>
+                <span class="opacity-30">|</span>
+                <div class="flex items-center gap-2 font-semibold">
+                    <button class="hover:text-secondary-container transition-colors text-white font-bold" id="lang-es">ES</button>
+                    <span class="opacity-30">/</span>
+                    <button class="hover:text-secondary-container transition-colors opacity-75 font-normal" id="lang-en">EN</button>
                 </div>
             </div>
         </div>
-        <!-- Menú de Navegación Estandarizado (Unificado) -->
+    </div>
+    <!-- Banner de Alertas (Estandarizado) -->
+    <div class="bg-[#ba1a1a] text-white py-2 px-4 text-center text-sm font-bold sticky top-0 z-[60] border-b border-red-800">
+        <div class="max-w-[1140px] mx-auto flex items-center justify-center gap-2">
+            <span>⚠️</span>
+            <span>Aviso Meteorológico: Previsión de fuertes lluvias para el próximo fin de semana.</span>
+            <a class="flex items-center hover:opacity-90 transition-opacity ml-1" href="avisos.html">
+                <span class="underline text-white font-bold">Más información</span>
+                <span class="material-symbols-outlined text-sm ml-0.5" style="font-variation-settings: 'FILL' 1;">arrow_right_alt</span>
+            </a>
+        </div>
+    </div>
+    <!-- Menú de Navegación Estandarizado (Unificado) -->
         <header
-            class="bg-white dark:bg-slate-950 border-b border-[#D1D1D1] dark:border-slate-800 sticky z-50 top-0 transition-all duration-200">
+            class="bg-white dark:bg-slate-950 border-b border-[#D1D1D1] dark:border-slate-800 sticky z-50 top-9 transition-all duration-200">
             <div
                 class="flex justify-between items-center h-20 max-w-[1140px] mx-auto px-4 md:px-8">
                 <a href="index.html"
@@ -165,7 +175,7 @@
                         href="agrupacion.html">La agrupación</a>
                     <a
                         class="text-slate-600 dark:text-slate-400 hover:text-[#154481] dark:hover:text-blue-400 transition-colors py-2"
-                        href="actuaciones.html">Actuaciones</a>
+                        href="solicitudes.html">Solicitudes</a>
                     <a
                         class="text-[#154481] dark:text-blue-400 font-bold border-b-2 border-secondary-container pb-1 py-2"
                         href="biosfera.html">Biosfera</a>
@@ -208,7 +218,7 @@
                     href="agrupacion.html">La agrupación</a>
                 <a
                     class="text-slate-600 dark:text-slate-400 hover:text-[#154481] dark:hover:text-blue-400 py-2 border-b border-slate-100 dark:border-slate-900 transition-colors"
-                    href="actuaciones.html">Actuaciones</a>
+                    href="solicitudes.html">Solicitudes</a>
                 <a
                     class="text-[#154481] dark:text-blue-400 font-bold py-2 border-b border-slate-100 dark:border-slate-900 transition-colors"
                     href="biosfera.html">Biosfera</a>
@@ -339,66 +349,52 @@
                 <div class="max-w-container-max mx-auto px-gutter">
                     <div class="text-center mb-stack-lg">
                         <h2
-                            class="font-headline-lg text-headline-lg text-primary border-b-2 border-secondary-container pb-2 w-fit mx-auto mb-4">Disfruta
-                            con Responsabilidad</h2>
+                            class="font-headline-lg text-headline-lg text-primary border-b-2 border-secondary-container pb-2 w-fit mx-auto mb-4">Consejos de Seguridad en Entornos Naturales</h2>
                         <p
-                            class="font-body-lg text-body-lg text-on-surface-variant">Consejos
-                            de seguridad para tu visita a la Reserva</p>
+                            class="font-body-lg text-body-lg text-on-surface-variant">Recomendaciones clave de autoprotección y prevención en la Reserva de la Biosfera</p>
                     </div>
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                        <!-- Fuego -->
+                        <!-- Pérdida en Montaña -->
                         <div
                             class="bg-white rounded-xl p-6 border border-outline-variant hover:shadow-md transition-shadow">
                             <div
-                                class="w-12 h-12 bg-error-container rounded-full flex items-center justify-center mb-4">
+                                class="w-12 h-12 bg-tertiary-fixed rounded-full flex items-center justify-center mb-4 text-tertiary">
                                 <span
-                                    class="material-symbols-outlined text-error"
-                                    data-icon="local_fire_department">local_fire_department</span>
-                            </div>
-                            <h3
-                                class="font-headline-sm text-headline-sm text-primary mb-2">Riesgo
-                                de Incendio</h3>
-                            <p
-                                class="font-body-md text-body-md text-on-surface-variant">Prohibido
-                                hacer fuego en cualquier época del año. No
-                                arrojes colillas ni cristales. Ante humo o
-                                llamas, llama inmediatamente al 112.</p>
-                        </div>
-                        <!-- Orientación -->
-                        <div
-                            class="bg-white rounded-xl p-6 border border-outline-variant hover:shadow-md transition-shadow">
-                            <div
-                                class="w-12 h-12 bg-tertiary-fixed rounded-full flex items-center justify-center mb-4">
-                                <span
-                                    class="material-symbols-outlined text-tertiary"
+                                    class="material-symbols-outlined"
                                     data-icon="explore">explore</span>
                             </div>
                             <h3
-                                class="font-headline-sm text-headline-sm text-primary mb-2">Planifica
-                                tu Ruta</h3>
+                                class="font-headline-sm text-headline-sm text-primary mb-2 font-bold">Pérdidas en Montaña</h3>
                             <p
-                                class="font-body-md text-body-md text-on-surface-variant">No
-                                abandones los senderos señalizados. Lleva agua,
-                                batería cargada y ropa adecuada. Avisa a alguien
-                                de tu itinerario previsto.</p>
+                                class="font-body-md text-body-md text-on-surface-variant">Si te pierdes, mantén la calma y no camines sin rumbo. Busca un lugar visible, conserva batería en tu teléfono y llama al 112 facilitando tus coordenadas GPS a través de aplicaciones de geolocalización.</p>
                         </div>
-                        <!-- Entorno -->
+                        <!-- Riesgo de Incendio -->
                         <div
                             class="bg-white rounded-xl p-6 border border-outline-variant hover:shadow-md transition-shadow">
                             <div
-                                class="w-12 h-12 bg-primary-fixed rounded-full flex items-center justify-center mb-4">
+                                class="w-12 h-12 bg-error-container rounded-full flex items-center justify-center mb-4 text-error">
                                 <span
-                                    class="material-symbols-outlined text-primary"
-                                    data-icon="eco">eco</span>
+                                    class="material-symbols-outlined"
+                                    data-icon="local_fire_department">local_fire_department</span>
                             </div>
                             <h3
-                                class="font-headline-sm text-headline-sm text-primary mb-2">Respeta
-                                el Entorno</h3>
+                                class="font-headline-sm text-headline-sm text-primary mb-2 font-bold">Prevención de Incendios</h3>
                             <p
-                                class="font-body-md text-body-md text-on-surface-variant">Llévate
-                                tu basura. No molestes a la fauna ni arranques
-                                flora autóctona. Mantén a los perros atados en
-                                zonas sensibles.</p>
+                                class="font-body-md text-body-md text-on-surface-variant">Prohibido encender fuego o barbacoas en cualquier época del año en entornos forestales. Evita tirar colillas o vidrios. Si divisas cualquier columna de humo, avisa inmediatamente al 112.</p>
+                        </div>
+                        <!-- Vialidad Invernal -->
+                        <div
+                            class="bg-white rounded-xl p-6 border border-outline-variant hover:shadow-md transition-shadow">
+                            <div
+                                class="w-12 h-12 bg-primary-fixed rounded-full flex items-center justify-center mb-4 text-primary">
+                                <span
+                                    class="material-symbols-outlined"
+                                    data-icon="ac_unit">ac_unit</span>
+                            </div>
+                            <h3
+                                class="font-headline-sm text-headline-sm text-primary mb-2 font-bold">Vialidad Invernal</h3>
+                            <p
+                                class="font-body-md text-body-md text-on-surface-variant">Ante temporales de nieve y heladas, reduce la velocidad y viaja con el depósito lleno y cadenas o neumáticos de invierno. Evita las zonas forestales y consulta los avisos de Protección Civil.</p>
                         </div>
                     </div>
                 </div>

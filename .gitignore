@@ -1,4 +1,6 @@
 scratch/
 .vscode/
 .DS_Store
-Thumbs.db
+Thumbs.dbnode_modules/ 
+scratch/ 
+tailwindcss.exe 

@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', () => {
     // URL of the generated JSON (could be absolute or relative depending on host)
     const jsonUrl = 'data/alertas_aemet.json';
@@ -15,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
         })
         .catch(error => {
             console.error('Error loading alerts:', error);
-            // Default to hiding the banner if there's an error
+            // Default to showing green banner if there's an error (assuming normal)
             updateBanner([]);
             updateAvisosPage([]);
         });
@@ -34,15 +33,60 @@ document.addEventListener('DOMContentLoaded', () => {
             highestAlert = alertas.find(a => a.nivel === 'Amarillo');
         }
 
+        // Reset base classes
+        banner.className = "py-2 px-4 text-center text-sm font-bold sticky top-0 z-[60] border-b";
+        banner.style.display = 'block';
+
+        const textSpan = banner.querySelector('span:nth-child(2)');
+        const iconSpan = banner.querySelector('span:nth-child(1)');
+        const linkWrapper = banner.querySelector('a');
+        const linkText = banner.querySelector('a span:first-child');
+        const linkIcon = banner.querySelector('a span:last-child');
+        const closeBtn = banner.querySelector('button');
+        
+        // Helper to reset inner elements colors
+        if (linkText) { linkText.className = "underline font-bold"; }
+        if (linkIcon) { linkIcon.className = "material-symbols-outlined text-sm ml-0.5"; }
+        if (closeBtn) { closeBtn.className = "absolute right-0 transition-all p-1 hover:scale-110"; }
+
         if (highestAlert) {
-            banner.style.display = 'block';
-            // Update banner text
-            const textSpan = banner.querySelector('span:nth-child(2)');
+            if (highestAlert.nivel === 'Rojo') {
+                banner.classList.add('bg-[#ba1a1a]', 'text-white', 'border-red-800');
+                iconSpan.textContent = '🚨';
+                if (linkText) linkText.classList.add('text-white');
+                if (linkIcon) linkIcon.classList.add('text-white');
+                if (closeBtn) closeBtn.classList.add('text-white/80', 'hover:text-white');
+            } else if (highestAlert.nivel === 'Naranja') {
+                banner.classList.add('bg-[#a53c00]', 'text-white', 'border-orange-800');
+                iconSpan.textContent = '⚠️';
+                if (linkText) linkText.classList.add('text-white');
+                if (linkIcon) linkIcon.classList.add('text-white');
+                if (closeBtn) closeBtn.classList.add('text-white/80', 'hover:text-white');
+            } else if (highestAlert.nivel === 'Amarillo') {
+                banner.classList.add('bg-[#D4AF37]', 'text-slate-900', 'border-yellow-600');
+                iconSpan.textContent = '⚠️';
+                if (linkText) linkText.classList.add('text-slate-900');
+                if (linkIcon) linkIcon.classList.add('text-slate-900');
+                if (closeBtn) closeBtn.classList.add('text-slate-700', 'hover:text-slate-900');
+            }
             if (textSpan) {
                 textSpan.textContent = `Aviso Meteorológico (${highestAlert.nivel}): ${highestAlert.titulo}`;
             }
+            if (linkText) linkText.textContent = "Más información";
         } else {
-            banner.style.display = 'none';
+            // Verde - Todo OK
+            banner.classList.add('bg-[#2E7D32]', 'text-white', 'border-green-800');
+            iconSpan.textContent = '✅';
+            if (linkText) {
+                linkText.classList.add('text-white');
+                linkText.textContent = "Ver estado";
+            }
+            if (linkIcon) linkIcon.classList.add('text-white');
+            if (closeBtn) closeBtn.classList.add('text-white/80', 'hover:text-white');
+            
+            if (textSpan) {
+                textSpan.textContent = 'Situación Normal: No hay avisos meteorológicos activos en la zona.';
+            }
         }
     }
 
@@ -65,7 +109,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <span class="text-[#2E7D32] font-label-sm text-label-sm uppercase tracking-wider font-bold">Situación Normal</span>
                             <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1 mb-2">Sin alertas activas</h3>
                             <p class="text-body-md font-body-md text-on-surface-variant mb-4">
-                                Actualmente no hay avisos meteorológicos en vigor para la zona del Sistema Central de Segovia.
+                                Actualmente no hay avisos meteorológicos en vigor para la zona del Sistema Central de Segovia ni Meseta.
                             </p>
                         </div>
                     </div>

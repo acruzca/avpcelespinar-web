@@ -1,11 +1,4 @@
 {
     "ultima_actualizacion": "2026-05-26T08:00:00Z",
-    "alertas": [
-        {
-            "nivel": "Naranja",
-            "titulo": "Vientos fuertes",
-            "descripcion": "Rachas máximas de viento que podrían alcanzar los 90 km/h en zonas elevadas del Sistema Central de Segovia.",
-            "valido_hasta": "Hasta mañana 12:00h"
-        }
-    ]
+    "alertas": []
 }

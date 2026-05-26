@@ -323,36 +323,10 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div
                         class="p-4 border-b border-surface-variant bg-surface-container-low flex justify-between items-center">
                         <h3 class="font-headline-sm text-headline-sm text-primary font-bold mb-2">Avisos activos</h3>
-                        <span class="bg-error-container text-on-error-container font-label-sm px-2 py-1 rounded-full">3 Activos</span>
+                        <span id="mapa-alertas-count" class="bg-surface-container-high text-on-surface-variant font-label-sm px-2 py-1 rounded-full">Cargando...</span>
                     </div>
-                    <div class="p-4 flex flex-col gap-4">
-                        <!-- Alert Item 1 -->
-                        <div class="border-l-4 border-error bg-surface-container p-3 rounded-r-lg">
-                            <div class="flex items-center gap-2 mb-1">
-                                <span class="material-symbols-outlined text-error text-sm" style="font-variation-settings: 'FILL' 1;">severe_cold</span>
-                                <span class="font-label-lg text-error">Nevadas Intensas</span>
-                            </div>
-                            <p class="font-body-sm text-on-surface-variant text-sm">Acumulación de nieve prevista de hasta 20cm. Se ruega evitar desplazamientos innecesarios y extremar la precaución en vías públicas.</p>
-                            <div class="mt-2 text-xs text-on-surface-variant">Hasta las 23:59h de hoy</div>
-                        </div>
-                        <!-- Alert Item 2 -->
-                        <div class="border-l-4 border-[#a53c00] bg-surface-container p-3 rounded-r-lg">
-                            <div class="flex items-center gap-2 mb-1">
-                                <span class="material-symbols-outlined text-[#a53c00] text-sm" style="font-variation-settings: 'FILL' 1;">air</span>
-                                <span class="font-label-lg text-[#a53c00]">Vientos Fuertes</span>
-                            </div>
-                            <p class="font-body-sm text-on-surface-variant text-sm">Rachas máximas de viento que podrían alcanzar los 90 km/h en zonas elevadas.</p>
-                            <div class="mt-2 text-xs text-on-surface-variant">Hasta mañana 12:00h</div>
-                        </div>
-                        <!-- Alert Item 3 (Yellow Level - Secondary) -->
-                        <div class="border-l-4 border-[#D4AF37] bg-surface-container p-3 rounded-r-lg">
-                            <div class="flex items-center gap-2 mb-1">
-                                <span class="material-symbols-outlined text-[#B45309] text-sm" style="font-variation-settings: 'FILL' 1;">thermostat</span>
-                                <span class="font-label-lg text-[#B45309]">Temperaturas Mínimas</span>
-                            </div>
-                            <p class="font-body-sm text-on-surface-variant text-sm">Temperaturas nocturnas que podrían descender hasta los -4ºC.</p>
-                            <div class="mt-2 text-xs text-on-surface-variant">Próximas 48h</div>
-                        </div>
+                    <div id="mapa-alertas-container" class="p-4 flex flex-col gap-4">
+                        <!-- Alerts will be injected here by JS -->
                     </div>
                 </div>
             </div>

@@ -11,12 +11,14 @@ document.addEventListener('DOMContentLoaded', () => {
             const alertas = data.alertas || [];
             updateBanner(alertas);
             updateAvisosPage(alertas);
+            updateMapaPage(alertas);
         })
         .catch(error => {
             console.error('Error loading alerts:', error);
             // Default to showing green banner if there's an error (assuming normal)
             updateBanner([]);
             updateAvisosPage([]);
+            updateMapaPage([]);
         });
 
     function updateBanner(alertas) {
@@ -155,6 +157,60 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
             `;
             container.appendChild(article);
+        });
+    }
+
+    function updateMapaPage(alertas) {
+        const container = document.getElementById('mapa-alertas-container');
+        const countBadge = document.getElementById('mapa-alertas-count');
+        if (!container || !countBadge) return; // Not on mapa_riesgos.html
+        
+        container.innerHTML = ''; // Clear loading text
+        
+        if (alertas.length === 0) {
+            countBadge.className = "bg-[#E8F5E9] text-[#2E7D32] font-label-sm px-2 py-1 rounded-full border border-[#2E7D32]";
+            countBadge.textContent = "0 Activos";
+            
+            container.innerHTML = `
+                <div class="border-l-4 border-[#2E7D32] bg-surface-container p-3 rounded-r-lg">
+                    <div class="flex items-center gap-2 mb-1">
+                        <span class="material-symbols-outlined text-[#2E7D32] text-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                        <span class="font-label-lg text-[#2E7D32]">Situación Normal</span>
+                    </div>
+                    <p class="font-body-sm text-on-surface-variant text-sm">No hay avisos meteorológicos activos para nuestra zona actualmente.</p>
+                </div>
+            `;
+            return;
+        }
+
+        // Has alerts
+        countBadge.className = "bg-error-container text-on-error-container font-label-sm px-2 py-1 rounded-full font-bold";
+        countBadge.textContent = `${alertas.length} Activo${alertas.length > 1 ? 's' : ''}`;
+
+        const levelConfig = {
+            'Rojo': { color: 'border-error', textColor: 'text-error', icon: 'warning' },
+            'Naranja': { color: 'border-[#a53c00]', textColor: 'text-[#a53c00]', icon: 'air' },
+            'Amarillo': { color: 'border-[#D4AF37]', textColor: 'text-[#B45309]', icon: 'thermostat' }
+        };
+
+        alertas.forEach(alerta => {
+            const config = levelConfig[alerta.nivel] || levelConfig['Amarillo'];
+            
+            const div = document.createElement('div');
+            div.className = `border-l-4 ${config.color} bg-surface-container p-3 rounded-r-lg`;
+            
+            div.innerHTML = `
+                <div class="flex items-center gap-2 mb-1">
+                    <span class="material-symbols-outlined ${config.textColor} text-sm" style="font-variation-settings: 'FILL' 1;">${config.icon}</span>
+                    <span class="font-label-lg ${config.textColor}">${alerta.titulo} (Nivel ${alerta.nivel})</span>
+                </div>
+                <p class="font-body-sm text-on-surface-variant text-sm">${alerta.descripcion}</p>
+                <div class="mt-2 text-xs text-on-surface-variant flex items-center gap-1">
+                    <span class="material-symbols-outlined text-[14px]">schedule</span>
+                    ${alerta.valido_hasta || 'En vigor'}
+                </div>
+            `;
+            container.appendChild(div);
         });
     }
 });

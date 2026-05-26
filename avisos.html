@@ -41,7 +41,7 @@
         </div>
     </div>
     <!-- Banner de Alertas (Estandarizado) -->
-    <div class="bg-[#ba1a1a] text-white py-2 px-4 text-center text-sm font-bold sticky top-0 z-[60] border-b border-red-800" id="alert-banner">
+    <div class="bg-[#ba1a1a] text-white py-2 px-4 text-center text-sm font-bold sticky top-0 z-[60] border-b border-red-800" id="alert-banner" style="display: none;">
         <div class="max-w-[1140px] mx-auto flex items-center justify-center gap-2 relative">
             <span>⚠️</span>
             <span>Aviso Meteorológico: Previsión de fuertes lluvias para el próximo fin de semana.</span>
@@ -231,112 +231,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     <h2 class="font-headline-lg text-headline-lg text-primary-container font-bold border-b-2 border-secondary-container pb-2 w-fit mb-6">
                         Alertas en vigor
                     </h2>
-                    <!-- Red Alert Card -->
-                    <article
-                        class="bg-surface-container-lowest border border-[#ba1a1a] rounded-lg p-6 relative overflow-hidden shadow-sm">
-                        <div class="absolute top-0 left-0 w-2 h-full bg-[#ba1a1a]"></div>
-                        <div class="flex items-start gap-4">
-                            <div class="bg-error-container p-3 rounded-full shrink-0">
-                                <span class="material-symbols-outlined text-[#ba1a1a] text-3xl"
-                                    style="font-variation-settings: 'FILL' 1;">severe_cold</span>
-                            </div>
-                            <div class="flex-1">
-                                <div class="flex justify-between items-start mb-2">
-                                    <div>
-                                        <span
-                                            class="text-[#ba1a1a] font-label-sm text-label-sm uppercase tracking-wider font-bold">Nivel
-                                            Rojo - Riesgo Extremo</span>
-                                        <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1 mb-2">Nevadas
-                                            intensas</h3>
-                                    </div>
-                                    <span
-                                        class="bg-surface-container-high px-2 py-1 rounded text-label-sm font-label-sm text-on-surface-variant flex items-center gap-1">
-                                        <span class="material-symbols-outlined text-[14px]">schedule</span>
-                                        Hasta las 23:59h de hoy
-                                    </span>
-                                </div>
-                                <p class="text-body-md font-body-md text-on-surface-variant mb-4">
-                                    Acumulación de nieve prevista de hasta 20cm. Se ruega evitar desplazamientos
-                                    innecesarios y extremar la precaución en vías públicas.
-                                </p>
-                                <button
-                                    class="text-[#ba1a1a] hover:bg-error-container/20 px-4 py-2 border border-[#ba1a1a] rounded font-label-lg text-label-lg transition-colors flex items-center gap-2">
-                                    <span class="material-symbols-outlined text-[18px]">info</span>
-                                    Ver recomendaciones
-                                </button>
-                            </div>
-                        </div>
-                    </article>
-                    <!-- Orange Alert Card -->
-                    <article
-                        class="bg-surface-container-lowest border border-[#a53c00] rounded-lg p-6 relative overflow-hidden shadow-sm">
-                        <div class="absolute top-0 left-0 w-2 h-full bg-[#a53c00]"></div>
-                        <div class="flex items-start gap-4">
-                            <div class="bg-secondary-fixed p-3 rounded-full shrink-0">
-                                <span class="material-symbols-outlined text-[#a53c00] text-3xl"
-                                    style="font-variation-settings: 'FILL' 1;">air</span>
-                            </div>
-                            <div class="flex-1">
-                                <div class="flex justify-between items-start mb-2">
-                                    <div>
-                                        <span
-                                            class="text-[#a53c00] font-label-sm text-label-sm uppercase tracking-wider font-bold">Nivel
-                                            Naranja - Riesgo Importante</span>
-                                        <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1 mb-2">Vientos
-                                            fuertes</h3>
-                                    </div>
-                                    <span
-                                        class="bg-surface-container-high px-2 py-1 rounded text-label-sm font-label-sm text-on-surface-variant flex items-center gap-1">
-                                        <span class="material-symbols-outlined text-[14px]">schedule</span>
-                                        Hasta mañana 12:00h
-                                    </span>
-                                </div>
-                                <p class="text-body-md font-body-md text-on-surface-variant mb-4">
-                                    Rachas máximas de viento que podrían alcanzar los 90 km/h en zonas elevadas.
-                                </p>
-                                <button
-                                    class="text-[#a53c00] hover:bg-secondary-fixed/20 px-4 py-2 border border-[#a53c00] rounded font-label-lg text-label-lg transition-colors flex items-center gap-2">
-                                    <span class="material-symbols-outlined text-[18px]">info</span>
-                                    Ver recomendaciones
-                                </button>
-                            </div>
-                        </div>
-                    </article>
-                    <!-- Yellow Alert Card -->
-                    <article
-                        class="bg-surface-container-lowest border border-[#D4AF37] rounded-lg p-6 relative overflow-hidden shadow-sm">
-                        <div class="absolute top-0 left-0 w-2 h-full bg-[#D4AF37]"></div>
-                        <div class="flex items-start gap-4">
-                            <div class="bg-[#FFF8E7] p-3 rounded-full shrink-0">
-                                <span class="material-symbols-outlined text-[#D4AF37] text-3xl"
-                                    style="font-variation-settings: 'FILL' 1;">thermostat</span>
-                            </div>
-                            <div class="flex-1">
-                                <div class="flex justify-between items-start mb-2">
-                                    <div>
-                                        <span
-                                            class="text-[#D4AF37] font-label-sm text-label-sm uppercase tracking-wider font-bold">Nivel
-                                            Amarillo - Riesgo</span>
-                                        <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1 mb-2">Temperaturas
-                                            mínimas</h3>
-                                    </div>
-                                    <span
-                                        class="bg-surface-container-high px-2 py-1 rounded text-label-sm font-label-sm text-on-surface-variant flex items-center gap-1">
-                                        <span class="material-symbols-outlined text-[14px]">schedule</span>
-                                        Próximas 48h
-                                    </span>
-                                </div>
-                                <p class="text-body-md font-body-md text-on-surface-variant mb-4">
-                                    Temperaturas nocturnas que podrían descender hasta los -4ºC.
-                                </p>
-                                <button
-                                    class="text-[#D4AF37] hover:bg-[#FFF8E7] px-4 py-2 border border-[#D4AF37] rounded font-label-lg text-label-lg transition-colors flex items-center gap-2">
-                                    <span class="material-symbols-outlined text-[18px]">info</span>
-                                    Ver recomendaciones
-                                </button>
-                            </div>
-                        </div>
-                    </article>
+                                        <div id="alertas-container" class="flex flex-col gap-stack-sm">
+                        <!-- Alerts will be injected here by JS -->
+                    </div>
                     <!-- Historical Alerts Image integration to break up text content -->
                     <div class="mt-8 rounded-lg overflow-hidden border border-outline-variant/30">
                         <img alt="A detailed digital illustration showing a meteorological command center for Civil Protection. The scene features large digital screens displaying weather maps and radar data in institutional blue and bright warning orange colors. The aesthetic is clean, professional, and modern, illuminated by bright overhead lighting typical of an emergency response center. The mood is alert and highly organized."
@@ -773,6 +670,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 </script>
+    <script src="js/alertas_aemet.js"></script>
 </body>
 
 </html>
